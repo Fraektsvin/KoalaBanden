@@ -9,7 +9,7 @@ package Business;
  *
  * @author finch
  */
-public class Concent {
+public class Consent {
     
     // Data field
     
