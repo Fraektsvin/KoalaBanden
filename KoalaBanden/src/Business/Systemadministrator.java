@@ -6,7 +6,7 @@
 package Business;
 
 /**
- * Test
+ * 
  * @author Antonio
  */
 public class SystemAdministrator extends User {
