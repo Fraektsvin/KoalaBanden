@@ -11,7 +11,7 @@ package Business;
  */
 public class CaseOpening {
     private String  caseDescription; 
-    private boolean isSortHelpClear;
+    private boolean isSoughtHelpClear;
     private boolean isInformedAboutRepresentationRights;
     private boolean isInformedAboutElectronicRegistration;
     private String  progressAgreement;
