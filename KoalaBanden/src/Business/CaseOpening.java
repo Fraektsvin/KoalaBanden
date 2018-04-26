@@ -32,7 +32,7 @@ public class CaseOpening {
         
     }
     
-    private void createInquiry() {
+    private void createEnquiry() {
         
     }
     
