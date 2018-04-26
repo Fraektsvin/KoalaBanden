@@ -5,7 +5,7 @@
  */
 package Business;
 /**
- * Test 2
+ * Test 3
  * @author Jonas
  */
 public class CaseOpening {
