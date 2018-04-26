@@ -6,13 +6,13 @@
 package Business;
 
 /**
- *
+ * Test
  * @author Antonio
  */
-public class Systemadministrator extends User {
+public class SystemAdministrator extends User {
     private int ID; 
 
-    public Systemadministrator(String username, String password, String email, int SSN, int accessLevel) {
+    public SystemAdministrator(String username, String password, String email, int SSN, int accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
 
