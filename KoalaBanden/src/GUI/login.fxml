@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="494.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="34.0" layoutY="182.0" text="Brugernavn:" />
+      <Label layoutX="27.0" layoutY="245.0" text="Adgangskode:" />
+      <JFXComboBox layoutX="152.0" layoutY="285.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg brugertype" unFocusColor="WHITE" />
+      <JFXTextField layoutX="135.0" layoutY="161.0" prefHeight="31.0" prefWidth="300.0" />
+      <JFXTextField layoutX="138.0" layoutY="229.0" prefHeight="31.0" prefWidth="300.0" />
+      <Label layoutX="27.0" layoutY="290.0" text="Adgangsniveau:" />
+      <JFXButton layoutX="202.0" layoutY="339.0" style="-fx-background-color: #699F6B;" text="Login" textFill="WHITE" />
+      <JFXMasonryPane layoutX="-8.0" layoutY="-6.0" prefHeight="31.0" prefWidth="508.0" />
+      <Label layoutY="408.0" prefHeight="31.0" prefWidth="494.0" text="Status:" />
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="494.0" style="-fx-background-color: #699F6B;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_Lock_50px_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>
