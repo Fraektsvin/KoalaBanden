@@ -26,6 +26,7 @@ public class Case {
     public Case (int ID, int citizenSSN){
         this.ID = ID;
         this.citizenSSN = citizenSSN;
+        this.dateCreated = new Date();
     }
     
     // Methods
