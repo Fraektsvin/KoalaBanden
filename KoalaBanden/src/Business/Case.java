@@ -16,7 +16,7 @@ public class Case {
     // Data field
     
     private int ID;
-    private Date dateOfCreation;
+    private Date dateCreated;
     private String lastModifiedBy;
     private Date lastModified;
     private int citizenSSN;
