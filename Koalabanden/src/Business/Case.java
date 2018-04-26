@@ -32,7 +32,7 @@ public class Case {
     // Methods
     
     public int getSSN(){
-        return citizenSSN;
+        return this.citizenSSN;
     }
     
 }
