@@ -9,10 +9,10 @@ package Business;
  *
  * @author Antonio
  */
-public class SystemAdministrator extends User {
+public class Systemadministrator extends User {
     private int ID; 
 
-    public SystemAdministrator(String username, String password, String email, int SSN, int accessLevel) {
+    public Systemadministrator(String username, String password, String email, int SSN, int accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
 
