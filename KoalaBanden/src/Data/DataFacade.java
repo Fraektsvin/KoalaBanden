@@ -6,6 +6,7 @@
 package Data;
 
 import Acquaintance.IData;
+import Acquaintance.IUser;
 
 /**
  *
@@ -22,6 +23,11 @@ public class DataFacade implements IData {
     @Override
     public boolean userExists(String userName) {
         return userData.userExists(userName);
+    }
+
+    @Override
+    public void createUser(IUser user) {
+        userData.createUser(user);
     }
     
 }

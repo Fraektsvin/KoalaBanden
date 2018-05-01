@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Data;
+package Acquaintance;
 
 /**
  *
- * @author Antonio
+ * @author viktorianadarajah
  */
-public class Datafacade {
+public interface IUser {
     
+    public String getUsername();
 }

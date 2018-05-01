@@ -17,7 +17,17 @@ public class SystemManager {
 
     public SystemManager() {
     }
-
+    
+    public boolean createUser(String username, String password, String email, int SSN, int accessLevel) {
+        if (!BusinessFacade.userExists(username)) {
+            User user = new User(username, password, email, SSN, accessLevel);
+            BusinessFacade.createUser(user);
+            return true;
+        } else {
+            return false;
+        }
+    } 
+    
     public void setUsers(ArrayList<User> Users) {
         this.Users = Users;
     }

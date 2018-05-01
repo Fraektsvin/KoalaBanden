@@ -5,11 +5,14 @@
  */
 package Business;
 
+import Acquaintance.IUser;
+import java.io.Serializable;
+
 /**
  *
  * @author finch
  */
-public class User {
+public class User implements Serializable, IUser {
     
     // Date field
     
@@ -46,5 +49,11 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String getUsername() {
+        return this.username;
+    }
+    
     
 }
