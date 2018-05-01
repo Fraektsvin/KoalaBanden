@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -19,6 +20,8 @@ import javafx.stage.Stage;
  */
     public class GUIFacade extends Application implements IGUI {
     
+    private static IBusiness business;
+        
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
@@ -34,6 +37,16 @@ import javafx.stage.Stage;
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    @Override
+    public void injectBusiness(IBusiness business) {
+        this.business = business;
+    }
+
+    @Override
+    public void startApplication(String[] args) {
+        this.main(args);
     }
     
 }

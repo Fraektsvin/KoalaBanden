@@ -9,6 +9,7 @@ package Acquaintance;
  *
  * @author Jonas
  */
-public class IData {
+public interface IData {
+    public boolean userExists(String userName);
     
 }

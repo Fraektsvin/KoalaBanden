@@ -6,6 +6,7 @@
 package Business;
 
 import Acquaintance.IBusiness;
+import Acquaintance.IData;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -20,6 +21,16 @@ import javafx.stage.Stage;
  */
 public class BusinessFacade implements IBusiness {
     
- 
+    private static IData data;
+    
+    public boolean userExists(String userName) {
+        return true;
+    }
+
+    @Override
+    public void injectData(IData data) {
+        this.data = data;
+    }
+    
     
 }

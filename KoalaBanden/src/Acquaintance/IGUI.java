@@ -10,5 +10,7 @@ package Acquaintance;
  * @author Jonas
  */
 public interface IGUI {
-    
+    public abstract void injectBusiness(IBusiness business);
+    public abstract void startApplication(String[] args);
+
 }
