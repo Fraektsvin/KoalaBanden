@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  *
  * @author Antonio
  */
-public class Businessfacaden implements IBusiness {
+public class BusinessFacade implements IBusiness {
     
  
     

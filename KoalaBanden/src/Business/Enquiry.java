@@ -11,6 +11,7 @@ import java.util.Date;
  *
  * @author finch
  */
+
 public class Enquiry {
     
     private Date date;
