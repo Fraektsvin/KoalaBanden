@@ -9,6 +9,6 @@ package Acquaintance;
  *
  * @author Jonas
  */
-public class IGUI {
+public interface IGUI {
     
 }
