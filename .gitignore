@@ -6,3 +6,5 @@ KoalaBanden/src/Business/CaseOpening.java
 Koalabanden/src/Business/SystemAdministrator.java
 KoalaBanden/src/Business/SystemAdministrator.java
 /KoalaBanden/nbproject/private/
+/KoalaBanden/build/
+*.properties
