@@ -47,12 +47,14 @@ public class SystemManager {
     }
     
     public int login(String userName, String password) {
-        User user = BusinessFacade.getUser(userName, password);
-        if (user != null) {
-            currentUser = user;
-            return user.getAccessLevel();
+        if (BusinessFacade.userExists(userName)) {
+            User user = BusinessFacade.getUser(userName, password);
+            if (user != null) {
+                currentUser = user;
+                return user.getAccessLevel();
+            }
         }
-        return 0; 
+        return 0;
     }
     
     public void logOut() {

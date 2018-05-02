@@ -27,8 +27,6 @@ public class Starter {
         business.injectData(data);
         
         GUI.startApplication(args);
-        
-        
+            
     }
-    
 }
