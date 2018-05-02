@@ -54,6 +54,15 @@ public class User implements Serializable, IUser {
     public String getUsername() {
         return this.username;
     }
+
+    public int getAccessLevel() {
+        return accessLevel;
+    }
+
+    @Override
+    public boolean checkPassword(String password) {
+        return this.password.equals(password);
+    }
     
     
 }

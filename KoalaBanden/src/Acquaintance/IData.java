@@ -12,4 +12,5 @@ package Acquaintance;
 public interface IData {
     public boolean userExists(String userName);
     public void createUser(IUser user);
+    public IUser getUser(String userName, String password);
 }

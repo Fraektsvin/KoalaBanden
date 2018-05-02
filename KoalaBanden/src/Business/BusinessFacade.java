@@ -37,4 +37,7 @@ public class BusinessFacade implements IBusiness {
         data.createUser(user);
     }
     
+    public static User getUser(String userName, String password) {
+        return (User) data.getUser(userName, password);
+    }
 }

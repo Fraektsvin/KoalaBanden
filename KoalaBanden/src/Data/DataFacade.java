@@ -29,5 +29,10 @@ public class DataFacade implements IData {
     public void createUser(IUser user) {
         userData.createUser(user);
     }
+
+    @Override
+    public IUser getUser(String userName, String password) {
+       return userData.getUser(userName, password);
+    }
     
 }

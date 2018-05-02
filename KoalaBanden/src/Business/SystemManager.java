@@ -14,6 +14,8 @@ import java.util.ArrayList;
 public class SystemManager {
     private ArrayList<User> Users = new ArrayList<>();
     private ArrayList<User> Case = new ArrayList<>();
+    
+    private User currentUser = null;
 
     public SystemManager() {
     }
@@ -42,6 +44,19 @@ public class SystemManager {
 
     public ArrayList<User> getCase() {
         return Case;
+    }
+    
+    public int login(String userName, String password) {
+        User user = BusinessFacade.getUser(userName, password);
+        if (user != null) {
+            currentUser = user;
+            return user.getAccessLevel();
+        }
+        return 0; 
+    }
+    
+    public void logOut() {
+        currentUser = null;
     }
 
    

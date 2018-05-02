@@ -30,6 +30,9 @@ public class UserData {
             userMap = new HashMap<>();
             saveMap();
         }
+        else {
+            readMap();
+        }
     }
     
     public void createUser(IUser user) {
@@ -38,7 +41,15 @@ public class UserData {
     }
     
     public boolean userExists(String userName){
-        return userMap.containsKey(userName);
+          return userMap.containsKey(userName);  
+    }
+    
+    public IUser getUser(String userName, String password) {
+        IUser user = userMap.get(userName);
+        if (user != null && user.checkPassword(password)) {
+            return user;
+        }
+        return null;
     }
     
     private void saveMap() {
