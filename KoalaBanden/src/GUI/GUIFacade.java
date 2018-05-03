@@ -7,6 +7,7 @@ package GUI;
 
 import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
+import Acquaintance.IGuardian;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -21,6 +22,7 @@ import javafx.stage.Stage;
     public class GUIFacade extends Application implements IGUI {
     
     private static IBusiness business;
+    private static IGuardian guardian;
         
     @Override
     public void start(Stage stage) throws Exception {
@@ -49,5 +51,8 @@ import javafx.stage.Stage;
         this.main(args);
     }
     
+    public IGuardian guardian(IGuardian guardian) {
+            return guardian;
+    
 }
-
+    }
