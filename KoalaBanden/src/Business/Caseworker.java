@@ -5,25 +5,44 @@
  */
 package Business;
 
+import Acquaintance.IBusiness;
+import Acquaintance.IData;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Date;
+import java.util.HashMap;
+
+
 /**
  *
  * @author finch
  */
 public class Caseworker extends User {
 
+    private IBusiness business;
+    
     // Data field
-    private int ID;
+    private IData data; 
+    private int ID; 
+    private int caseID = 0;
 
     // Constructor
+
     public Caseworker(String username, String password, String email, int SSN, int accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
+    
+   
 
     // Methods
-    public void createCase() {
-
+    public void createCase(int citizenSSN) {
+        business.createCase(citizenSSN);
     }
+    
 
+  
+      
     public void createCaseOpening() {
 
     }

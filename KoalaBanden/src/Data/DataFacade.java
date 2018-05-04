@@ -5,8 +5,11 @@
  */
 package Data;
 
+import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -15,9 +18,11 @@ import Acquaintance.IUser;
 public class DataFacade implements IData {
 
     private UserData userData;
+    private caseData caseData;
     
     public DataFacade() {
         this.userData = new UserData();
+        this.caseData = new caseData();
     }
     
     @Override
@@ -33,6 +38,17 @@ public class DataFacade implements IData {
     @Override
     public IUser getUser(String userName, String password) {
        return userData.getUser(userName, password);
+    }
+
+    @Override
+    public void saveCase(ICase c) {
+       caseData.saveCase(c);
+    }
+    
+  
+    
+    public Map<Integer, ICase> getCases() {
+        return caseData.getCaseMap();
     }
     
 }

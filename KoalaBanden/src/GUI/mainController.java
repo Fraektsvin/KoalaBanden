@@ -5,25 +5,23 @@
  */
 package GUI;
 
-import Acquaintance.IGuardian;
+import Acquaintance.IUser;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTreeView;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 /**
  *
@@ -31,11 +29,9 @@ import javafx.stage.Stage;
  */
 public class mainController implements Initializable{
       
-
     
-    @FXML
-    private Label label;
-    
+ 
+   
     @FXML
     private VBox news_scroll;
     
@@ -43,9 +39,8 @@ public class mainController implements Initializable{
    private JFXButton opretbtn;
    
    @FXML
-   private JFXComboBox guardiancombo;
+   private JFXTreeView<?> h_sager;
     
-    @FXML
     private void handleButtonAction(MouseEvent event) {        
        refreshNodes();
     }
@@ -88,7 +83,18 @@ public class mainController implements Initializable{
     }
      
 }
-   
+
+    @FXML
+    private void createCase(ActionEvent event) {
+      GUIFacade.business.createCase((int)Math.random() * 1000);
+    }
+
+    @FXML
+    private void seeCases(ActionEvent event) {
+        System.out.println(GUIFacade.business.getCases().keySet());
+    }
+
+
         
 }
 

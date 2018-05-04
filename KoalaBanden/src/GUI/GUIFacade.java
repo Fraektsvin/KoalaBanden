@@ -15,14 +15,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 /**
  *
  * @author Antonio
  */
     public class GUIFacade extends Application implements IGUI {
     
-    private static IBusiness business;
-    private static IGuardian guardian;
+    static IBusiness business;
+    
         
     @Override
     public void start(Stage stage) throws Exception {
@@ -39,6 +40,7 @@ import javafx.stage.Stage;
      */
     public static void main(String[] args) {
         launch(args);
+      
     }
 
     @Override

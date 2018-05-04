@@ -6,8 +6,11 @@
 package Business;
 
 import Acquaintance.IBusiness;
+import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
+import Data.DataFacade;
+import java.util.Map;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,8 +25,11 @@ import javafx.stage.Stage;
  */
 public class BusinessFacade implements IBusiness {
     
-    private static IData data;
     
+   
+    private static IData data;
+    int caseID = 0;
+   
     public static boolean userExists(String userName) {
         return data.userExists(userName);
     }
@@ -40,4 +46,32 @@ public class BusinessFacade implements IBusiness {
     public static User getUser(String userName, String password) {
         return (User) data.getUser(userName, password);
     }
+    
+    @Override
+    public void createCase(int citizenSSN) {
+      caseID++;
+        System.out.println(caseID);
+      ICase c = new Case(caseID, citizenSSN);
+      data.saveCase(c);
+    }
+    
+   
+    
+  
+    
+    
+  
+    
+   
+    
+    @Override
+    public Map<Integer, ICase> getCases() {
+        return data.getCases();
+    }
+
+    @Override
+    public IData getData() {
+        return this.data;
+    }
+    
 }
