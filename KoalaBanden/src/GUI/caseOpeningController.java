@@ -7,14 +7,34 @@ package GUI;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
+
 
 
 public class caseOpeningController implements Initializable{
 
+    @FXML
+    private CheckBox Borger;
+    @FXML
+    private CheckBox Pårørende;
+    @FXML
+    private CheckBox Læge;
+    @FXML
+    private CheckBox Hospital;
+    @FXML
+    private CheckBox andenForvaltning;
+    @FXML
+    private CheckBox igangværendeIndsats;
+    @FXML
+    private CheckBox andenKommune;
+    @FXML
+    private CheckBox andre;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
    //  @Override
    // public void addGuardian(Guardian guardian) {

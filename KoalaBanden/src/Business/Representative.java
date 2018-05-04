@@ -14,8 +14,8 @@ public class Representative extends User {
     private String address; 
     private String caseInformation;
     
-    public Representative(String username, String password, String email, int CPR, int accessLevel) {
-        super(username, password, email, CPR, accessLevel);
+    public Representative(String username, String password, String email, int SSN, int accessLevel) {
+        super(username, password, email, SSN, accessLevel);
     }
     
     private String getCaseinformation() {

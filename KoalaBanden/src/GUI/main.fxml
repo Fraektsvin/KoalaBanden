@@ -141,7 +141,7 @@
             </JFXButton>
          </children>
       </VBox>
-      <Pane layoutX="93.0" layoutY="101.0" style="-fx-background-color: #fff;">
+      <Pane layoutX="123.0" layoutY="101.0" style="-fx-background-color: #fff;">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>

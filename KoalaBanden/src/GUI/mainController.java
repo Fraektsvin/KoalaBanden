@@ -89,7 +89,6 @@ public class mainController implements Initializable{
     @FXML
     private void createCase(ActionEvent event) {
      // GUIFacade.business.createCase((int)Math.random() * 1000);
-      
      try {
        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
        Parent root1 = (Parent) fxmlLoader.load();

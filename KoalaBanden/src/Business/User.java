@@ -19,16 +19,16 @@ public class User implements Serializable, IUser {
     private String username;
     private String password;
     private String email;
-    private int CPR;
+    private int SSN;
     private int accessLevel;
     
     // Constructor
     
-    public User(String username, String password, String email, int CPR, int accessLevel){
+    public User(String username, String password, String email, int SSN, int accessLevel){
         this.username = username;
         this.password = password;
         this.email = email;
-        this.CPR = CPR;
+        this.SSN = SSN;
         this.accessLevel = accessLevel;
     }
     

@@ -19,7 +19,7 @@ public abstract class Guardian extends User implements IGuardian {
     private String username;
     private String password;
     private String email;
-    private int CPR;
+    private int SSN;
     private int accessLevel;
     private String firstName;
     private String lastName;
@@ -29,15 +29,15 @@ public abstract class Guardian extends User implements IGuardian {
     private String guardianDescription;
     
     
-    public Guardian(String username, String password, String email, int CPR, String guardianDescription, int accessLevel, String type, String address, String caseInformation, String PostalCode, String firstName, String lastName, String phonenumber, String DOB) {
-          super(username, password, email, CPR, accessLevel);
+    public Guardian(String username, String password, String email, int SSN, String guardianDescription, int accessLevel, String type, String address, String caseInformation, String PostalCode, String firstName, String lastName, String phonenumber, String DOB) {
+          super(username, password, email, SSN, accessLevel);
         
         
         this.type = type;
         this.address = address;
         this.caseInformation = caseInformation;
         this.email = email;
-        this.CPR = CPR;
+        this.SSN = SSN;
         this.accessLevel = accessLevel;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -148,13 +148,13 @@ public abstract class Guardian extends User implements IGuardian {
     }
 
     
-   // public int getCPR() {
-     //   return  CPR;
+   // public int getSSN() {
+     //   return  SSN;
     //}
     
     
-    public void setCPR(int CPR) {
-        this.CPR = CPR;
+    public void setSSN(int SSN) {
+        this.SSN = SSN;
     }
 
     public int getAccessLevel() {
@@ -169,13 +169,13 @@ public abstract class Guardian extends User implements IGuardian {
       return caseInformation;
    }
    
-   public void setGuardianData(String username, String password, String email, String guardianDescription, int CPR, int accessLevel, String type, String address, String caseInformation, String firstName, String lastName, String DOB, String phonenumber, String PostalCode) {
+   public void setGuardianData(String username, String password, String email, String guardianDescription, int SSN, int accessLevel, String type, String address, String caseInformation, String firstName, String lastName, String DOB, String phonenumber, String PostalCode) {
        
         this.type = type;
         this.address = address;
         this.caseInformation = caseInformation;
         this.email = email;
-        this.CPR = CPR;
+        this.SSN = SSN;
         this.accessLevel = accessLevel;
         this.firstName = firstName;
         this.lastName = lastName;
