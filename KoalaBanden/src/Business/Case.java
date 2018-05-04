@@ -34,7 +34,7 @@ public class Case implements Serializable, ICase  {
         return citizenCPR;
     }
     
-    public void setSSN(int citizenCPR) {
+    public void setCPR(int citizenCPR) {
         this.citizenCPR = citizenCPR;
     }
     
