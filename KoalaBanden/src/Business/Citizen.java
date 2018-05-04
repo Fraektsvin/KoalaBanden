@@ -13,8 +13,8 @@ public class Citizen extends User {
     
     // Contructor
     
-    public Citizen(String username, String password, String email, int SSN, int accessLevel) {
-        super(username, password, email, SSN, accessLevel);
+    public Citizen(String username, String password, String email, int CPR, int accessLevel) {
+        super(username, password, email, CPR, accessLevel);
     }
     
     // Methods

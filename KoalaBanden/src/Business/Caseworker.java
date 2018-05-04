@@ -24,15 +24,15 @@ public class Caseworker extends User {
 
     // Constructor
 
-    public Caseworker(String username, String password, String email, int SSN, int accessLevel) {
-        super(username, password, email, SSN, accessLevel);
+    public Caseworker(String username, String password, String email, int CPR, int accessLevel) {
+        super(username, password, email, CPR, accessLevel);
     }
     
    
 
     // Methods
-    public void createCase(int citizenSSN) {
-        business.createCase(citizenSSN);
+    public void createCase(int citizenCPR) {
+        business.createCase(citizenCPR);
     }
     
 
