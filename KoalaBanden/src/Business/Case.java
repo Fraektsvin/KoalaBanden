@@ -21,21 +21,21 @@ public class Case implements Serializable, ICase  {
     private Date dateCreated;
     private Date lastModified;
     private String lastModifiedBy;
-    private int citizenSSN;
+    private int citizenCPR;
     // Constructor
-    public Case(int ID, int citizenSSN) {
+    public Case(int ID, int citizenCPR) {
         this.ID = ID;
-        this.citizenSSN = citizenSSN;
+        this.citizenCPR = citizenCPR;
     }
     
     // Methods
     
-    public int getSSN() {
-        return citizenSSN;
+    public int getCPR() {
+        return citizenCPR;
     }
     
-    public void setSSN(int citizenSSN) {
-        this.citizenSSN = citizenSSN;
+    public void setCPR(int citizenCPR) {
+        this.citizenCPR = citizenCPR;
     }
     
     public int getID() {
