@@ -1,6 +1,5 @@
 package Acquaintance;
 
-import Business.Case;
 import java.util.Map;
 
 public interface IBusiness {
