@@ -21,7 +21,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 /**
  *
@@ -86,8 +88,21 @@ public class mainController implements Initializable{
 
     @FXML
     private void createCase(ActionEvent event) {
-      GUIFacade.business.createCase((int)Math.random() * 1000);
+     // GUIFacade.business.createCase((int)Math.random() * 1000);
+      
+     try {
+       FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
+       Parent root1 = (Parent) fxmlLoader.load();
+       Stage stage = new Stage();
+       stage.setScene(new Scene(root1));  
+       stage.show();
+    }catch (IOException io){
+        io.printStackTrace();
     }
+
+}
+
+    
 
     @FXML
     private void seeCases(ActionEvent event) {

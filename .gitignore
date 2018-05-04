@@ -8,3 +8,4 @@ KoalaBanden/src/Business/SystemAdministrator.java
 /KoalaBanden/nbproject/private/
 /KoalaBanden/build/
 *.properties
+/KoalaBanden/dist/
