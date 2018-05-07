@@ -5,9 +5,8 @@
  */
 package GUI;
 
-import Acquaintance.IGuardian;
-import Acquaintance.ICaseOpening;
-import Acquaintance.IUser;
+
+import Business.Guardian;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import java.io.IOException;
@@ -16,6 +15,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -23,23 +23,30 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+import Acquaintance.*;
 
 
-public class caseOpeningController implements Initializable{
+public class caseOpeningController implements Initializable {
+private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
+   
 
+    @FXML   
+    private JFXComboBox text;
+    
+    
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-   //  @Override
-   // public void addGuardian(Guardian guardian) {
-     //   for (int i = 0; i < this.guardianlist.size(); i++) {
-       //    guardianlist.get(i).getGuardianDescription();
-         //  guardianlist.add(guardian);  
-           
+    @FXML
+   public void addGuardian(ActionEvent event) throws IOException {
+        text.getItems().addAll(guardianlist);
         
-  
-        }
+}}
+    
+           
+    
              
      
 
