@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="494.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="494.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginController">
    <children>
       <Label layoutX="34.0" layoutY="182.0" text="Brugernavn:" />
       <Label layoutX="27.0" layoutY="245.0" text="Adgangskode:" />
-      <JFXComboBox layoutX="152.0" layoutY="285.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg brugertype" unFocusColor="WHITE" />
-      <JFXTextField layoutX="135.0" layoutY="161.0" prefHeight="31.0" prefWidth="300.0" />
-      <JFXTextField layoutX="138.0" layoutY="229.0" prefHeight="31.0" prefWidth="300.0" />
-      <Label layoutX="27.0" layoutY="290.0" text="Adgangsniveau:" />
-      <JFXButton layoutX="202.0" layoutY="339.0" style="-fx-background-color: #699F6B;" text="Login" textFill="WHITE" />
+      <JFXTextField fx:id="loginuser" layoutX="135.0" layoutY="161.0" prefHeight="31.0" prefWidth="300.0" />
+      <JFXTextField fx:id="loginpass" layoutX="138.0" layoutY="229.0" prefHeight="31.0" prefWidth="300.0" />
+      <JFXButton layoutX="202.0" layoutY="339.0" onAction="#actionLogin" style="-fx-background-color: #699F6B;" text="Login" textFill="WHITE" />
       <JFXMasonryPane layoutX="-8.0" layoutY="-6.0" prefHeight="31.0" prefWidth="508.0" />
       <Label layoutY="408.0" prefHeight="31.0" prefWidth="494.0" text="Status:" />
       <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="494.0" style="-fx-background-color: #699F6B;">
