@@ -7,6 +7,7 @@ package Business;
 
 import Acquaintance.IBusiness;
 import Acquaintance.ICase;
+import Acquaintance.ICaseworker;
 import Acquaintance.IData;
 import java.util.Map;
 
@@ -16,10 +17,15 @@ import java.util.Map;
  */
 public class BusinessFacade implements IBusiness {
     
-    
-   
+    private SystemManager manager;
+    private ICaseworker worker; 
     private static IData data;
     int caseID = 0;
+    
+    BusinessFacade() {
+        manager = new SystemManager();
+        
+    }
    
     public static boolean userExists(String userName) {
         return data.userExists(userName);
@@ -40,10 +46,15 @@ public class BusinessFacade implements IBusiness {
     
     @Override
     public void createCase(int citizenSSN) {
-      caseID++;
-        System.out.println(caseID);
-      ICase c = new Case(caseID, citizenSSN);
-      data.saveCase(c);
+      
+    }
+    
+    public ICaseworker getCaseworker() {
+        return worker;
+    }
+    
+    public void createCaseworker(String username, String password, String email, int SSN, int accesslevel ) {
+        manager.createCaseworker(username, password, email, SSN, accesslevel);
     }
     
    

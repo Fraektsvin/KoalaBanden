@@ -6,6 +6,7 @@
 package Business;
 
 import Acquaintance.IBusiness;
+import Acquaintance.ICase;
 import Acquaintance.IData;
 
 
@@ -20,7 +21,6 @@ public class Caseworker extends User {
     // Data field
     private IData data; 
     private int ID; 
-    private int caseID = 0;
 
     // Constructor
 
@@ -28,11 +28,13 @@ public class Caseworker extends User {
         super(username, password, email, SSN, accessLevel);
     }
     
+    
+    
    
 
     // Methods
     public void createCase(int citizenSSN) {
-        business.createCase(citizenSSN);
+      new Case(, citizenSSN);
     }
     
 

@@ -30,6 +30,16 @@ public class SystemManager {
         }
     } 
     
+    public boolean createCaseworker(String username, String password, String email, int SSN, int accessLevel) {
+        if (!BusinessFacade.userExists(username)) {
+            Caseworker caseworker = new Caseworker(username, password, email, SSN, accessLevel);
+            BusinessFacade.createUser(caseworker);
+            return true;
+        } else {
+            return false;
+        }
+    } 
+    
     public void setUsers(ArrayList<User> Users) {
         this.Users = Users;
     }
@@ -40,6 +50,15 @@ public class SystemManager {
 
     public ArrayList<User> getUsers() {
         return Users;
+    }
+    
+    public User getCurrentUser() {
+        return currentUser;
+    }
+    
+    public Case createCase(int ID, int citizenSSN) {
+        Caseworker worker = (Caseworker)currentUser;
+   
     }
 
     public ArrayList<User> getCase() {
