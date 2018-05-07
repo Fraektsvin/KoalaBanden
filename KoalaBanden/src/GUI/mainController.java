@@ -74,17 +74,11 @@ public class mainController implements Initializable{
         } 
     
     }
-    private void opretSag(MouseEvent event) throws IOException {
-        {
-          
-        Parent root = FXMLLoader.load(getClass().getResource("caseOpening.fxml"));
+    
         
-        Scene scene = new Scene(root);
-        
-        
-    }
+    
      
-}
+
 
     @FXML
     private void createCase(ActionEvent event) {
@@ -109,6 +103,19 @@ public class mainController implements Initializable{
     }
 
 
+    
+    @FXML
+    private void userlist(ActionEvent even) {
+        try {
+       FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
+       Parent root1 = (Parent) fxmlLoader.load();
+       Stage stage = new Stage();
+       stage.setScene(new Scene(root1));  
+       stage.show();
+    }catch (IOException io){
+        io.printStackTrace();
+    }
+    }
         
 }
 

@@ -5,11 +5,8 @@
  */
 package GUI;
 
-import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -17,12 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author trium
  */
-public class LoginController implements Initializable {
-
-    @FXML
-    private JFXTextField loginuser;
-    @FXML
-    private JFXTextField loginpass;
+public class UserlistController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -31,9 +23,5 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void actionLogin(ActionEvent event) {
-    }
     
 }
