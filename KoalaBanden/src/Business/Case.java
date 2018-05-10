@@ -22,6 +22,7 @@ public class Case implements Serializable, ICase  {
     private Date lastModified;
     private String lastModifiedBy;
     private int citizenSSN;
+    
     // Constructor
     public Case(int ID, int citizenSSN) {
         this.ID = ID;

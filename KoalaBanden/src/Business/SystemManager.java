@@ -58,6 +58,7 @@ public class SystemManager {
     
     public Case createCase(int ID, int citizenSSN) {
         Caseworker worker = (Caseworker)currentUser;
+        return null;
    
     }
 

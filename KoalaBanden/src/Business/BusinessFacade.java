@@ -22,7 +22,7 @@ public class BusinessFacade implements IBusiness {
     private static IData data;
     int caseID = 0;
     
-    BusinessFacade() {
+    public BusinessFacade() {
         manager = new SystemManager();
         
     }
@@ -44,27 +44,14 @@ public class BusinessFacade implements IBusiness {
         return (User) data.getUser(userName, password);
     }
     
-    @Override
-    public void createCase(int citizenSSN) {
-      
-    }
-    
     public ICaseworker getCaseworker() {
         return worker;
     }
     
     public void createCaseworker(String username, String password, String email, int SSN, int accesslevel ) {
-        manager.createCaseworker(username, password, email, SSN, accesslevel);
+        //manager.createCaseworker(username, password, email, SSN, accesslevel);
+        this.worker = new Caseworker(username, password, email, SSN, accesslevel);
     }
-    
-   
-    
-  
-    
-    
-  
-    
-   
     
     @Override
     public Map<Integer, ICase> getCases() {
@@ -75,5 +62,5 @@ public class BusinessFacade implements IBusiness {
     public IData getData() {
         return this.data;
     }
-    
+
 }

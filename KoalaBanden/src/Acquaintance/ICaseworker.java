@@ -10,5 +10,6 @@ package Acquaintance;
  * @author Jonas
  */
 public interface ICaseworker {
-    
+
+    public void createCase(int citizenSSN);
 }

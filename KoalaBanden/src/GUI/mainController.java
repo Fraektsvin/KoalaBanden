@@ -5,7 +5,6 @@
  */
 package GUI;
 
-import Acquaintance.IUser;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTreeView;
 import java.io.IOException;
@@ -21,7 +20,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -82,8 +80,9 @@ public class mainController implements Initializable{
 
     @FXML
     private void createCase(ActionEvent event) {
-     // GUIFacade.business.createCase((int)Math.random() * 1000);
-     try {
+            GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, 0);
+            GUIFacade.business.getCaseworker().createCase(12);
+        try {
        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
        Parent root1 = (Parent) fxmlLoader.load();
        Stage stage = new Stage();

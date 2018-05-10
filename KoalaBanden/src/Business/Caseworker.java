@@ -5,8 +5,7 @@
  */
 package Business;
 
-import Acquaintance.IBusiness;
-import Acquaintance.ICase;
+import Acquaintance.ICaseworker;
 import Acquaintance.IData;
 
 
@@ -14,10 +13,8 @@ import Acquaintance.IData;
  *
  * @author finch
  */
-public class Caseworker extends User {
+public class Caseworker extends User implements ICaseworker{
 
-    private IBusiness business;
-    
     // Data field
     private IData data; 
     private int ID; 
@@ -34,7 +31,7 @@ public class Caseworker extends User {
 
     // Methods
     public void createCase(int citizenSSN) {
-      new Case(, citizenSSN);
+        System.out.println("ghfghfg");
     }
     
 
