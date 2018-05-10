@@ -25,7 +25,7 @@ public class Caseworker extends User implements ICaseworker {
 
     // Methods
     public void createCase(int citizenSSN) {
-        BusinessFacade.data.saveCase(new Case(10, citizenSSN));
+        BusinessFacade.data.saveCase(new Case(citizenSSN));
         System.out.println("ghfghfg");
     }
 

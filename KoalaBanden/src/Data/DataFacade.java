@@ -19,12 +19,12 @@ public class DataFacade implements IData {
 
     private UserData userData;
     private caseData caseData;
-    
+
     public DataFacade() {
         this.userData = new UserData();
         this.caseData = new caseData();
     }
-    
+
     @Override
     public boolean userExists(String userName) {
         return userData.userExists(userName);
@@ -37,18 +37,16 @@ public class DataFacade implements IData {
 
     @Override
     public IUser getUser(String userName, String password) {
-       return userData.getUser(userName, password);
+        return userData.getUser(userName, password);
     }
 
     @Override
     public void saveCase(ICase c) {
-       caseData.saveCase(c);
+        caseData.saveCase(c);
     }
-    
-  
-    
+
     public Map<Integer, ICase> getCases() {
         return caseData.getCaseMap();
     }
-    
+
 }

@@ -13,50 +13,43 @@ import java.util.Date;
  *
  * @author Jonas
  */
-
 // TEST
-public class Case implements Serializable, ICase  {
+public class Case implements Serializable, ICase {
+
     // Data Field
-    private int ID = 1; 
     private Date dateCreated;
     private Date lastModified;
     private String lastModifiedBy;
     private int citizenSSN;
-    
+
     // Constructor
-    public Case(int ID, int citizenSSN) {
-        this.ID = ID;
+    public Case(int citizenSSN) {
         this.citizenSSN = citizenSSN;
     }
-    
+
     // Methods
-    
     public int getSSN() {
         return citizenSSN;
     }
-    
+
     public void setSSN(int citizenSSN) {
         this.citizenSSN = citizenSSN;
     }
-    
-    public int getID() {
-        return ID;
-    }
-    
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-    
+
+//    public int getID() {
+//        return ID;
+//    }
+//
+//    public void setID(int ID) {
+//        this.ID = ID;
+//    }
+
     public Date getDateCreated() {
         return dateCreated;
     }
-    
+
     public Date getLastModified() {
         return lastModified;
     }
-    
-   
-    
-   
 
 }

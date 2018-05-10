@@ -10,5 +10,6 @@ package Acquaintance;
  * @author Jonas
  */
 public interface ICase {
-    public int getID();
+
+//    public int getID();
 }
