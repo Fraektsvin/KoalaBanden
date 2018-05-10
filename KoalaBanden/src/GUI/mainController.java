@@ -19,6 +19,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -36,7 +38,7 @@ public class mainController implements Initializable {
     private JFXButton opretbtn;
 
     @FXML
-    private JFXTreeView<?> h_sager;
+    private Label sager;
 
     private void handleButtonAction(MouseEvent event) {
         refreshNodes();
@@ -46,7 +48,7 @@ public class mainController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
 
-        refreshNodes();
+        // refreshNodes();
     }
 
     private void refreshNodes() {
@@ -85,10 +87,12 @@ public class mainController implements Initializable {
 
     @FXML
     private void seeCases(ActionEvent event) {
-        System.out.println(GUIFacade.business.getCases().keySet());
+        sager.setText("");
+        for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
+            sager.setText(sager.getText() + "\nSag:" + i);
+    }
     }
 
-    @FXML
     private void userlist(ActionEvent even) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));

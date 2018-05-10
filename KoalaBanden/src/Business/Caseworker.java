@@ -24,9 +24,10 @@ public class Caseworker extends User implements ICaseworker {
     }
 
     // Methods
+    @Override
     public void createCase(int citizenSSN) {
         BusinessFacade.data.saveCase(new Case(citizenSSN));
-        System.out.println("ghfghfg");
+
     }
 
     public void createCaseOpening() {

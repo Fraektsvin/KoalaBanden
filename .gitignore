@@ -9,3 +9,5 @@ KoalaBanden/src/Business/SystemAdministrator.java
 /KoalaBanden/build/
 *.properties
 /KoalaBanden/dist/
+*.properties
+KoalaBanden/nbproject/private/private.properties

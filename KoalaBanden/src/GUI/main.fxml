@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTreeView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -157,7 +156,7 @@
          <content>
             <VBox fx:id="news_scroll" prefHeight="404.0" prefWidth="1023.0" spacing="20.0" style="-fx-background-color: #fff;">
                <children>
-                  <JFXTreeView fx:id="h_sager" />
+                  <Label fx:id="sager" />
                </children></VBox>
          </content>
       </ScrollPane>
