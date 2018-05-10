@@ -43,7 +43,7 @@ public class BusinessFacade implements IBusiness {
     public User getUser(String userName, String password) {
         return (User) data.getUser(userName, password);
     }
-    
+   
     public ICaseworker getCaseworker() {
         return worker;
     }
@@ -54,6 +54,7 @@ public class BusinessFacade implements IBusiness {
     }
     
     @Override
+    // Returns the collection of cases from data.
     public Map<Integer, ICase> getCases() {
         return data.getCases();
     }

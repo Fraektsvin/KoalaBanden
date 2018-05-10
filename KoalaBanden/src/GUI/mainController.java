@@ -44,7 +44,7 @@ public class mainController implements Initializable {
     @FXML
     private Label sager;
     @FXML
-    private ListView<?> sagerListe;
+    private ListView<String> sagerListe;
     
 
     private void handleButtonAction(MouseEvent event) {
@@ -94,9 +94,11 @@ public class mainController implements Initializable {
 
     @FXML
     private void seeCases(ActionEvent event) {
-        sager.setText("");
+        // Resets the list containing items everytime method is called.
+        sagerListe.getItems().clear();
+        // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
-            sager.setText(sager.getText() + "\nSag:" + i);
+            sagerListe.getItems().add("Sag: " + i);
     }
     }
 
