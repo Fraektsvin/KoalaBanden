@@ -19,7 +19,7 @@ public class BusinessFacade implements IBusiness {
     
     private SystemManager manager;
     private ICaseworker worker; 
-    private static IData data;
+    public  static IData data;
     int caseID = 0;
     
     public BusinessFacade() {
@@ -27,7 +27,7 @@ public class BusinessFacade implements IBusiness {
         
     }
    
-    public static boolean userExists(String userName) {
+    public boolean userExists(String userName) {
         return data.userExists(userName);
     }
     
@@ -36,11 +36,11 @@ public class BusinessFacade implements IBusiness {
         this.data = data;
     }
     
-    public static void createUser(User user) {
+    public void createUser(User user) {
         data.createUser(user);
     }
     
-    public static User getUser(String userName, String password) {
+    public User getUser(String userName, String password) {
         return (User) data.getUser(userName, password);
     }
     

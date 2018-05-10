@@ -8,35 +8,27 @@ package Business;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
 
-
 /**
  *
  * @author finch
  */
-public class Caseworker extends User implements ICaseworker{
+public class Caseworker extends User implements ICaseworker {
 
     // Data field
-    private IData data; 
-    private int ID; 
+    private IData data;
+    private int ID;
 
     // Constructor
-
     public Caseworker(String username, String password, String email, int SSN, int accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
-    
-    
-    
-   
 
     // Methods
     public void createCase(int citizenSSN) {
+        BusinessFacade.data.saveCase(new Case(10, citizenSSN));
         System.out.println("ghfghfg");
     }
-    
 
-  
-      
     public void createCaseOpening() {
 
     }

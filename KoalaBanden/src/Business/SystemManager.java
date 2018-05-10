@@ -21,9 +21,9 @@ public class SystemManager {
     }
     
     public boolean createUser(String username, String password, String email, int SSN, int accessLevel) {
-        if (!BusinessFacade.userExists(username)) {
+        if (!BusinessFacade.data.userExists(username)) {
             User user = new User(username, password, email, SSN, accessLevel);
-            BusinessFacade.createUser(user);
+            BusinessFacade.data.createUser(user);
             return true;
         } else {
             return false;
@@ -31,9 +31,9 @@ public class SystemManager {
     } 
     
     public boolean createCaseworker(String username, String password, String email, int SSN, int accessLevel) {
-        if (!BusinessFacade.userExists(username)) {
+        if (!BusinessFacade.data.userExists(username)) {
             Caseworker caseworker = new Caseworker(username, password, email, SSN, accessLevel);
-            BusinessFacade.createUser(caseworker);
+            BusinessFacade.data.createUser(caseworker);
             return true;
         } else {
             return false;
@@ -67,8 +67,8 @@ public class SystemManager {
     }
     
     public int login(String userName, String password) {
-        if (BusinessFacade.userExists(userName)) {
-            User user = BusinessFacade.getUser(userName, password);
+        if (BusinessFacade.data.userExists(userName)) {
+            User user = (User) BusinessFacade.data.getUser(userName, password);
             if (user != null) {
                 currentUser = user;
                 return user.getAccessLevel();
