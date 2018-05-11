@@ -28,18 +28,18 @@
          </font>
       </Label>
       <Separator layoutX="38.0" layoutY="114.0" prefHeight="2.0" prefWidth="525.0" />
-      <Label layoutX="34.0" layoutY="150.0" text="Brugernavn:" />
-      <Label layoutX="27.0" layoutY="208.0" text="Adgangskode:" />
-      <Label layoutX="77.0" layoutY="252.0" text="Email:" />
-      <JFXTextField fx:id="passwordTextField1" layoutX="144.0" layoutY="247.0" prefHeight="31.0" prefWidth="279.0" />
-      <JFXComboBox fx:id="accessLevelComboBox" layoutX="148.0" layoutY="355.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg niveau" unFocusColor="WHITE" />
+      <Label layoutX="37.0" layoutY="150.0" text="Brugernavn:" />
+      <Label layoutX="37.0" layoutY="208.0" text="Adgangskode:" />
+      <Label layoutX="37.0" layoutY="252.0" text="Email:" />
+      <JFXTextField fx:id="emailTextField" layoutX="144.0" layoutY="247.0" prefHeight="31.0" prefWidth="279.0" />
+      <JFXComboBox fx:id="accessLevelComboBox" layoutX="144.0" layoutY="355.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg niveau" unFocusColor="WHITE" />
       <JFXTextField fx:id="usernameTextField" layoutX="144.0" layoutY="145.0" prefHeight="31.0" prefWidth="279.0" />
       <JFXTextField fx:id="passwordTextField" layoutX="144.0" layoutY="203.0" prefHeight="31.0" prefWidth="279.0" />
       <Label layoutX="37.0" layoutY="362.0" text="Adgangsniveau:" />
       <Label layoutX="37.0" layoutY="313.0" text="CPR:" />
-      <JFXTextField fx:id="CPRTextField1" layoutX="74.0" layoutY="308.0" prefHeight="31.0" prefWidth="139.0" />
-      <Label layoutX="226.0" layoutY="313.0" text="-" />
-      <JFXTextField fx:id="CPRTextField2" layoutX="255.0" layoutY="308.0" prefHeight="31.0" prefWidth="80.0" />
+      <JFXTextField fx:id="CPRTextField1" layoutX="143.0" layoutY="308.0" prefHeight="31.0" prefWidth="139.0" />
+      <Label layoutX="290.0" layoutY="313.0" prefHeight="17.0" prefWidth="9.0" text="-" />
+      <JFXTextField fx:id="CPRTextField2" layoutX="304.0" layoutY="308.0" prefHeight="31.0" prefWidth="80.0" />
       <JFXButton fx:id="createUserButton" layoutX="245.0" layoutY="443.0" onAction="#handleCreateUserButtonAction" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE" />
    </children>
 </AnchorPane>

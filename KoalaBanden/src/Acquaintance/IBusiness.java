@@ -15,4 +15,6 @@ public interface IBusiness {
     IData getData();
     
     public int login(String userName, String password);
+    
+    public boolean createUser(String username, String password, String email, int SSN, int accessLevel);
 }

@@ -27,6 +27,10 @@ import javafx.stage.Stage;
     public static int login(String username, String password) {
         return business.login(username, password);
     }
+    
+    public static void createUser(String username, String password, String email, int CPR, int accessLevel) {
+        business.createUser(username, password, email, CPR, accessLevel);
+    }
         
     @Override
     public void start(Stage stage) throws Exception {

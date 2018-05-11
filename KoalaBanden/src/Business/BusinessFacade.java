@@ -68,4 +68,9 @@ public class BusinessFacade implements IBusiness {
         return manager.login(userName, password);
     }
 
+    @Override
+    public boolean createUser(String username, String password, String email, int SSN, int accessLevel) {
+        return manager.createUser(username, password, email, SSN, accessLevel);
+    }
+
 }
