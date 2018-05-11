@@ -69,6 +69,8 @@ public class UserlistController implements Initializable {
 
     @FXML
     private void handleDeleteUserButton(ActionEvent event) {
+        String username = userListView.getSelectionModel().getSelectedItem();
+        GUIFacade.business.deleteUser(username);
         this.updateUserList();
     }
 

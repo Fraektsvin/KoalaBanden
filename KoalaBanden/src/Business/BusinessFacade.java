@@ -85,4 +85,9 @@ public class BusinessFacade implements IBusiness {
         return data.getUsers();
     }
 
+    @Override
+    public void deleteUser(String username) {
+        manager.deleteUser(username);
+    }
+
 }

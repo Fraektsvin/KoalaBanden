@@ -20,4 +20,5 @@ public interface IData {
     public void saveCase(ICase c);
     public Map<Integer, ICase> getCases();
     public Map<String, IUser> getUsers();
+    public void deleteUser(String username);
 }

@@ -54,4 +54,9 @@ public class DataFacade implements IData {
         return userData.getUserMap();
     }
 
+    @Override
+    public void deleteUser(String username) {
+        userData.deleteUser(username);
+    }
+
 }

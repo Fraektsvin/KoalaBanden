@@ -41,6 +41,11 @@ public class UserData {
         saveMap();
     }
     
+    public void deleteUser(String username) {
+        userMap.remove(username);
+        saveMap();
+    }
+    
     public boolean userExists(String userName){
           return userMap.containsKey(userName);  
     }

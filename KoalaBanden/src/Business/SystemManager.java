@@ -98,15 +98,9 @@ public class SystemManager {
         }
     } 
     
-    public boolean createCaseworker(String username, String password, String email, int SSN, int accessLevel) {
-        if (!BusinessFacade.data.userExists(username)) {
-            Caseworker caseworker = new Caseworker(username, password, email, SSN, accessLevel);
-            BusinessFacade.data.createUser(caseworker);
-            return true;
-        } else {
-            return false;
-        }
-    } 
+    public void deleteUser(String username) {
+        BusinessFacade.data.deleteUser(username);
+    }
     
     public void setUsers(ArrayList<User> Users) {
         this.Users = Users;
