@@ -6,14 +6,11 @@
 package GUI;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTreeView;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,10 +18,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TreeView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -160,7 +155,7 @@ public class mainController implements Initializable {
             scene = logoutButton.getScene();
             Stage stage = (Stage)scene.getWindow();
             stage.setWidth(494);
-            stage.setHeight(432);
+            stage.setHeight(472);
             stage.centerOnScreen();
             scene.setRoot(root);
             scene.getRoot().requestFocus();

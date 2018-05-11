@@ -61,7 +61,7 @@ public class LoginController implements Initializable {
             // An error has occurred
             case 0:
                 // Inform user of error and break
-                statusLabel.setText("Fejl");
+                statusLabel.setText("Fejl i brugernavn og/eller password");
                 break;
             // Caseworker login
             default:
