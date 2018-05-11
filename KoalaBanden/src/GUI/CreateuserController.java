@@ -45,19 +45,14 @@ public class CreateuserController implements Initializable {
     @FXML
     private JFXTextField emailTextField;
 
-    private final String SYSTEM_ADMINISTRATOR = "Systemadministrator";
-    private final String SAGSBEHANDLER = "Sagsbehandler";
-    private final String BORGER = "Borger";
-    private final String VÆRGE = "Værge";
-    private final String PARTSREPRÆSENTANT = "Partsrepræsentant";
-
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        ObservableList<String> accessLevelList = FXCollections.observableArrayList(SYSTEM_ADMINISTRATOR, SAGSBEHANDLER, BORGER, VÆRGE, PARTSREPRÆSENTANT);
+        ObservableList<String> accessLevelList = FXCollections.observableArrayList(GUIFacade.getAccessLevels());
         accessLevelComboBox.setItems(accessLevelList);
     }    
 
@@ -67,53 +62,18 @@ public class CreateuserController implements Initializable {
         String username = this.usernameTextField.getText();
         String password = this.passwordTextField.getText();
         String email = this.emailTextField.getText();
-        String CPRString = this.CPRTextField1.getText() + this.CPRTextField2.getText();
-        String accessLevelString = this.accessLevelComboBox.getValue();
+        String CPR = this.CPRTextField1.getText() + this.CPRTextField2.getText();
+        String accessLevel = this.accessLevelComboBox.getValue();
         
-        boolean hasErrorOccurred = false;
+        boolean isUserCreated = GUIFacade.createUser(username, password, email, CPR, accessLevel);
         
-        int CPR = 0;
-        try {
-            CPR = Integer.parseInt(CPRString);
-        }
-        catch (NumberFormatException ex) {
-            hasErrorOccurred = true;
-            this.statusLabel.setText("Status: Forkert CPR.");
-        }
-        
-        int accessLevel;
-        
-        switch(accessLevelString) {
-            case SYSTEM_ADMINISTRATOR:
-                accessLevel = 1;
-                break;
-            case SAGSBEHANDLER:
-                accessLevel = 2;
-                break;
-            case BORGER:
-                accessLevel = 3;
-                break;
-            case VÆRGE:
-                accessLevel = 4;
-                break;
-            case PARTSREPRÆSENTANT:
-                accessLevel = 5;
-                break;
-            default:
-                accessLevel = 0;
-                hasErrorOccurred = true;
-                break;
-        }
-        
-        if (!hasErrorOccurred) {
-            GUIFacade.createUser(username, password, email, CPR, accessLevel);
+        if (isUserCreated){
+            Stage stage = (Stage) createUserButton.getScene().getWindow();
+            stage.close();
         }
         else {
-            this.statusLabel.setText("Status: Der er sket en fejl. Prøv igen.");
+            statusLabel.setText("Status: En fejl er opstået. Prøv igen.");
         }
-        
-        Stage stage = (Stage) createUserButton.getScene().getWindow();
-        stage.close();
     }
     
 }

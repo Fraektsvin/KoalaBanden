@@ -33,7 +33,7 @@ String setDOB();
 String setPostalCode();
 String setphonenumber();  
 
-String Guardian();
+//String Guardian();
 String getGuardianData();
     
 }

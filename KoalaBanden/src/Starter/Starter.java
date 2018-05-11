@@ -29,7 +29,7 @@ public class Starter {
         
         // Used for testing
         SystemManager manager = new SystemManager();
-        manager.createUser("Jonas", "1234", "email", 123, 1);
+        manager.createUser("Jonas", "1234", "email", "123", "1");
         
         GUI.startApplication(args);
             

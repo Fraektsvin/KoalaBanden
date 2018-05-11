@@ -8,6 +8,7 @@ package GUI;
 import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
 import Acquaintance.IGuardian;
+import java.util.Collection;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -28,8 +29,12 @@ import javafx.stage.Stage;
         return business.login(username, password);
     }
     
-    public static void createUser(String username, String password, String email, int CPR, int accessLevel) {
-        business.createUser(username, password, email, CPR, accessLevel);
+    public static boolean createUser(String username, String password, String email, String CPR, String accessLevel) {
+        return business.createUser(username, password, email, CPR, accessLevel);
+    }
+    
+    public static Collection getAccessLevels() {
+        return business.getAccessLevels();
     }
         
     @Override

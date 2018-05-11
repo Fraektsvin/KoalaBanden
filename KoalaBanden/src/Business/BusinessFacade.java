@@ -9,6 +9,7 @@ import Acquaintance.IBusiness;
 import Acquaintance.ICase;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
+import java.util.Collection;
 import java.util.Map;
 
 /**
@@ -69,8 +70,13 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public boolean createUser(String username, String password, String email, int SSN, int accessLevel) {
+    public boolean createUser(String username, String password, String email, String SSN, String accessLevel) {
         return manager.createUser(username, password, email, SSN, accessLevel);
+    }
+
+    @Override
+    public Collection getAccessLevels() {
+        return manager.getAccessLevels();
     }
 
 }

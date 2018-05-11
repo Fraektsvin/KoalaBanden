@@ -1,5 +1,6 @@
 package Acquaintance;
 
+import java.util.Collection;
 import java.util.Map;
 
 public interface IBusiness {
@@ -16,5 +17,7 @@ public interface IBusiness {
     
     public int login(String userName, String password);
     
-    public boolean createUser(String username, String password, String email, int SSN, int accessLevel);
+    public boolean createUser(String username, String password, String email, String SSN, String accessLevel);
+    
+    public Collection getAccessLevels();
 }
