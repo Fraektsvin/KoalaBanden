@@ -5,12 +5,18 @@
  */
 package GUI;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -23,6 +29,15 @@ public class LoginController implements Initializable {
     private JFXTextField loginuser;
     @FXML
     private JFXTextField loginpass;
+    @FXML
+    private Label statusLabel;
+    
+    private String newScene = "main";
+    private Parent root;
+    private Scene scene;
+    
+    @FXML
+    private JFXButton loginButton;
 
     /**
      * Initializes the controller class.
@@ -34,6 +49,34 @@ public class LoginController implements Initializable {
 
     @FXML
     private void actionLogin(ActionEvent event) {
+        // Read the input values for username and password.
+        String username = loginuser.getText();
+        String password = loginpass.getText();
+        
+        // Call login. Return value indicates status of login
+        int i = GUIFacade.login(username, password);
+        
+        // Act according to login status
+        switch(i) {
+            // An error has occurred
+            case 0:
+                // Inform user of error and break
+                statusLabel.setText("Fejl");
+                break;
+            // Caseworker login
+            case 1:
+                try {
+                    root = FXMLLoader.load(getClass().getResource(newScene + ".fxml"));
+                    scene = loginButton.getScene();
+                    scene.setRoot(root);
+                    scene.getRoot().requestFocus();
+                }
+                catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                break;
+                
+        }
     }
     
 }

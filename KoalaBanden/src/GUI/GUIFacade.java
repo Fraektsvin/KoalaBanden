@@ -24,13 +24,13 @@ import javafx.stage.Stage;
     
     static IBusiness business;
     
-//    public static int login(String username, String password) {
-//        return business.login(username, password);
-//    }
+    public static int login(String username, String password) {
+        return business.login(username, password);
+    }
         
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         
         Scene scene = new Scene(root);
         

@@ -13,4 +13,6 @@ public interface IBusiness {
     public void createCaseworker(String username, String password, String email, int SSN, int accesslevel);
 
     IData getData();
+    
+    public int login(String userName, String password);
 }

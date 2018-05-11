@@ -45,6 +45,11 @@ public class mainController implements Initializable {
     private Label sager;
     @FXML
     private ListView<String> sagerListe;
+    @FXML
+    private JFXButton logoutButton;
+    
+    private Parent root;
+    private Scene scene;
     
 
     private void handleButtonAction(MouseEvent event) {
@@ -112,6 +117,19 @@ public class mainController implements Initializable {
         } catch (IOException io) {
             io.printStackTrace();
         }
+    }
+
+    @FXML
+    private void handleLogoutButtonAction(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(getClass().getResource("login.fxml"));
+            scene = logoutButton.getScene();
+            scene.setRoot(root);
+            scene.getRoot().requestFocus();
+            }
+            catch (IOException ex) {
+                ex.printStackTrace();
+            }
     }
 
 }

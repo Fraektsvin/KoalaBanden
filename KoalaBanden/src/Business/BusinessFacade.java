@@ -63,5 +63,9 @@ public class BusinessFacade implements IBusiness {
     public IData getData() {
         return this.data;
     }
+    
+    public int login(String userName, String password) {
+        return manager.login(userName, password);
+    }
 
 }

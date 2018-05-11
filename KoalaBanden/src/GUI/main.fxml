@@ -124,7 +124,7 @@
                   <Insets left="50.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="57.0" prefWidth="281.0" text="Log ud">
+            <JFXButton fx:id="logoutButton" alignment="BASELINE_LEFT" onAction="#handleLogoutButtonAction" prefHeight="57.0" prefWidth="281.0" text="Log ud">
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                      <image>
