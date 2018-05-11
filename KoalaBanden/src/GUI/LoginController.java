@@ -17,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -67,9 +68,18 @@ public class LoginController implements Initializable {
             case 1:
                 try {
                     root = FXMLLoader.load(getClass().getResource(newScene + ".fxml"));
+                    
                     scene = loginButton.getScene();
+                    Stage stage = (Stage)scene.getWindow();
+                    stage.setWidth(1257);
+                    stage.setHeight(763);
+                    stage.centerOnScreen();
+//                    stage.setX(0);
+//                    stage.setY(0);
                     scene.setRoot(root);
                     scene.getRoot().requestFocus();
+                    
+                   
                 }
                 catch (IOException ex) {
                     ex.printStackTrace();

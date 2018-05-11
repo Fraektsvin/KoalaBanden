@@ -34,6 +34,7 @@ import javafx.stage.Stage;
         
         Scene scene = new Scene(root);
         
+        stage.setResizable(true);
         stage.setScene(scene);
         stage.show();
     }

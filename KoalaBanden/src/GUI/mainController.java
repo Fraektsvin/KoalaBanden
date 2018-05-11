@@ -124,6 +124,12 @@ public class mainController implements Initializable {
         try {
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
+            Stage stage = (Stage)scene.getWindow();
+            stage.setWidth(494);
+            stage.setHeight(432);
+//            stage.setX(0);
+//            stage.setY(0);
+            stage.centerOnScreen();
             scene.setRoot(root);
             scene.getRoot().requestFocus();
             }
