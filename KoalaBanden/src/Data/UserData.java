@@ -15,6 +15,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  *
@@ -27,7 +28,7 @@ public class UserData {
     
     UserData() {
         if (!file.exists()) {
-            userMap = new HashMap<>();
+            userMap = new TreeMap<>();
             saveMap();
         }
         else {
@@ -89,5 +90,9 @@ public class UserData {
                 ex.printStackTrace();
             }
         }
+    }
+    
+    public Map<String, IUser> getUserMap() {
+        return this.userMap;
     }
 }

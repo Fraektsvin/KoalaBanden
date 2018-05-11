@@ -8,6 +8,8 @@ public interface IBusiness {
     public abstract void injectData(IData data);
 
     public Map<Integer, ICase> getCases();
+    
+    public Map<String, IUser> getUsers();
 
     public ICaseworker getCaseworker();
 

@@ -8,7 +8,9 @@ package GUI;
 import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
 import Acquaintance.IGuardian;
+import Acquaintance.IUser;
 import java.util.Collection;
+import java.util.Map;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -35,6 +37,10 @@ import javafx.stage.Stage;
     
     public static Collection getAccessLevels() {
         return business.getAccessLevels();
+    }
+    
+    public static Map<String, IUser> getUsers() {
+        return business.getUsers();
     }
         
     @Override

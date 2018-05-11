@@ -49,4 +49,9 @@ public class DataFacade implements IData {
         return caseData.getCaseMap();
     }
 
+    @Override
+    public Map<String, IUser> getUsers() {
+        return userData.getUserMap();
+    }
+
 }

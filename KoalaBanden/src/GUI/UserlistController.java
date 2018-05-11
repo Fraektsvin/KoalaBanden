@@ -5,9 +5,12 @@
  */
 package GUI;
 
+import Acquaintance.IUser;
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXListView;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -30,6 +33,10 @@ public class UserlistController implements Initializable {
     private JFXButton createUserButton;
     @FXML
     private JFXButton deleteUser;
+    @FXML
+    private JFXButton editUserButton;
+    @FXML
+    private JFXListView<String> userListView;
 
     
     /**
@@ -38,6 +45,7 @@ public class UserlistController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        this.updateUserList();
     }    
 
     @FXML
@@ -61,6 +69,21 @@ public class UserlistController implements Initializable {
 
     @FXML
     private void handleDeleteUserButton(ActionEvent event) {
+        this.updateUserList();
+    }
+
+    @FXML
+    private void handleEditUserButtonAction(ActionEvent event) {
+        this.updateUserList();
+    }
+    
+    private void updateUserList() {
+        userListView.getItems().clear(); 
+        
+        Map<String, IUser> userMap = GUIFacade.getUsers();
+        for (Map.Entry<String, IUser> entry : userMap.entrySet()) {
+            userListView.getItems().add(entry.getKey());
+        }
     }
     
 }

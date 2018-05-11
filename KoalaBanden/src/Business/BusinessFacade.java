@@ -9,6 +9,7 @@ import Acquaintance.IBusiness;
 import Acquaintance.ICase;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
+import Acquaintance.IUser;
 import java.util.Collection;
 import java.util.Map;
 
@@ -77,6 +78,11 @@ public class BusinessFacade implements IBusiness {
     @Override
     public Collection getAccessLevels() {
         return manager.getAccessLevels();
+    }
+
+    @Override
+    public Map<String, IUser> getUsers() {
+        return data.getUsers();
     }
 
 }

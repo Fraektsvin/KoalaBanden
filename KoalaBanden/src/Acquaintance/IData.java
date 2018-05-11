@@ -19,4 +19,5 @@ public interface IData {
     public IUser getUser(String userName, String password);
     public void saveCase(ICase c);
     public Map<Integer, ICase> getCases();
+    public Map<String, IUser> getUsers();
 }
