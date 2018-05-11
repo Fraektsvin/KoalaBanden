@@ -8,6 +8,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreateuserController">
@@ -28,18 +29,22 @@
          </font>
       </Label>
       <Separator layoutX="38.0" layoutY="114.0" prefHeight="2.0" prefWidth="525.0" />
-      <Label layoutX="37.0" layoutY="150.0" text="Brugernavn:" />
-      <Label layoutX="37.0" layoutY="208.0" text="Adgangskode:" />
-      <Label layoutX="37.0" layoutY="252.0" text="Email:" />
       <JFXTextField fx:id="emailTextField" layoutX="144.0" layoutY="247.0" prefHeight="31.0" prefWidth="279.0" />
-      <JFXComboBox fx:id="accessLevelComboBox" layoutX="144.0" layoutY="355.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg niveau" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="accessLevelComboBox" layoutX="143.0" layoutY="360.0" prefHeight="31.0" prefWidth="133.0" promptText="Vælg niveau" unFocusColor="WHITE" />
       <JFXTextField fx:id="usernameTextField" layoutX="144.0" layoutY="145.0" prefHeight="31.0" prefWidth="279.0" />
-      <JFXTextField fx:id="passwordTextField" layoutX="144.0" layoutY="203.0" prefHeight="31.0" prefWidth="279.0" />
-      <Label layoutX="37.0" layoutY="362.0" text="Adgangsniveau:" />
-      <Label layoutX="37.0" layoutY="313.0" text="CPR:" />
-      <JFXTextField fx:id="CPRTextField1" layoutX="143.0" layoutY="308.0" prefHeight="31.0" prefWidth="139.0" />
-      <Label layoutX="290.0" layoutY="313.0" prefHeight="17.0" prefWidth="9.0" text="-" />
-      <JFXTextField fx:id="CPRTextField2" layoutX="304.0" layoutY="308.0" prefHeight="31.0" prefWidth="80.0" />
-      <JFXButton fx:id="createUserButton" layoutX="245.0" layoutY="443.0" onAction="#handleCreateUserButtonAction" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE" />
+      <JFXTextField fx:id="passwordTextField" layoutX="144.0" layoutY="197.0" prefHeight="31.0" prefWidth="279.0" />
+      <JFXTextField fx:id="CPRTextField1" layoutX="143.0" layoutY="300.0" prefHeight="31.0" prefWidth="139.0" />
+      <Label layoutX="290.0" layoutY="305.0" prefHeight="17.0" prefWidth="9.0" text="-" />
+      <JFXTextField fx:id="CPRTextField2" layoutX="304.0" layoutY="300.0" prefHeight="31.0" prefWidth="80.0" />
+      <JFXButton fx:id="createUserButton" alignment="CENTER" layoutX="261.0" layoutY="443.0" onAction="#handleCreateUserButtonAction" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE" />
+      <VBox alignment="CENTER_RIGHT" layoutX="31.0" layoutY="161.0" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+         <children>
+            <Label text="Brugernavn:" />
+            <Label text="Adgangskode:" />
+            <Label text="Email:" />
+            <Label text="CPR:" />
+            <Label text="Adgangsniveau:" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
