@@ -33,7 +33,6 @@ public class LoginController implements Initializable {
     @FXML
     private Label statusLabel;
     
-    private String newScene = "main";
     private Parent root;
     private Scene scene;
     
@@ -65,9 +64,9 @@ public class LoginController implements Initializable {
                 statusLabel.setText("Fejl");
                 break;
             // Caseworker login
-            case 1:
+            default:
                 try {
-                    root = FXMLLoader.load(getClass().getResource(newScene + ".fxml"));
+                    root = FXMLLoader.load(getClass().getResource("main.fxml"));
                     
                     scene = loginButton.getScene();
                     Stage stage = (Stage)scene.getWindow();

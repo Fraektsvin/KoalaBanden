@@ -147,4 +147,7 @@ public class SystemManager {
         return this.accessLevels;
     }
    
+    public int getCurrentAccessLevel() {
+        return currentUser.getAccessLevel();
+    }
 }

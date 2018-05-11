@@ -30,7 +30,7 @@
       </Label>
       <Separator layoutX="38.0" layoutY="114.0" prefHeight="2.0" prefWidth="525.0" />
       <JFXTextField fx:id="emailTextField" layoutX="144.0" layoutY="247.0" prefHeight="31.0" prefWidth="279.0" />
-      <JFXComboBox fx:id="accessLevelComboBox" layoutX="143.0" layoutY="360.0" prefHeight="31.0" prefWidth="133.0" promptText="Vælg niveau" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="accessLevelComboBox" layoutX="143.0" layoutY="360.0" prefHeight="31.0" prefWidth="279.0" promptText="Vælg niveau" unFocusColor="WHITE" />
       <JFXTextField fx:id="usernameTextField" layoutX="144.0" layoutY="145.0" prefHeight="31.0" prefWidth="279.0" />
       <JFXTextField fx:id="passwordTextField" layoutX="144.0" layoutY="197.0" prefHeight="31.0" prefWidth="279.0" />
       <JFXTextField fx:id="CPRTextField1" layoutX="143.0" layoutY="300.0" prefHeight="31.0" prefWidth="139.0" />

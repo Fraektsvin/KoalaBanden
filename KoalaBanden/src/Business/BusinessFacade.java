@@ -90,4 +90,9 @@ public class BusinessFacade implements IBusiness {
         manager.deleteUser(username);
     }
 
+    @Override
+    public int getCurrentAccessLevel() {
+        return manager.getCurrentAccessLevel();
+    }
+
 }

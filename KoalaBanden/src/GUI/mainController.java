@@ -52,6 +52,14 @@ public class mainController implements Initializable {
     private Scene scene;
     @FXML
     private JFXButton userButton;
+    @FXML
+    private JFXButton frontPageButton;
+    @FXML
+    private JFXButton casesButton;
+    @FXML
+    private JFXButton enquiryButton;
+    @FXML
+    private JFXButton administratorButton;
     
 
     private void handleButtonAction(MouseEvent event) {
@@ -61,7 +69,31 @@ public class mainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        int currentAccessLevel = GUIFacade.business.getCurrentAccessLevel();
+        switch (currentAccessLevel) {
+            case 1:
+                opretbtn.setVisible(false);
+                casesButton.setVisible(false);
+                enquiryButton.setVisible(false);
+                userButton.setVisible(true);
+                break;
+            case 2:
+                opretbtn.setVisible(true);
+                casesButton.setVisible(true);
+                enquiryButton.setVisible(true);
+                userButton.setVisible(false);
+                break;
+            case 3:
+            case 4:
+            case 5:
+                opretbtn.setVisible(false);
+                casesButton.setVisible(true);
+                enquiryButton.setVisible(false);
+                userButton.setVisible(false);
+                break;
+            default:
+                break;
+        }
         // refreshNodes();
     }
 
