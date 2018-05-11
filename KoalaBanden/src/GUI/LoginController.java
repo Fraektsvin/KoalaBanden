@@ -74,10 +74,7 @@ public class LoginController implements Initializable {
                     stage.setWidth(1257);
                     stage.setHeight(763);
                     stage.centerOnScreen();
-//                    stage.setX(0);
-//                    stage.setY(0);
                     scene.setRoot(root);
-                    scene.getRoot().requestFocus();
                     
                    
                 }

@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreateuserController">
    <children>
       <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="61.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,22 +22,22 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="143.0" layoutY="71.0" text="Opdatering: 20178" textFill="#b2b0b0">
+      <Label fx:id="statusLabel" layoutX="143.0" layoutY="71.0" text="Status:" textFill="#b2b0b0">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <Separator layoutX="38.0" layoutY="114.0" prefHeight="2.0" prefWidth="525.0" />
-      <Label layoutX="36.0" layoutY="192.0" text="Brugernavn:" />
-      <Label layoutX="38.0" layoutY="252.0" text="Adgangskode:" />
-      <JFXComboBox layoutX="148.0" layoutY="355.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg niveau" unFocusColor="WHITE" />
-      <JFXTextField layoutX="145.0" layoutY="171.0" prefHeight="31.0" prefWidth="279.0" />
-      <JFXTextField layoutX="148.0" layoutY="239.0" prefHeight="31.0" prefWidth="279.0" />
-      <Label layoutX="32.0" layoutY="360.0" text="Adgangsniveau:" />
-      <Label layoutX="38.0" layoutY="313.0" text="CPR:" />
-      <JFXTextField layoutX="74.0" layoutY="308.0" prefHeight="31.0" prefWidth="139.0" />
+      <Label layoutX="37.0" layoutY="194.0" text="Brugernavn:" />
+      <Label layoutX="37.0" layoutY="254.0" text="Adgangskode:" />
+      <JFXComboBox fx:id="accessLevelComboBox" layoutX="148.0" layoutY="355.0" prefHeight="31.0" prefWidth="188.0" promptText="Vælg niveau" unFocusColor="WHITE" />
+      <JFXTextField fx:id="usernameTextField" layoutX="145.0" layoutY="171.0" prefHeight="31.0" prefWidth="279.0" />
+      <JFXTextField fx:id="passwordTextField" layoutX="144.0" layoutY="239.0" prefHeight="31.0" prefWidth="279.0" />
+      <Label layoutX="37.0" layoutY="362.0" text="Adgangsniveau:" />
+      <Label layoutX="37.0" layoutY="313.0" text="CPR:" />
+      <JFXTextField fx:id="CPRTextField1" layoutX="74.0" layoutY="308.0" prefHeight="31.0" prefWidth="139.0" />
       <Label layoutX="226.0" layoutY="313.0" text="-" />
-      <JFXTextField layoutX="255.0" layoutY="308.0" prefHeight="31.0" prefWidth="80.0" />
-      <JFXButton layoutX="245.0" layoutY="443.0" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE" />
+      <JFXTextField fx:id="CPRTextField2" layoutX="255.0" layoutY="308.0" prefHeight="31.0" prefWidth="80.0" />
+      <JFXButton fx:id="createUserButton" layoutX="245.0" layoutY="443.0" onAction="#handleCreateUserButtonAction" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -86,7 +86,7 @@
                   <Insets left="50.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="57.0" prefWidth="272.0" text="Brugere">
+            <JFXButton fx:id="userButton" alignment="BASELINE_LEFT" onAction="#handleUserButtonAction" prefHeight="57.0" prefWidth="272.0" text="Brugere">
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                      <image>

@@ -50,6 +50,8 @@ public class mainController implements Initializable {
     
     private Parent root;
     private Scene scene;
+    @FXML
+    private JFXButton userButton;
     
 
     private void handleButtonAction(MouseEvent event) {
@@ -127,8 +129,6 @@ public class mainController implements Initializable {
             Stage stage = (Stage)scene.getWindow();
             stage.setWidth(494);
             stage.setHeight(432);
-//            stage.setX(0);
-//            stage.setY(0);
             stage.centerOnScreen();
             scene.setRoot(root);
             scene.getRoot().requestFocus();
@@ -136,6 +136,19 @@ public class mainController implements Initializable {
             catch (IOException ex) {
                 ex.printStackTrace();
             }
+    }
+
+    @FXML
+    private void handleUserButtonAction(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
     }
 
 }

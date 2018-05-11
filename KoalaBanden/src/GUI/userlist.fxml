@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UserlistController">
    <children>
       <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="51.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
@@ -45,12 +44,12 @@
       <JFXTreeTableView layoutX="55.0" layoutY="164.0" prefHeight="444.0" prefWidth="1020.0" />
       <Pane layoutX="55.0" layoutY="616.0" prefHeight="70.0" prefWidth="1020.0" style="-fx-background-color: #F0F0F0;">
          <children>
-            <JFXButton layoutX="26.0" layoutY="20.0" style="-fx-background-color: #FC432E;" text="Tilbage" textFill="WHITE" />
+            <JFXButton fx:id="returnButton" layoutX="26.0" layoutY="20.0" onAction="#handleReturnButtonAction" style="-fx-background-color: #FC432E;" text="Tilbage" textFill="WHITE" />
          </children>
       </Pane>
       <HBox alignment="CENTER" layoutX="51.0" layoutY="104.0" prefHeight="53.0" prefWidth="1020.0">
          <children>
-            <JFXButton prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE">
+            <JFXButton fx:id="createUserButton" onAction="#handleCreateUserButtonAction" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -65,7 +64,7 @@
                   <Insets right="15.0" />
                </HBox.margin>
             </JFXButton>
-            <JFXButton prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Slut Bruger" textFill="WHITE">
+            <JFXButton fx:id="deleteUser" onAction="#handleDeleteUserButton" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Slet Bruger" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
                      <image>
