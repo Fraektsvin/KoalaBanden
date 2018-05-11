@@ -84,5 +84,10 @@ public class LoginController implements Initializable {
                 
         }
     }
+
+    @FXML
+    private void handlePasswordTextfieldAction(ActionEvent event) {
+        actionLogin(event);
+    }
     
 }

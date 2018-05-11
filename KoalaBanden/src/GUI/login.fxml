@@ -15,7 +15,7 @@
       <Label layoutX="34.0" layoutY="182.0" text="Brugernavn:" />
       <Label layoutX="27.0" layoutY="245.0" text="Adgangskode:" />
       <JFXTextField fx:id="loginuser" layoutX="135.0" layoutY="161.0" prefHeight="31.0" prefWidth="300.0" />
-      <JFXTextField fx:id="loginpass" layoutX="138.0" layoutY="229.0" prefHeight="31.0" prefWidth="300.0" />
+      <JFXTextField fx:id="loginpass" layoutX="138.0" layoutY="229.0" onAction="#handlePasswordTextfieldAction" prefHeight="31.0" prefWidth="300.0" />
       <JFXButton fx:id="loginButton" layoutX="202.0" layoutY="339.0" onAction="#actionLogin" style="-fx-background-color: #699F6B;" text="Login" textFill="WHITE" />
       <JFXMasonryPane layoutX="-8.0" layoutY="-6.0" prefHeight="31.0" prefWidth="508.0" />
       <Label fx:id="statusLabel" layoutY="408.0" prefHeight="31.0" prefWidth="494.0" text="Status:" />
