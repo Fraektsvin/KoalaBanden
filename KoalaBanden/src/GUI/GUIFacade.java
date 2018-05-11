@@ -24,6 +24,9 @@ import javafx.stage.Stage;
     
     static IBusiness business;
     
+//    public static int login(String username, String password) {
+//        return business.login(username, password);
+//    }
         
     @Override
     public void start(Stage stage) throws Exception {
@@ -35,13 +38,6 @@ import javafx.stage.Stage;
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-      
-    }
 
     @Override
     public void injectBusiness(IBusiness business) {
@@ -50,11 +46,11 @@ import javafx.stage.Stage;
 
     @Override
     public void startApplication(String[] args) {
-        this.main(args);
+        launch(args);
     }
     
     public IGuardian guardian(IGuardian guardian) {
             return guardian;
     
-}
     }
+}
