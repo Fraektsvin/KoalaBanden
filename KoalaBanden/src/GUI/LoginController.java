@@ -78,18 +78,29 @@ public class LoginController implements Initializable {
                     ex.printStackTrace();
                 }
                 break;
-            default:
+            case 2:
                 try {
-                    root = FXMLLoader.load(getClass().getResource("main.fxml"));
-                    
+                    root = FXMLLoader.load(getClass().getResource("mainCaseWorker.fxml"));
                     scene = loginButton.getScene();
                     Stage stage = (Stage)scene.getWindow();
                     stage.setWidth(1257);
                     stage.setHeight(763);
                     stage.centerOnScreen();
                     scene.setRoot(root);
-                    
-                   
+                }
+                catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                break;
+            default:
+                try {
+                    root = FXMLLoader.load(getClass().getResource("main.fxml"));
+                    scene = loginButton.getScene();
+                    Stage stage = (Stage)scene.getWindow();
+                    stage.setWidth(1257);
+                    stage.setHeight(763);
+                    stage.centerOnScreen();
+                    scene.setRoot(root);
                 }
                 catch (IOException ex) {
                     ex.printStackTrace();

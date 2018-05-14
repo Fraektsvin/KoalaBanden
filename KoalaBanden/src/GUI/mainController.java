@@ -133,7 +133,7 @@ public class mainController implements Initializable {
         // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
             sagerListe.getItems().add("Sag: " + i);
-    }
+        }
     }
 
     private void userlist(ActionEvent even) {
