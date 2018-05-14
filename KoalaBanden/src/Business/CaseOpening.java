@@ -8,12 +8,8 @@ package Business;
 import Acquaintance.ICaseOpening;
 import Acquaintance.IUser;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Map;
-import Business.Citizen;
 import java.util.HashMap;
-import Business.Guardian;
-import java.util.List;
 
 /**
  *
