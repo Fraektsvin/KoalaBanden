@@ -48,6 +48,21 @@
       </Pane>
       <HBox alignment="CENTER" layoutX="51.0" layoutY="104.0" prefHeight="53.0" prefWidth="1020.0">
          <children>
+            <JFXButton fx:id="updateListButton" onAction="#handleUpdateListButton" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opdater liste" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Return_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
             <JFXButton fx:id="createUserButton" onAction="#handleCreateUserButtonAction" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE">
                <graphic>
                   <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">

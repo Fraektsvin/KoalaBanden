@@ -40,6 +40,8 @@ public class UserlistController implements Initializable {
     private JFXListView<String> userListView;
     @FXML
     private Label statusLabel;
+    @FXML
+    private JFXButton updateListButton;
 
     
     /**
@@ -107,6 +109,11 @@ public class UserlistController implements Initializable {
         for (Map.Entry<String, IUser> entry : userMap.entrySet()) {
             userListView.getItems().add(entry.getKey());
         }
+    }
+
+    @FXML
+    private void handleUpdateListButton(ActionEvent event) {
+        this.updateUserList();
     }
     
 }
