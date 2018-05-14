@@ -61,29 +61,15 @@ public class EditUserController implements Initializable {
 
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
-        boolean hasErrorOccurred = false;
-        
         String password = passwordTextField.getText();
-        if (password != null && !"".equals(password)) {
-            user.setPassword(password);
-        }
-        else {
-            hasErrorOccurred = true;
-        }
-        
         String email = emailTextField.getText();
-        if (email != null && !"".equals(email)) {
+        if (!"".equals(password) && !"".equals(email)) {
+            user.setPassword(password);
             user.setEmail(email);
-        }
-        else {
-            hasErrorOccurred = true;
-        }
-        
-        if (hasErrorOccurred) {
-            statusLabel.setText("Status: Alle felter skal udfyldes.");
-        }
-        else {
             statusLabel.setText("Status: Brugerinformationer er opdateret.");
+        }
+        else {
+            statusLabel.setText("Status: Alle felter skal udfyldes.");
         }
     }
     

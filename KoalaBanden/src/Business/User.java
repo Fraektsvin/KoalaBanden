@@ -42,6 +42,7 @@ public class User implements Serializable, IUser {
     @Override
     public void setPassword(String password) {
         this.password = password;
+        BusinessFacade.data.createUser(this);
     }
 
     @Override
@@ -52,6 +53,7 @@ public class User implements Serializable, IUser {
     @Override
     public void setEmail(String email) {
         this.email = email;
+        BusinessFacade.data.createUser(this);
     }
 
     @Override
