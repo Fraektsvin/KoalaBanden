@@ -100,4 +100,9 @@ public class BusinessFacade implements IBusiness {
         return data.getUser(userName);
     }
 
+    @Override
+    public String getCurrentUsername() {
+        return manager.getCurrentUsername();
+    }
+
 }

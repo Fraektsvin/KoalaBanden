@@ -118,6 +118,10 @@ public class SystemManager {
         return currentUser;
     }
     
+    public String getCurrentUsername() {
+        return currentUser.getUsername();
+    }
+    
     public Case createCase(int ID, int citizenSSN) {
         Caseworker worker = (Caseworker)currentUser;
         return null;
