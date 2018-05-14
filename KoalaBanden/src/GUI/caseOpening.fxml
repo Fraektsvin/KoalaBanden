@@ -54,7 +54,7 @@
               <tabs>
                 <Tab text="Generelt">
                      <content>
-                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" pannable="true" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0">
+                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2791.0" prefWidth="1014.0">
                                  <children>
@@ -498,6 +498,9 @@
                                  </children>
                               </AnchorPane>
                           </content>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
                         </ScrollPane>
                      </content>
                 </Tab>
