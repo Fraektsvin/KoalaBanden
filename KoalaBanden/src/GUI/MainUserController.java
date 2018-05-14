@@ -6,14 +6,19 @@
 package GUI;
 
 import com.jfoenix.controls.JFXButton;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -35,7 +40,10 @@ public class MainUserController implements Initializable {
     @FXML
     private Label sager;
     @FXML
-    private ListView<?> sagerListe;
+    private ListView<String> sagerListe;
+    
+    private Parent root;
+    private Scene scene;
 
     /**
      * Initializes the controller class.
@@ -47,14 +55,42 @@ public class MainUserController implements Initializable {
 
     @FXML
     private void seeCases(ActionEvent event) {
+         // Resets the list containing items everytime method is called.
+        sagerListe.getItems().clear();
+        // Adds every case ID from the case hashMap file to file sagerListe list. 
+        for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
+            sagerListe.getItems().add("Sag: " + i);
+        }
     }
 
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
+        GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
+        try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
+                Parent root = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            } catch (IOException io) {
+                io.printStackTrace();
+            }
     }
 
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(getClass().getResource("login.fxml"));
+            scene = logoutButton.getScene();
+            Stage stage = (Stage)scene.getWindow();
+            stage.setWidth(494);
+            stage.setHeight(472);
+            stage.centerOnScreen();
+            scene.setRoot(root);
+            scene.getRoot().requestFocus();
+            }
+            catch (IOException ex) {
+                ex.printStackTrace();
+            }
     }
-    
 }
