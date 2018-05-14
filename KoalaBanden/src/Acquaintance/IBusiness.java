@@ -4,7 +4,6 @@ import Business.User;
 import java.util.Collection;
 import java.util.Map;
 
-//Test
 public interface IBusiness {
 
     public abstract void injectData(IData data);
