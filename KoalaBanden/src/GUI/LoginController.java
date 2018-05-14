@@ -53,6 +53,11 @@ public class LoginController implements Initializable {
         String username = loginuser.getText();
         String password = loginpass.getText();
         
+        if("".equals(username) || "".equals(password)) {
+            statusLabel.setText("Status: Alle felter skal udfyldes.");
+            return;
+        }
+        
         // Call login. Return value indicates status of login
         int i = GUIFacade.login(username, password);
         
