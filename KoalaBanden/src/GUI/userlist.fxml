@@ -36,7 +36,7 @@
          </font>
       </Label>
       <Label layoutX="1042.0" layoutY="47.0" text="MAJ" textFill="#3a1c9d" />
-      <Label layoutX="133.0" layoutY="61.0" text="Opdatering: 20178" textFill="#b2b0b0">
+      <Label fx:id="statusLabel" layoutX="133.0" layoutY="61.0" text="Status:" textFill="#b2b0b0">
          <font>
             <Font size="14.0" />
          </font>

@@ -26,6 +26,7 @@ import javafx.stage.Stage;
     public class GUIFacade extends Application implements IGUI {
     
     static IBusiness business;
+    static String currentUsername;
     
     public static int login(String username, String password) {
         return business.login(username, password);

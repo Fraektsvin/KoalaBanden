@@ -34,18 +34,22 @@ public class User implements Serializable, IUser {
     
     // Methods
 
+    @Override
     public String getPassword() {
         return password;
     }
 
+    @Override
     public void setPassword(String password) {
         this.password = password;
     }
 
+    @Override
     public String getEmail() {
         return email;
     }
 
+    @Override
     public void setEmail(String email) {
         this.email = email;
     }
@@ -58,11 +62,24 @@ public class User implements Serializable, IUser {
     public int getAccessLevel() {
         return accessLevel;
     }
+    
+    
 
     @Override
     public boolean checkPassword(String password) {
         return this.password.equals(password);
     }
+
+    @Override
+    public int getCPR() {
+        return this.SSN;
+    }
+
+    @Override
+    public String getAccessLevelString() {
+        return SystemManager.getAccessLevelString(this.accessLevel);
+    }
+
     
     
 }

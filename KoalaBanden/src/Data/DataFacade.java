@@ -39,7 +39,7 @@ public class DataFacade implements IData {
     public IUser getUser(String userName, String password) {
         return userData.getUser(userName, password);
     }
-
+    
     @Override
     public void saveCase(ICase c) {
         caseData.saveCase(c);
@@ -57,6 +57,11 @@ public class DataFacade implements IData {
     @Override
     public void deleteUser(String username) {
         userData.deleteUser(username);
+    }
+
+    @Override
+    public IUser getUser(String userName) {
+        return userData.getUser(userName);
     }
 
 }

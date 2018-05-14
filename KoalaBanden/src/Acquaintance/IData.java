@@ -17,6 +17,7 @@ public interface IData {
     public boolean userExists(String userName);
     public void createUser(IUser user);
     public IUser getUser(String userName, String password);
+    public IUser getUser(String userName);
     public void saveCase(ICase c);
     public Map<Integer, ICase> getCases();
     public Map<String, IUser> getUsers();

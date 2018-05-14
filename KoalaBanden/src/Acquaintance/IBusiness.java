@@ -27,4 +27,6 @@ public interface IBusiness {
     public void deleteUser(String username);
     
     public int getCurrentAccessLevel();
+    
+    public IUser getUser(String userName);
 }

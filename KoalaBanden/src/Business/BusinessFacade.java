@@ -95,4 +95,9 @@ public class BusinessFacade implements IBusiness {
         return manager.getCurrentAccessLevel();
     }
 
+    @Override
+    public IUser getUser(String userName) {
+        return data.getUser(userName);
+    }
+
 }

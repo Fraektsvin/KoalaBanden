@@ -19,11 +19,11 @@ public class SystemManager {
     private User currentUser = null;
     private ArrayList<String> accessLevels;
     
-    private final String SYSTEMADMINISTRATOR = "Systemadministrator";
-    private final String SAGSBEHANDLER = "Sagsbehandler";
-    private final String BORGER = "Borger";
-    private final String VÆRGE = "Værge";
-    private final String PARTSREPRÆSENTANT = "Partsrepæsentant";
+    private static final String SYSTEMADMINISTRATOR = "Systemadministrator";
+    private static final String SAGSBEHANDLER = "Sagsbehandler";
+    private static final String BORGER = "Borger";
+    private static final String VÆRGE = "Værge";
+    private static final String PARTSREPRÆSENTANT = "Partsrepæsentant";
 
     public SystemManager() {
         accessLevels = new ArrayList();
@@ -145,6 +145,31 @@ public class SystemManager {
 
     public Collection getAccessLevels() {
         return this.accessLevels;
+    }
+    
+    public static String getAccessLevelString(int accessLevel) {
+        String accessLevelString = "";
+        switch (accessLevel) {
+                case 1:
+                    accessLevelString = SYSTEMADMINISTRATOR;
+                    break;
+                case 2:
+                    accessLevelString = SAGSBEHANDLER;
+                    break;
+                case 3:
+                    accessLevelString = BORGER;
+                    break;
+                case 4:
+                    accessLevelString = VÆRGE;
+                    break;
+                case 5:
+                    accessLevelString = PARTSREPRÆSENTANT;
+                    break;
+                default:
+                    accessLevelString = "Fejl";
+                    break;
+            }
+        return accessLevelString;
     }
    
     public int getCurrentAccessLevel() {

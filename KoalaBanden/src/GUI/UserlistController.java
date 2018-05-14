@@ -18,6 +18,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 /**
@@ -37,6 +38,8 @@ public class UserlistController implements Initializable {
     private JFXButton editUserButton;
     @FXML
     private JFXListView<String> userListView;
+    @FXML
+    private Label statusLabel;
 
     
     /**
@@ -76,6 +79,24 @@ public class UserlistController implements Initializable {
 
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
+        String username = userListView.getSelectionModel().getSelectedItem();
+        GUIFacade.currentUsername = username;
+        
+        if (username != null) {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
+                Parent root = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            } catch (IOException io) {
+                io.printStackTrace();
+            }
+        }
+        else {
+            statusLabel.setText("Status: Vælg en bruger.");
+        }
+        
         this.updateUserList();
     }
     

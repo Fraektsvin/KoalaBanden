@@ -58,6 +58,11 @@ public class UserData {
         return null;
     }
     
+    public IUser getUser(String userName) {
+        IUser user = userMap.get(userName);
+        return user;
+    }
+    
     private void saveMap() {
         ObjectOutputStream outputStream = null;
         try {

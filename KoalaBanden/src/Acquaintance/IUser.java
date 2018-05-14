@@ -12,6 +12,12 @@ package Acquaintance;
 public interface IUser {
     
     public String getUsername();
+    public String getPassword();
+    public String getEmail();
+    public int getCPR();
+    public String getAccessLevelString();
+    public void setPassword(String password);
+    public void setEmail(String email);
     
     public boolean checkPassword(String password);
 }

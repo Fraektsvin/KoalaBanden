@@ -75,5 +75,6 @@ public class CreateuserController implements Initializable {
             statusLabel.setText("Status: En fejl er opstået. Prøv igen.");
         }
     }
+
     
 }
