@@ -7,7 +7,6 @@ package GUI;
 
 import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
-import Acquaintance.IGuardian;
 import Acquaintance.IUser;
 import java.util.Collection;
 import java.util.Map;
@@ -66,8 +65,5 @@ import javafx.stage.Stage;
         launch(args);
     }
     
-    public IGuardian guardian(IGuardian guardian) {
-            return guardian;
-    
-    }
+   
 }

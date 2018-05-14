@@ -77,6 +77,10 @@ public class User implements Serializable, IUser {
         return this.SSN;
     }
 
+    public int getSSN() {
+        return SSN;
+    }
+
     @Override
     public String getAccessLevelString() {
         return SystemManager.getAccessLevelString(this.accessLevel);

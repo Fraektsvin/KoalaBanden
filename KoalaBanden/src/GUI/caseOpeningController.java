@@ -5,15 +5,25 @@
  */
 package GUI;
 
+import com.jfoenix.controls.JFXComboBox;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
+import Acquaintance.*;
+import Business.Guardian;
+import java.util.ArrayList;
+import javafx.scene.control.ComboBox;
+import static javafx.scene.input.KeyCode.T;
 
 
 
-public class caseOpeningController implements Initializable{
+public class caseOpeningController<T> extends ComboBox<T> implements Initializable {
+private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
+   
 
     @FXML
     private CheckBox Borger;
@@ -32,19 +42,24 @@ public class caseOpeningController implements Initializable{
     @FXML
     private CheckBox andre;
 
+    @FXML   
+    private JFXComboBox text;
+    
+    
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
        
     }
-   //  @Override
-   // public void addGuardian(Guardian guardian) {
-     //   for (int i = 0; i < this.guardianlist.size(); i++) {
-       //    guardianlist.get(i).getGuardianDescription();
-         //  guardianlist.add(guardian);  
-           
+    @FXML
+   public void addGuardian(ActionEvent event) throws IOException {
+        text.getItems().addAll(guardianlist);
         
-  
-        }
+        
+}}
+    
+           
+    
              
      
 

@@ -6,59 +6,93 @@
 package Business;
 
 import Acquaintance.ICaseOpening;
+import Acquaintance.IUser;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
+import Business.Citizen;
+import java.util.HashMap;
+import Business.Guardian;
+import java.util.List;
 
 /**
- * 
+ *
  * @author Jonas
  */
-public abstract class CaseOpening implements ICaseOpening {
-    private String  caseDescription; 
-    private boolean isSoughtHelpClear;
-    private boolean isInformedAboutRepresentationRights;
-    private boolean isInformedAboutElectronicRegistration;
-    private String  progressAgreement;
-    private boolean isConsentRelevant;
-    private String  citizenInvolvementSpecialCircumstances;
-    private String  actingMunicipality; 
-    private String  payingMunicipality;
-    
-   // private ArrayList<Guardian> guardianList;
-    private ArrayList<Guardian> guardianlist = new ArrayList<>();
+public class CaseOpening implements ICaseOpening {
 
-    public CaseOpening() {
-        
+    private final Enquiry EN;
+    private final Case C;
+    private String guardianDescription;
+    private String username;
+    private String Address;
+    private String Firstname;
+    private String Lastname;
+    private String Nationality;
+    private int phoneNumber;
+    private final String CitizenDescription;
+
+    public CaseOpening(Enquiry EN, Case C, String guardianDescription, String username, String Address, String Firstname, String Lastname, String Nationality, int phoneNumber, Map<String, IUser> userMap) {
+        this.EN = EN;
+        this.C = C;
+        this.guardianDescription = guardianDescription;
+        this.username = username;
+        this.Address = Address;
+        this.Firstname = Firstname;
+        this.Lastname = Lastname;
+        this.Nationality = Nationality;
+        this.phoneNumber = phoneNumber;
+        this.CitizenDescription = username + Address + Firstname + Lastname + Nationality + phoneNumber;
     }
-    
-    private void addGuardian(Guardian guardian) {
-        for (int i = 0; i < this.guardianlist.size(); i++) {
-           guardianlist.get(i).getGuardianDescription();
-           guardianlist.add(guardian);  
-        }
+
+    public String getCitizenDescription() {
+        return CitizenDescription;
     }
-    
+
+    // private ArrayList<Guardian> guardianList;
+    public ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
+
+    public Guardian newGuardian = new Guardian("31313", "12113", "12313", 3, 2);
+    public ArrayList<Enquiry> EnquiryList = new ArrayList<Enquiry>();
+    public final HashMap<Integer, String> CPRS = new HashMap<>();
     
    
-    private void addRepresentative() {
-        
+
+    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
+        for (int i = 0; i < this.guardianlist.size(); i++) {
+            guardianlist.get(i).getUsername();
+            guardianlist.add(guardian);
+        }
+        return guardianlist;
     }
-    
-    private void createEnquiry() {
-        
+    public ArrayList<Guardian>GetGuardian() {
+        return guardianlist;
     }
-    
-    private void addService() { 
-        
+
+    public void saveCPR(Citizen citizen) {
+        int CPR = citizen.getSSN();
+        CPRS.put(CPR, CitizenDescription);
+        //for(int i=0; i < CPRS.size(); i++) {
+        //if(!CPRSget(getCitizenDescription().equals(Citizen)) {
+
     }
-    
+
+    public HashMap getCPRSMAP() {
+        return CPRS;
+    }
+
+    public void createEnquiry() {
+        if (EN.getDescription() != null) {
+            EnquiryList.add(EN);
+        }
+    }
+      private void addService() {
+
+    }
+
     private void addOffer() {
-        
+
     }
-    
-    
-    
-    
-    
-    
-    
+
+
 }

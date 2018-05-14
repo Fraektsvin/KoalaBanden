@@ -5,11 +5,14 @@
  */
 package Acquaintance;
 
+import Business.Enquiry;
 import Business.Guardian;
 import java.util.ArrayList;
-
+import java.util.HashMap;
 
 public interface ICaseOpening {
-                ArrayList<Guardian> addGuardian();
+
+    public ArrayList<Guardian> AddGuardian(Guardian guardian);
+    public void createEnquiry();
 
 }
