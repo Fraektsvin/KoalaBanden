@@ -61,7 +61,7 @@ public class LoginController implements Initializable {
             // An error has occurred
             case 0:
                 // Inform user of error and break
-                statusLabel.setText("Fejl i brugernavn og/eller password");
+                statusLabel.setText("Status: Fejl i brugernavn og/eller password");
                 break;
             // System administrator login
             case 1:
@@ -109,20 +109,8 @@ public class LoginController implements Initializable {
                 }
                 break;
             default:
-                try {
-                    root = FXMLLoader.load(getClass().getResource("main.fxml"));
-                    scene = loginButton.getScene();
-                    Stage stage = (Stage)scene.getWindow();
-                    stage.setWidth(1257);
-                    stage.setHeight(763);
-                    stage.centerOnScreen();
-                    scene.setRoot(root);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+                statusLabel.setText("Status: Der er sket en fejl.");
                 break;
-                
         }
     }
 
