@@ -65,11 +65,19 @@ public class CreateuserController implements Initializable {
         String CPR = this.CPRTextField1.getText() + this.CPRTextField2.getText();
         String accessLevel = this.accessLevelComboBox.getValue();
         
-        boolean isUserCreated = GUIFacade.createUser(username, password, email, CPR, accessLevel);
+        boolean isUserCreated = false;
+        
+        if (!"".equals(username) && !"".equals(password) && !"".equals(email) && !"".equals(CPR) && !"".equals(accessLevel)) {
+            isUserCreated = GUIFacade.createUser(username, password, email, CPR, accessLevel);
+        }
+        else {
+            statusLabel.setText("Status: Alle felter skal være udfyldt.");
+            return;
+        }
         
         if (isUserCreated){
             Stage stage = (Stage) createUserButton.getScene().getWindow();
-            stage.close();
+            statusLabel.setText("Status: " + username + " er oprettet.");
         }
         else {
             statusLabel.setText("Status: En fejl er opstået. Prøv igen.");

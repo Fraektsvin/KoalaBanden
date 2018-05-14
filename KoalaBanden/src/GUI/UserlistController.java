@@ -77,6 +77,7 @@ public class UserlistController implements Initializable {
         String username = userListView.getSelectionModel().getSelectedItem();
         GUIFacade.business.deleteUser(username);
         this.updateUserList();
+        statusLabel.setText("Status: " + username + " er slettet.");
     }
 
     @FXML
