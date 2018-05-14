@@ -690,6 +690,38 @@
                            </padding></AnchorPane>
                     </content>
                   </Tab>
+                  <Tab text="Borgerinddragelse/Kommuner">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="14.0" layoutY="14.0" prefHeight="309.0" prefWidth="990.0" spacing="8.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Borgerinddragelse - særligeforhold">
+                                       <font>
+                                          <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Eventuelle særlige forhold der skal adresseres for at borgeren kan inddrages i sagsbehandlingen?" />
+                                    <TextArea prefHeight="81.0" prefWidth="980.0" />
+                                    <Label text="Handle- og betalingskommune">
+                                       <font>
+                                          <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Angiv kun hvilken kommune,hvis det ikke er egenkommune." />
+                                    <CheckBox mnemonicParsing="false" text="Anden handlekommune [angiv hvilke]" />
+                                    <TextField disable="true" />
+                                    <CheckBox mnemonicParsing="false" text="Anden betalingskommune [angiv hvilke]" />
+                                    <TextField disable="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
               </tabs>
             </TabPane>
          </children>
