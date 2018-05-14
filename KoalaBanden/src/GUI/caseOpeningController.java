@@ -22,6 +22,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import Acquaintance.*;
+import java.util.ArrayList;
 
 
 public class caseOpeningController implements Initializable {
