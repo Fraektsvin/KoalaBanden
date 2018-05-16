@@ -8,9 +8,9 @@ package Data;
 import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
-import java.sql.Connection;
+import Business.User;
+
 import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -68,7 +68,7 @@ public class DataFacade implements IData {
     }
 
     @Override
-    public String[] getUser(String userName, String password) {
+    public IUser getUser(String userName, String password) {
         try {
             return database.getUser(userName, password);
         } catch(SQLException e) {

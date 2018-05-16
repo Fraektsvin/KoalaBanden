@@ -5,6 +5,9 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
+import Acquaintance.IUser;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -16,9 +19,10 @@ public class SystemManager {
     private ArrayList<User> Users = new ArrayList<>();
     private ArrayList<User> Case = new ArrayList<>();
     
-    private User currentUser = null;
+    private IUser currentUser = null;
     private ArrayList<String> accessLevels;
-    
+
+    // TODO: Lav til enums
     private static final String SYSTEMADMINISTRATOR = "Systemadministrator";
     private static final String SAGSBEHANDLER = "Sagsbehandler";
     private static final String BORGER = "Borger";
@@ -34,7 +38,7 @@ public class SystemManager {
         accessLevels.add(PARTSREPRÆSENTANT);
     }
     
-    public boolean createUser(String username, String password, String email, String CPRString, String accessLevelString) {
+    public boolean createUser(String username, String password, String email, String CPRString, AccessLevel accessLevel) {
         if (!BusinessFacade.data.userExists(username)) {
             if (CPRString.length() != 10) {
                 return false;
@@ -49,43 +53,20 @@ public class SystemManager {
             
             int CPR = Integer.parseInt(CPRString);
             
-            int accessLevel;
-            
-            switch (accessLevelString) {
-                case SYSTEMADMINISTRATOR:
-                    accessLevel = 1;
-                    break;
-                case SAGSBEHANDLER:
-                    accessLevel = 2;
-                    break;
-                case BORGER:
-                    accessLevel = 3;
-                    break;
-                case VÆRGE:
-                    accessLevel = 4;
-                    break;
-                case PARTSREPRÆSENTANT:
-                    accessLevel = 5;
-                    break;
-                default:
-                    accessLevel = 0;
-                    break;
-            }
-            
             switch (accessLevel) {
-                case 1:
+                case SYSTEMADMINISTRATOR:
                     BusinessFacade.data.createUser(new User(username, password, email, CPR, accessLevel));
                     return true;
-                case 2:
+                case SAGSBEHANDLER:
                     BusinessFacade.data.createUser(new Caseworker(username, password, email, CPR, accessLevel));
                     return true;
-                case 3:
+                case BORGER:
                     BusinessFacade.data.createUser(new Citizen(username, password, email, CPR, accessLevel));
                     return true;
-                case 4:
+                case VÆRGE:
                     BusinessFacade.data.createUser(new Guardian(username, password, email, CPR, accessLevel));
                     return true;
-                case 5:
+                case PARTSREPRÆSENTANT:
                     BusinessFacade.data.createUser(new Representative(username, password, email, CPR, accessLevel));
                     return true;
                 default:
@@ -113,7 +94,7 @@ public class SystemManager {
         return Users;
     }
     
-    public User getCurrentUser() {
+    public IUser getCurrentUser() {
         return currentUser;
     }
     
@@ -131,12 +112,12 @@ public class SystemManager {
         return Case;
     }
     
-    public int login(String userName, String password) {
+    public IUser login(String userName, String password) {
         if (BusinessFacade.data.userExists(userName)) {
-            return Integer.parseInt(BusinessFacade.data.getUser(userName, password)[2]);
-                
-            }
-        return 0;
+            this.currentUser = BusinessFacade.data.getUser(userName, password);
+            return this.currentUser;
+        }
+        return null;
     }
     
     public void logOut() {
@@ -172,7 +153,7 @@ public class SystemManager {
         return accessLevelString;
     }
    
-    public int getCurrentAccessLevel() {
+    public AccessLevel getCurrentAccessLevel() {
         return currentUser.getAccessLevel();
     }
 }

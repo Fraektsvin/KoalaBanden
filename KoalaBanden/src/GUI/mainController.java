@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Acquaintance.AccessLevel;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
@@ -65,24 +66,22 @@ public class mainController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        int currentAccessLevel = GUIFacade.business.getCurrentAccessLevel();
+        // TODO: Initialize not called when changing scenes
+        AccessLevel currentAccessLevel = GUIFacade.business.getCurrentAccessLevel();
         switch (currentAccessLevel) {
-            case 1:
+            case SYSTEMADMINISTRATOR:
                 opretbtn.setVisible(false);
                 casesButton.setVisible(false);
                 enquiryButton.setVisible(false);
                 userButton.setVisible(true);
                 break;
-            case 2:
+            case SAGSBEHANDLER:
                 opretbtn.setVisible(true);
                 casesButton.setVisible(true);
                 enquiryButton.setVisible(true);
                 userButton.setVisible(false);
                 break;
-            case 3:
-            case 4:
-            case 5:
+            case PARTSREPRÆSENTANT:
                 opretbtn.setVisible(false);
                 casesButton.setVisible(true);
                 enquiryButton.setVisible(false);
@@ -114,7 +113,7 @@ public class mainController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, 0);
+        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, AccessLevel.SYSTEMADMINISTRATOR);
         GUIFacade.business.getCaseworker().createCase(12);
         try {
              logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");

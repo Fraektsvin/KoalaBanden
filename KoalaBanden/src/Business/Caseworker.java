@@ -5,6 +5,7 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
 
@@ -19,7 +20,7 @@ public class Caseworker extends User implements ICaseworker {
     private int ID;
 
     // Constructor
-    public Caseworker(String username, String password, String email, int SSN, int accessLevel) {
+    public Caseworker(String username, String password, String email, int SSN, AccessLevel accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
 

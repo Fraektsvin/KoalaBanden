@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Acquaintance.AccessLevel;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
@@ -70,7 +71,8 @@ public class CreateuserController implements Initializable {
         boolean isUserCreated = false;
         
         if (!"".equals(username) && !"".equals(password) && !"".equals(email) && !"".equals(CPR) && !"".equals(accessLevel)) {
-            isUserCreated = GUIFacade.createUser(username, password, email, CPR, accessLevel);
+            // TODO: Parse access level from cobo box
+            isUserCreated = GUIFacade.createUser(username, password, email, CPR, AccessLevel.BORGER);
         }
         else {
             statusLabel.setText("Status: Alle felter skal være udfyldt.");

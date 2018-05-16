@@ -12,3 +12,5 @@ KoalaBanden/src/Business/SystemAdministrator.java
 *.properties
 KoalaBanden/nbproject/private/private.properties
 *.properties
+.idea
+out

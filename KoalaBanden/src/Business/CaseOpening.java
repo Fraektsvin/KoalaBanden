@@ -5,6 +5,7 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
 import Acquaintance.ICaseOpening;
 import Acquaintance.IUser;
 import java.util.ArrayList;
@@ -48,7 +49,7 @@ public class CaseOpening implements ICaseOpening {
     // private ArrayList<Guardian> guardianList;
     public ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
 
-    public Guardian newGuardian = new Guardian("31313", "12113", "12313", 3, 2);
+    public Guardian newGuardian = new Guardian("31313", "12113", "12313", 3, AccessLevel.SAGSBEHANDLER);
     public ArrayList<Enquiry> EnquiryList = new ArrayList<Enquiry>();
     public final HashMap<Integer, String> CPRS = new HashMap<>();
     

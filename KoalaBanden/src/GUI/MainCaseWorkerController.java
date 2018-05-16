@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Acquaintance.AccessLevel;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
@@ -63,7 +64,7 @@ public class MainCaseWorkerController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, 0);
+        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, AccessLevel.SYSTEMADMINISTRATOR);
         GUIFacade.business.getCaseworker().createCase(12);
         try {
             logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());

@@ -5,21 +5,20 @@
  */
 package GUI;
 
+import Acquaintance.IUser;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
-import java.io.IOException;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -42,6 +41,11 @@ public class LoginController implements Initializable {
     private JFXButton loginButton;
 
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
+
+    public LoginController() {
+        System.out.println("Test");
+    }
+
     /**
      * Initializes the controller class.
      */
@@ -63,9 +67,22 @@ public class LoginController implements Initializable {
         }
         
         // Call login. Return value indicates status of login
-        int i = GUIFacade.login(username, password);
+        IUser user = GUIFacade.login(username, password);
+
+        if (user == null) {
+            // Could not login
+            statusLabel.setText("Status: Fejl i brugernavn og/eller password");
+            logger.warning("Fejl i brugernavn og/eller password");
+            return;
+        }
+
+        GUIFacade.instance.showUserStartScreen(user);
+
+        logger.info(username + " er logget ind som " + user.getAccessLevelString());
+
+
         
-        // Act according to login status
+/*        // Act according to login status
         switch(i) {
             // An error has occurred
             case 0:
@@ -125,7 +142,7 @@ public class LoginController implements Initializable {
                 statusLabel.setText("Status: Der er sket en fejl.");
                 logger.warning("Der er sket en fejl.");
                 break;
-        }
+        }*/
     }
 
     @FXML
