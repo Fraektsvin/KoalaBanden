@@ -8,6 +8,7 @@ package Data;
 import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
+import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,6 +20,11 @@ public class DataFacade implements IData {
 
     private UserData userData;
     private caseData caseData;
+    
+    private String host = "jdbc:postgresql://";
+    private String username = "";
+    private String password = "";
+    
 
     public DataFacade() {
         this.userData = new UserData();
