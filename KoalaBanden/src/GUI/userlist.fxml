@@ -30,12 +30,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="993.0" layoutY="39.0" text="23" textFill="#aeacac">
+      <Label fx:id="userlistDate" layoutX="993.0" layoutY="39.0" text="23" textFill="#aeacac">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="1042.0" layoutY="47.0" text="MAJ" textFill="#3a1c9d" />
+      <Label fx:id="userlistMonth" layoutX="1042.0" layoutY="47.0" text="MAJ" textFill="#3a1c9d" />
       <Label fx:id="statusLabel" layoutX="133.0" layoutY="61.0" text="Status:" textFill="#b2b0b0">
          <font>
             <Font size="14.0" />

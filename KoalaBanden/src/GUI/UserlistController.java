@@ -6,12 +6,14 @@
 package GUI;
 
 import Acquaintance.IUser;
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXListView;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,6 +22,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import java.util.Calendar;
 
 /**
  * FXML Controller class
@@ -42,8 +45,15 @@ public class UserlistController implements Initializable {
     private Label statusLabel;
     @FXML
     private JFXButton updateListButton;
+    @FXML
+    private Label userlistDate;
+    @FXML
+    private Label userlistMonth;
 
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     
+    Calendar calendar = Calendar.getInstance();
+            
     /**
      * Initializes the controller class.
      */
@@ -51,6 +61,7 @@ public class UserlistController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         this.updateUserList();
+        System.out.println("Dags dato: " + calendar.get(Calendar.DATE));
     }    
 
     @FXML
@@ -62,6 +73,8 @@ public class UserlistController implements Initializable {
     @FXML
     private void handleCreateUserButtonAction(ActionEvent event) {
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + " åbnede lav bruger værktøjet");
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createuser.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -78,6 +91,7 @@ public class UserlistController implements Initializable {
         GUIFacade.business.deleteUser(username);
         this.updateUserList();
         statusLabel.setText("Status: " + username + " er slettet.");
+        logger.info(username + " er blevet slettet");
     }
 
     @FXML
@@ -87,6 +101,8 @@ public class UserlistController implements Initializable {
         
         if (username != null) {
             try {
+                logger.info(GUIFacade.business.getCurrentUsername() + "Bruger manager åbnet");
+
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -105,7 +121,7 @@ public class UserlistController implements Initializable {
     
     private void updateUserList() {
         userListView.getItems().clear(); 
-        
+        logger.info("Brugerliste opdateret");
         Map<String, IUser> userMap = GUIFacade.getUsers();
         for (Map.Entry<String, IUser> entry : userMap.entrySet()) {
             userListView.getItems().add(entry.getKey());
@@ -115,6 +131,7 @@ public class UserlistController implements Initializable {
     @FXML
     private void handleUpdateListButton(ActionEvent event) {
         this.updateUserList();
+        logger.info("Brugerliste opdateret");
     }
     
 }

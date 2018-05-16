@@ -22,6 +22,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import Acquaintance.*;
+import Business.LoggerStart;
 import java.util.ArrayList;
 
 
@@ -32,7 +33,7 @@ private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
     @FXML   
     private JFXComboBox text;
     
-    
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -41,7 +42,9 @@ private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
     @FXML
    public void addGuardian(ActionEvent event) throws IOException {
         text.getItems().addAll(guardianlist);
-        
+        logger.info("Tilføjet som guardian");
+
+
 }}
     
            

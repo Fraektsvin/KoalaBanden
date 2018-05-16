@@ -10,8 +10,15 @@ import Acquaintance.ICase;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
 import Acquaintance.IUser;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
+import Acquaintance.ICaseOpening;
+import Business.Citizen;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.util.Date;
+import java.util.HashMap;
 
 /**
  *
@@ -23,6 +30,7 @@ public class BusinessFacade implements IBusiness {
     private ICaseworker worker; 
     public  static IData data;
     int caseID = 0;
+    private ICaseOpening CaseOpening;
     
     public BusinessFacade() {
         manager = new SystemManager();
@@ -95,10 +103,28 @@ public class BusinessFacade implements IBusiness {
     public String[] getUser(String userName, String password) {
         return data.getUser(userName, password);
     }
+     public ArrayList<Guardian>GetGuardian() {
+        return CaseOpening.GetGuardian();
+    }
+    
+    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
+    return CaseOpening.AddGuardian(guardian);
+}
+    
+    public HashMap getCPRSMAP() {
+        return CaseOpening.getCPRSMAP();
+    }
+    public void createEnquiry() {
+       CaseOpening.createEnquiry();
+    }
+     public ICaseOpening saveCPR(Citizen citizen) {
+         CaseOpening.saveCPR(citizen);
+        return null;
+     }
 
     @Override
     public String getCurrentUsername() {
         return manager.getCurrentUsername();
     }
-
 }
+

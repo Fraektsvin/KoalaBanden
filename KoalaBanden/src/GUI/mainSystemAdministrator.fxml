@@ -14,8 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="GUI.MainSystemAdministratorController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainSystemAdministratorController">
    <children>
       <HBox alignment="TOP_CENTER" layoutX="8.0" layoutY="4.0" prefHeight="168.0" prefWidth="1259.0" style="-fx-background-color: #699F6B;" stylesheets="@style.css">
          <children>
@@ -85,6 +84,18 @@
                <VBox.margin>
                   <Insets />
                </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="logbtn" alignment="BASELINE_LEFT" onAction="#handleLogButtonAction" prefHeight="57.0" prefWidth="270.0" text="Log">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Document_50px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
                <padding>
                   <Insets left="50.0" />
                </padding>

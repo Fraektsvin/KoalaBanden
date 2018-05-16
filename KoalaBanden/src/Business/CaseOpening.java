@@ -55,10 +55,8 @@ public class CaseOpening implements ICaseOpening {
    
 
     public ArrayList<Guardian> AddGuardian(Guardian guardian) {
-        for (int i = 0; i < this.guardianlist.size(); i++) {
-            guardianlist.get(i).getUsername();
             guardianlist.add(guardian);
-        }
+        
         return guardianlist;
     }
     public ArrayList<Guardian>GetGuardian() {
@@ -77,12 +75,14 @@ public class CaseOpening implements ICaseOpening {
         return CPRS;
     }
 
+    @Override
     public void createEnquiry() {
         if (EN.getDescription() != null) {
             EnquiryList.add(EN);
         }
     }
       private void addService() {
+          
 
     }
 

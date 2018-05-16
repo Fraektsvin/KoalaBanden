@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.ResourceBundle;
 import java.util.Set;
+import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -45,7 +47,7 @@ public class CreateuserController implements Initializable {
     @FXML
     private JFXTextField emailTextField;
 
-    
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     /**
      * Initializes the controller class.
      */
@@ -72,15 +74,18 @@ public class CreateuserController implements Initializable {
         }
         else {
             statusLabel.setText("Status: Alle felter skal være udfyldt.");
+            
             return;
         }
         
         if (isUserCreated){
             Stage stage = (Stage) createUserButton.getScene().getWindow();
             statusLabel.setText("Status: " + username + " er oprettet.");
+            logger.info(username + " er oprettet som bruger under " + accessLevel);
         }
         else {
             statusLabel.setText("Status: En fejl er opstået. Prøv igen.");
+            logger.warning("Fejl er opstået.");
         }
     }
 

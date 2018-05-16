@@ -5,10 +5,12 @@
  */
 package GUI;
 
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -48,6 +50,8 @@ public class MainCaseWorkerController implements Initializable {
     private Scene scene;
     @FXML
     private JFXButton myProfileButton;
+    
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     /**
      * Initializes the controller class.
@@ -62,6 +66,7 @@ public class MainCaseWorkerController implements Initializable {
         GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, 0);
         GUIFacade.business.getCaseworker().createCase(12);
         try {
+            logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -79,12 +84,14 @@ public class MainCaseWorkerController implements Initializable {
         // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
             sagerListe.getItems().add("Sag: " + i);
+            logger.info("Se sager åbnet");
         }
     }
 
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
             Stage stage = (Stage)scene.getWindow();
@@ -103,6 +110,7 @@ public class MainCaseWorkerController implements Initializable {
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + " åbnet sin egen profil");
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
