@@ -11,8 +11,10 @@ package Business;
  */
 public class Offer {
     
+    
+    
     // Data field
     
     private String category;
-    
+   
 }
