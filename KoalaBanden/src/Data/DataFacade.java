@@ -9,6 +9,7 @@ import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,37 +19,37 @@ import java.util.Map;
  */
 public class DataFacade implements IData {
 
-    private UserData userData;
+    private Database database;
     private caseData caseData;
     
-    private String host = "jdbc:postgresql://";
-    private String username = "";
-    private String password = "";
-    
 
-    public DataFacade() {
-        this.userData = new UserData();
-        this.caseData = new caseData();
+    public DataFacade() throws SQLException {
+        database = new Database();
     }
 
     @Override
     public boolean userExists(String userName) {
-        return userData.userExists(userName);
+        try {
+           return database.userExists(userName);
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+        return true;
     }
 
     @Override
     public void createUser(IUser user) {
-        userData.createUser(user);
-    }
-
-    @Override
-    public IUser getUser(String userName, String password) {
-        return userData.getUser(userName, password);
+        try {
+         database.createUser(user.getCPR(), user.getUsername(), user.getPassword(), user.getEmail(), user.getAccessLevel());
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+      
     }
     
     @Override
     public void saveCase(ICase c) {
-        caseData.saveCase(c);
+//        caseData.saveCase(c);
     }
 
     public Map<Integer, ICase> getCases() {
@@ -57,17 +58,23 @@ public class DataFacade implements IData {
 
     @Override
     public Map<String, IUser> getUsers() {
-        return userData.getUserMap();
+       // return userData.getUserMap();
+       return null;
     }
 
     @Override
     public void deleteUser(String username) {
-        userData.deleteUser(username);
+        // userData.deleteUser(username);
     }
 
     @Override
-    public IUser getUser(String userName) {
-        return userData.getUser(userName);
+    public String[] getUser(String userName, String password) {
+        try {
+            return database.getUser(userName, password);
+        } catch(SQLException e) {
+        e.printStackTrace();
+    }
+        return null;
     }
 
 }

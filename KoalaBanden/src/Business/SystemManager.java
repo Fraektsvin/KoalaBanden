@@ -35,7 +35,6 @@ public class SystemManager {
     }
     
     public boolean createUser(String username, String password, String email, String CPRString, String accessLevelString) {
-        
         if (!BusinessFacade.data.userExists(username)) {
             if (CPRString.length() != 10) {
                 return false;
@@ -134,12 +133,9 @@ public class SystemManager {
     
     public int login(String userName, String password) {
         if (BusinessFacade.data.userExists(userName)) {
-            User user = (User) BusinessFacade.data.getUser(userName, password);
-            if (user != null) {
-                currentUser = user;
-                return user.getAccessLevel();
+            return Integer.parseInt(BusinessFacade.data.getUser(userName, password)[2]);
+                
             }
-        }
         return 0;
     }
     

@@ -42,10 +42,6 @@ public class BusinessFacade implements IBusiness {
         data.createUser(user);
     }
     
-    public User getUser(String userName, String password) {
-        return (User) data.getUser(userName, password);
-    }
-   
     public ICaseworker getCaseworker() {
         return worker;
     }
@@ -96,8 +92,8 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public IUser getUser(String userName) {
-        return data.getUser(userName);
+    public String[] getUser(String userName, String password) {
+        return data.getUser(userName, password);
     }
 
     @Override

@@ -9,6 +9,8 @@ import GUI.GUIFacade;
 import Data.DataFacade;
 import Business.BusinessFacade;
 import Business.SystemManager;
+import Data.Database;
+import java.sql.SQLException;
 
 /**
  *
@@ -16,7 +18,7 @@ import Business.SystemManager;
  */
 public class Starter {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
         IData data = new DataFacade();
         
         IBusiness business = new BusinessFacade();
@@ -26,10 +28,11 @@ public class Starter {
         GUI.injectBusiness(business);
         
         business.injectData(data);
+
         
         // Used for testing
         SystemManager manager = new SystemManager();
-        manager.createUser("Jonas", "1234", "email", "1231111111", "Systemadministrator");
+        manager.createUser("Hassan", "1234", "email", "1231111111", "Systemadministrator");
         
         GUI.startApplication(args);
             

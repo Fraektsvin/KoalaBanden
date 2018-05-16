@@ -28,7 +28,7 @@ public interface IBusiness {
     
     public int getCurrentAccessLevel();
     
-    public IUser getUser(String userName);
+    public String[] getUser(String userName, String password);
     
     public String getCurrentUsername();
 }

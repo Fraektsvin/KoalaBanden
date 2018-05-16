@@ -48,8 +48,7 @@ public class EditUserController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         String username = GUIFacade.currentUsername;
-        user = GUIFacade.business.getUser(username);
-        usernameTextField.setText(user.getUsername());
+        usernameTextField.setText(GUIFacade.business.getUser(username, password)[1]);
         passwordTextField.setText(user.getPassword());
         emailTextField.setText(user.getEmail());
         String CPR = user.getCPR() + "";

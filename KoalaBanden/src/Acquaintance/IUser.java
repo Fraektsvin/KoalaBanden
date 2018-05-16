@@ -18,6 +18,6 @@ public interface IUser {
     public String getAccessLevelString();
     public void setPassword(String password);
     public void setEmail(String email);
-    
+    public int getAccessLevel();
     public boolean checkPassword(String password);
 }
