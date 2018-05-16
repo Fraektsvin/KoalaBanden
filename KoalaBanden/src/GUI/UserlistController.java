@@ -22,6 +22,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import java.util.Calendar;
 
 /**
  * FXML Controller class
@@ -46,6 +47,9 @@ public class UserlistController implements Initializable {
     private JFXButton updateListButton;
 
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
+    
+    Calendar calendar = Calendar.getInstance();
+            
     /**
      * Initializes the controller class.
      */
@@ -53,6 +57,7 @@ public class UserlistController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         this.updateUserList();
+        System.out.println("Dags dato: " + calendar.get(Calendar.DATE));
     }    
 
     @FXML
