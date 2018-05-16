@@ -45,6 +45,10 @@ public class UserlistController implements Initializable {
     private Label statusLabel;
     @FXML
     private JFXButton updateListButton;
+    @FXML
+    private Label userlistDate;
+    @FXML
+    private Label userlistMonth;
 
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     
