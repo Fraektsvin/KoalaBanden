@@ -5,11 +5,13 @@
  */
 package GUI;
 
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -39,6 +41,7 @@ public class LoginController implements Initializable {
     @FXML
     private JFXButton loginButton;
 
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     /**
      * Initializes the controller class.
      */
@@ -55,6 +58,7 @@ public class LoginController implements Initializable {
         
         if("".equals(username) || "".equals(password)) {
             statusLabel.setText("Status: Alle felter skal udfyldes.");
+            logger.warning("Mislykkedes forsøg på login - felter mangler at udfyldes");
             return;
         }
         
@@ -67,10 +71,12 @@ public class LoginController implements Initializable {
             case 0:
                 // Inform user of error and break
                 statusLabel.setText("Status: Fejl i brugernavn og/eller password");
+                logger.warning("Fejl i brugernavn og/eller password");
                 break;
             // System administrator login
             case 1:
                 try {
+                    logger.info(username + " er logget ind som system admin");
                     root = FXMLLoader.load(getClass().getResource("mainSystemAdministrator.fxml"));
                     scene = loginButton.getScene();
                     Stage stage = (Stage)scene.getWindow();
@@ -85,6 +91,7 @@ public class LoginController implements Initializable {
                 break;
             case 2:
                 try {
+                    logger.info(username + " er logget ind som sagsbehandler");
                     root = FXMLLoader.load(getClass().getResource("mainCaseWorker.fxml"));
                     scene = loginButton.getScene();
                     Stage stage = (Stage)scene.getWindow();
@@ -101,6 +108,7 @@ public class LoginController implements Initializable {
             case 4:
             case 5:
                 try {
+                    logger.info(username + " er logget ind som borger");
                     root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
                     scene = loginButton.getScene();
                     Stage stage = (Stage)scene.getWindow();
@@ -115,6 +123,7 @@ public class LoginController implements Initializable {
                 break;
             default:
                 statusLabel.setText("Status: Der er sket en fejl.");
+                logger.warning("Der er sket en fejl.");
                 break;
         }
     }

@@ -5,10 +5,12 @@
  */
 package GUI;
 
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -41,6 +43,7 @@ public class MainSystemAdministratorController implements Initializable {
     private Parent root;
     private Scene scene;
     
+    private static final Logger logger = Logger.getLogger(LoggerStart.class.getName());
     /**
      * Initializes the controller class.
      */
@@ -52,6 +55,7 @@ public class MainSystemAdministratorController implements Initializable {
     @FXML
     private void handleUserButtonAction(ActionEvent event) {
         try {
+            logger.info("brugerliste åbnet");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -61,11 +65,13 @@ public class MainSystemAdministratorController implements Initializable {
             io.printStackTrace();
         }
     }
-
+        
+    
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
+            logger.info("Bruger manager åbnet");
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -79,6 +85,7 @@ public class MainSystemAdministratorController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
             Stage stage = (Stage)scene.getWindow();
@@ -92,5 +99,20 @@ public class MainSystemAdministratorController implements Initializable {
                 ex.printStackTrace();
             }
     }
+    @FXML
+    private void handleLogButtonAction(ActionEvent event) {
+         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + "åbnede log listen");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("log.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
+    
+    }
+
     
 }

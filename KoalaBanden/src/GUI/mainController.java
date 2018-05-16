@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
@@ -56,6 +57,7 @@ public class mainController implements Initializable {
     @FXML
     private JFXButton administratorButton;
     
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     private void handleButtonAction(MouseEvent event) {
         refreshNodes();
@@ -115,6 +117,8 @@ public class mainController implements Initializable {
         GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, 0);
         GUIFacade.business.getCaseworker().createCase(12);
         try {
+             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -130,6 +134,7 @@ public class mainController implements Initializable {
     private void seeCases(ActionEvent event) {
         // Resets the list containing items everytime method is called.
         sagerListe.getItems().clear();
+        logger.info("Se sager åbnet");
         // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
             sagerListe.getItems().add("Sag: " + i);
@@ -138,6 +143,7 @@ public class mainController implements Initializable {
 
     private void userlist(ActionEvent even) {
         try {
+            logger.info("brugerliste åbnet");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -151,6 +157,8 @@ public class mainController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + " JoLogged ud");
+
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
             Stage stage = (Stage)scene.getWindow();
@@ -168,6 +176,8 @@ public class mainController implements Initializable {
     @FXML
     private void handleUserButtonAction(ActionEvent event) {
         try {
+            logger.info(GUIFacade.business.getCurrentUsername() + " åbnede brugerliste");
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();

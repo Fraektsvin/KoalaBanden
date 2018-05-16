@@ -1,0 +1,62 @@
+maj 16, 2018 10:29:23 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 16, 2018 10:29:28 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som system admin
+maj 16, 2018 10:29:29 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 16, 2018 10:29:32 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Jonasåbnede log listen
+maj 16, 2018 10:29:39 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 16, 2018 10:29:44 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som sagsbehandler
+maj 16, 2018 10:29:48 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 16, 2018 10:29:52 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som system admin
+maj 16, 2018 10:29:54 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Jonasåbnede log listen
+maj 16, 2018 10:30:03 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 16, 2018 10:30:07 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som system admin
+maj 16, 2018 10:30:10 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 16, 2018 10:30:14 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 16, 2018 10:30:18 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 16, 2018 10:30:21 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Jonasåbnede log listen
+maj 16, 2018 10:33:06 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 16, 2018 10:33:11 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som system admin
+maj 16, 2018 10:33:13 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 16, 2018 10:33:16 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 16, 2018 10:33:19 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 16, 2018 10:33:21 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Jonasåbnede log listen
+maj 16, 2018 10:34:07 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 16, 2018 10:34:07 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 16, 2018 10:34:57 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 16, 2018 10:35:00 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som system admin
+maj 16, 2018 10:35:02 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 16, 2018 10:35:02 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 16, 2018 10:35:03 AM GUI.UserlistController handleCreateUserButtonAction
+INFO: Jonas åbnede lav bruger værktøjet
+maj 16, 2018 10:35:25 AM GUI.CreateuserController handleCreateUserButtonAction
+INFO: Bo er oprettet som bruger underSystemadministrator
+maj 16, 2018 10:35:30 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 16, 2018 10:35:30 AM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
