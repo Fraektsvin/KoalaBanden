@@ -66,6 +66,7 @@ public class BusinessFacade implements IBusiness {
         return this.data;
     }
     
+    @Override
     public IUser login(String userName, String password) {
         return manager.login(userName, password);
     }
@@ -74,6 +75,9 @@ public class BusinessFacade implements IBusiness {
     public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel) {
         return manager.createUser(username, password, email, SSN, accessLevel);
     }
+    
+    
+    
 
     @Override
     public Collection getAccessLevels() {
@@ -99,6 +103,12 @@ public class BusinessFacade implements IBusiness {
     public IUser getUser(String userName, String password) {
         return data.getUser(userName, password);
     }
+    
+     @Override
+    public IUser getUser(String userName) {
+        return data.getUser(userName);
+    }
+    
      public ArrayList<Guardian>GetGuardian() {
         return CaseOpening.GetGuardian();
     }
@@ -123,4 +133,6 @@ public class BusinessFacade implements IBusiness {
         return manager.getCurrentUsername();
     }
 }
+
+  
 

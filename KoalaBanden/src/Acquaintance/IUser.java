@@ -16,8 +16,8 @@ public interface IUser {
     public String getEmail();
     public int getCPR();
     public String getAccessLevelString();
-    public void setPassword(String password);
-    public void setEmail(String email);
+    public void setPassword(String userName, String password);
+    public void setEmail(String userName, String email);
     public AccessLevel getAccessLevel();
     public boolean checkPassword(String password);
 }

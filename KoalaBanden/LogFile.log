@@ -60,3 +60,303 @@ maj 16, 2018 10:35:30 AM GUI.UserlistController updateUserList
 INFO: Brugerliste opdateret
 maj 16, 2018 10:35:30 AM GUI.UserlistController handleUpdateListButton
 INFO: Brugerliste opdateret
+maj 18, 2018 10:14:10 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:14:18 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:14:20 AM GUI.MainUserController handleMyProfileButtonAction
+INFO: Jonas Åbnede brugermanager
+maj 18, 2018 10:14:26 AM GUI.MainUserController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 18, 2018 10:14:31 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:14:34 AM GUI.MainUserController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 18, 2018 10:14:42 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:14:45 AM GUI.MainUserController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 18, 2018 10:15:04 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:15:12 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:15:13 AM GUI.MainUserController handleMyProfileButtonAction
+INFO: Jonas Åbnede brugermanager
+maj 18, 2018 10:15:19 AM GUI.MainUserController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 18, 2018 10:15:23 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:16:38 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:16:45 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:16:46 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnet sin egen profil
+maj 18, 2018 10:16:49 AM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 18, 2018 10:17:07 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 18, 2018 10:17:11 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:17:13 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 18, 2018 10:17:13 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 18, 2018 10:17:23 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Jonasåbnede log listen
+maj 18, 2018 10:17:33 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 18, 2018 10:21:16 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:21:22 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:21:25 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:24:21 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:24:28 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:24:30 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:24:50 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:24:56 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:24:58 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:40:39 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:40:46 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:40:47 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:50:04 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:50:12 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:50:45 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:50:53 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:50:55 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnet sin egen profil
+maj 18, 2018 10:56:14 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:56:20 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:56:22 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:57:01 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:57:08 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 10:57:09 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 10:57:59 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 18, 2018 10:58:03 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:58:04 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnet sin egen profil
+maj 18, 2018 10:58:14 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 18, 2018 10:58:20 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 10:58:27 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 18, 2018 10:58:29 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnet sin egen profil
+maj 18, 2018 10:58:46 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 18, 2018 11:00:00 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:00:19 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:00:25 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:00:27 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:01:07 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:01:13 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:01:15 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:01:37 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:01:43 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:01:46 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:02:16 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:02:20 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 18, 2018 11:02:23 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:02:25 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:02:36 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AlexLogged ud
+maj 18, 2018 11:02:47 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:02:54 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:02:55 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:03:03 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Alex er opdateret
+maj 18, 2018 11:03:16 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Alex er opdateret
+maj 18, 2018 11:05:32 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:05:56 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:05:59 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:06:54 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:23:33 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:23:40 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:23:41 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:25:49 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:25:56 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:25:57 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:29:43 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:29:49 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:29:50 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:29:53 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:30:57 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:31:03 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:31:10 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:31:15 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:31:18 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:32:49 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:32:57 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:33:01 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:33:11 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:33:13 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:33:15 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:33:20 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:33:30 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:34:37 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:34:47 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:34:52 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:34:56 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:35:16 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:35:23 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:35:27 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:36:08 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:36:14 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:38:47 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:38:53 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:38:55 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:42:43 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:42:50 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:42:51 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:43:48 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:43:54 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:43:55 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:43:58 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:44:15 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:44:21 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:44:49 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:45:53 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:45:59 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:46:10 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:46:11 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:46:17 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:46:29 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:46:32 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:46:39 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 18, 2018 11:48:32 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:48:38 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:48:50 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:48:51 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:48:58 AM GUI.LoginController actionLogin
+INFO: Thomas er logget ind som BORGER
+maj 18, 2018 11:48:59 AM GUI.MainUserController handleMyProfileButtonAction
+INFO: Thomas Åbnede brugermanager
+maj 18, 2018 11:49:19 AM GUI.MainUserController handleLogoutButtonAction
+INFO: ThomasLogged ud
+maj 18, 2018 11:49:24 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:49:25 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:49:31 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Alex er opdateret
+maj 18, 2018 11:50:08 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:50:20 AM GUI.LoginController actionLogin
+INFO: Alex er logget ind som SAGSBEHANDLER
+maj 18, 2018 11:50:21 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Alex åbnet sin egen profil
+maj 18, 2018 11:50:25 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Alex er opdateret
+maj 18, 2018 11:56:40 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 18, 2018 11:56:47 AM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 18, 2018 11:56:53 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 18, 2018 11:56:54 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 18, 2018 11:57:00 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret

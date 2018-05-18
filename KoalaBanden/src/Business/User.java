@@ -6,6 +6,7 @@
 package Business;
 
 import Acquaintance.AccessLevel;
+import Acquaintance.IBusiness;
 import Acquaintance.IUser;
 import java.io.Serializable;
 import java.sql.ResultSet;
@@ -18,7 +19,7 @@ import java.sql.SQLException;
 public class User implements Serializable, IUser {
     
     // Date field
-    
+
     private String username;
     private String password;
     private String email;
@@ -35,12 +36,12 @@ public class User implements Serializable, IUser {
         this.accessLevel = accessLevel;
     }
 
+    // Used to access database info. 
     public User(ResultSet rs) throws SQLException {
         this.SSN = rs.getInt(1);
         this.username = rs.getString(2);
         this.password = rs.getString(3);
         this.email = rs.getString(4);
-
         int accessLevel = rs.getInt(5);
         this.accessLevel = AccessLevel.fromInt(accessLevel);
     }
@@ -53,20 +54,21 @@ public class User implements Serializable, IUser {
     }
 
     @Override
-    public void setPassword(String password) {
+    public void setPassword(String userName, String password) {
         this.password = password;
-        BusinessFacade.data.createUser(this);
+        BusinessFacade.data.setPassword(userName, password);
+    }
+    
+     @Override
+    public void setEmail(String userName, String email) {
+        this.email = email;
+        BusinessFacade.data.setEmail(userName, email);
+        
     }
 
     @Override
     public String getEmail() {
         return email;
-    }
-
-    @Override
-    public void setEmail(String email) {
-        this.email = email;
-        BusinessFacade.data.createUser(this);
     }
 
     @Override

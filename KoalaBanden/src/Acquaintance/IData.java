@@ -18,8 +18,11 @@ public interface IData {
     public boolean userExists(String userName);
     public void createUser(IUser user);
     public IUser getUser(String userName, String password);
+    public IUser getUser(String userName);
     public void saveCase(ICase c);
     public Map<Integer, ICase> getCases();
     public Map<String, IUser> getUsers();
     public void deleteUser(String username);
+    public void setPassword(String userName, String password);
+    public void setEmail(String userName, String email);
 }

@@ -59,7 +59,7 @@ public class Database {
         }
         return false;
     }
-
+    // This method is used to call methods on user in the GUI BEFORE the user logged in.
     public IUser getUser(String userName, String password) throws SQLException {
         IUser user = null;
         try {
@@ -77,7 +77,46 @@ public class Database {
         }
         return user;
     }
-    
+    // This method is used to call methods on user in the GUI AFTER a person logged in.
+     public IUser getUser(String userName) throws SQLException {
+        IUser user = null;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Statement st = db.createStatement();
+            ResultSet rs = st.executeQuery("SELECT * FROM users WHERE username = '" + userName + "'");
+
+            rs.next();
+            user = new User(rs);
+
+            rs.close();
+            st.close();
+        } catch(PSQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        return user;
+    }
+    // Takes userName to check the user we want to change password for. Takes password as the new password. 
+    public void setPassword(String userName, String password) throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            Statement st = db.createStatement();
+            st.execute("UPDATE users SET password = '" + password + "' WHERE username = '" + userName + "'");
+            st.close();
+        } catch(PSQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void setEmail(String userName, String email) throws SQLException {
+       try {
+            Class.forName("org.postgresql.Driver");
+            Statement st = db.createStatement();
+            st.execute("UPDATE users SET email = '" + email + "' WHERE username = '" + userName + "'");
+            st.close();
+        } catch(PSQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }  
+    }
         
     
     

@@ -29,5 +29,7 @@ public interface IBusiness {
     
     public IUser getUser(String userName, String password);
     
+      public IUser getUser(String userName);
+    
     public String getCurrentUsername();
 }

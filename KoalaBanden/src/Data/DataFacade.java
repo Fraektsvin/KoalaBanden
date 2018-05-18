@@ -77,4 +77,34 @@ public class DataFacade implements IData {
         return null;
     }
 
+    @Override
+    public IUser getUser(String userName) {
+         try {
+            return database.getUser(userName);
+        } catch(SQLException e) {
+        e.printStackTrace();
+    }
+        return null;
+    }
+
+    @Override
+    public void setPassword(String userName, String password) {
+        try {
+         database.setPassword(userName, password);  
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+       
+    }
+
+    @Override
+    public void setEmail(String userName, String email) {
+        try {
+         database.setEmail(userName, email);  
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+
 }

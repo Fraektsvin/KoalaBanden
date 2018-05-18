@@ -31,6 +31,7 @@ import javafx.stage.Stage;
     static IBusiness business;
     static String currentUsername;
     public static String currentPassword;
+    static String currentEmail;
     private Stage stage;
 
     public static IUser login(String username, String password) {
@@ -78,10 +79,13 @@ import javafx.stage.Stage;
             switch(u.getAccessLevel()) {
                 case SYSTEMADMINISTRATOR:
                     showAdminScene();
+                    break;
                 case SAGSBEHANDLER:
                     showCaseWorkerScene();
+                    break;
                 default:
                     showUserScene();
+                    break;
             }
 
         } catch (IOException e) {

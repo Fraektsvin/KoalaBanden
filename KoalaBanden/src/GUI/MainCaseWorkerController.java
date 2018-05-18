@@ -111,7 +111,7 @@ public class MainCaseWorkerController implements Initializable {
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + " åbnet sin egen profil");
+                logger.info(GUIFacade.business.getCurrentUsername() + " åbnet sin egen profil");
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
