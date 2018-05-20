@@ -52,94 +52,94 @@
             </Label>
             <TabPane layoutX="4.0" layoutY="96.0" prefHeight="563.0" prefWidth="1007.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Generelt">
+                <Tab fx:id="generalTab" text="Generelt">
                      <content>
-                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0">
+                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0" vvalue="1.0">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2791.0" prefWidth="1014.0">
                                  <children>
                                     <VBox layoutX="14.0" layoutY="14.0" prefHeight="1087.0" prefWidth="1006.0" spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
                                           <Label text="Hvad drejer henvendelsen sig om? [beskrivelse af problemstillingen og behov for hjælp]" />
-                                          <TextArea prefHeight="247.0" prefWidth="996.0" />
+                                          <TextArea fx:id="whatIsTheEnquiryAboutTextArea" prefHeight="247.0" prefWidth="996.0" />
                                           <Label text="Er det klart hvad borgeren søger om?" />
                                           <HBox prefHeight="20.0" prefWidth="996.0" spacing="8.0">
                                              <children>
-                                                <CheckBox mnemonicParsing="false" text="Ja" />
-                                                <CheckBox mnemonicParsing="false" text="Nej" />
+                                                <CheckBox fx:id="isItClearWhatTheCitizenIsSeeksCheckBox" mnemonicParsing="false" text="Ja" />
+                                                <CheckBox fx:id="isItClearWhatTheCitizenIsSeeksNoCheckBox" mnemonicParsing="false" text="Nej" />
                                              </children>
                                              <padding>
                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                              </padding>
                                           </HBox>
                                           <Label text="Hvis ja, angiv ydelse [afkrydsning af ydelser/§]" />
-                                          <CheckBox mnemonicParsing="false" text="Aktivitets- og samværsydelse (§ 104)" />
-                                          <CheckBox mnemonicParsing="false" text="Befordring">
+                                          <CheckBox fx:id="ifYesMentionTheServiceCheckBox" mnemonicParsing="false" text="Aktivitets- og samværsydelse (§ 104)" />
+                                          <CheckBox fx:id="conveyanceCheckBox" mnemonicParsing="false" text="Befordring">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (§ 105)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOfferCheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (§ 105)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Hjælpemiddelbekendtgørelsen § 25)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOffer25CheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Hjælpemiddelbekendtgørelsen § 25)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Lov om specialundervisning til voksne § 5)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOffer5CheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Lov om specialundervisning til voksne § 5)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Lov om ungdomsuddannelse for unge med særligebehov, § 10)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOffer10CheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (Lov om ungdomsuddannelse for unge med særligebehov, § 10)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (SUL § 170)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOffer170CheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (SUL § 170)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (SUL § 172)">
+                                          <CheckBox fx:id="conveyanceToAndFromAOffer172CheckBox" disable="true" mnemonicParsing="false" text="Befordring til og fra et tilbud (SUL § 172)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Individuel befordring (§ 117)">
+                                          <CheckBox fx:id="individualConveyance" disable="true" mnemonicParsing="false" text="Individuel befordring (§ 117)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Behandling">
+                                          <CheckBox fx:id="treatmentCheckBox" mnemonicParsing="false" text="Behandling">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Misbrugsbehandling (§ 101)">
+                                          <CheckBox fx:id="substanceAbuseProblemTreatment101CheckBox" disable="true" mnemonicParsing="false" text="Misbrugsbehandling (§ 101)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Misbrugsbehandling (SUL § 141)">
+                                          <CheckBox fx:id="substanceAbuseProblemTreatment141CheckBox" disable="true" mnemonicParsing="false" text="Misbrugsbehandling (SUL § 141)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Terapi (§ 102)">
+                                          <CheckBox fx:id="therapyCheckBox" disable="true" mnemonicParsing="false" text="Terapi (§ 102)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Psykologisk behandling (§ 102)">
+                                          <CheckBox fx:id="psychologicalTreatmentCheckBox" disable="true" mnemonicParsing="false" text="Psykologisk behandling (§ 102)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Speciallæge behandling (§ 102)">
+                                          <CheckBox fx:id="specialistDoctorTreatmentCheckBox" disable="true" mnemonicParsing="false" text="Speciallæge behandling (§ 102)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
@@ -149,347 +149,342 @@
                                                 <Insets />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Dagaflastning (§ 84)">
+                                          <CheckBox fx:id="dayDecompressionCheckBox" mnemonicParsing="false" text="Dagaflastning (§ 84)">
                                              <VBox.margin>
                                                 <Insets />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Kontantydelse">
+                                          <CheckBox fx:id="cashServiceCheckBox" mnemonicParsing="false" text="Kontantydelse">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Arbejdsvederlag (§ 105)">
+                                          <CheckBox fx:id="remunerationCheckBox" disable="true" mnemonicParsing="false" text="Arbejdsvederlag (§ 105)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Dækning af merudgift (§ 100)">
+                                          <CheckBox fx:id="coverOfAdditionalCostsCheckBox" disable="true" mnemonicParsing="false" text="Dækning af merudgift (§ 100)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Dækning af merudgift (§ 100)">
-                                             <VBox.margin>
-                                                <Insets left="20.0" />
-                                             </VBox.margin>
-                                          </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Kontrolordning">
+                                          <CheckBox fx:id="controlSystemCheckBox" mnemonicParsing="false" text="Kontrolordning">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Fastholdelse (§ 126)">
+                                          <CheckBox fx:id="insistence126CheckBox" disable="true" mnemonicParsing="false" text="Fastholdelse (§ 126)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Fastholdelse (§ 127)">
+                                          <CheckBox fx:id="insistence127CheckBox" disable="true" mnemonicParsing="false" text="Fastholdelse (§ 127)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Fastholdelse (§ 128)">
+                                          <CheckBox fx:id="insistence128CheckBox" disable="true" mnemonicParsing="false" text="Fastholdelse (§ 128)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Kontrol med færden (§ 125)">
+                                          <CheckBox fx:id="controlOfTheBehaviorCheckBox" disable="true" mnemonicParsing="false" text="Kontrol med færden (§ 125)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Ophold">
+                                          <CheckBox fx:id="stayCheckBox" mnemonicParsing="false" text="Ophold">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Døgnaflastning (§ 84)">
+                                          <CheckBox fx:id="dayAndNightDecompressionCheckBox" disable="true" mnemonicParsing="false" text="Døgnaflastning (§ 84)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Længevarende ophold (§ 108)">
+                                          <CheckBox fx:id="prolongedStayCheckBox" disable="true" mnemonicParsing="false" text="Længevarende ophold (§ 108)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 80)">
+                                          <CheckBox fx:id="temporaryStay80CheckBox" disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 80)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 107)">
+                                          <CheckBox fx:id="temporaryStay107CheckBox" disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 107)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 109)">
+                                          <CheckBox fx:id="temporaryStay109CheckBox" disable="true" mnemonicParsing="false" text="Midlertidigt ophold (§ 109)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Personlig hjælp og pleje (§ 83)" />
-                                          <CheckBox mnemonicParsing="false" text="Personlig hjælp og pleje (§ 95)" />
-                                          <CheckBox mnemonicParsing="false" text="Praktisk hjælp (§ 83)" />
-                                          <CheckBox mnemonicParsing="false" text="Praktisk hjælp (§ 95)" />
-                                          <CheckBox mnemonicParsing="false" text="Socialpædagoisk støtte">
+                                          <CheckBox fx:id="personalHelpAndCare83CheckBox" mnemonicParsing="false" text="Personlig hjælp og pleje (§ 83)" />
+                                          <CheckBox fx:id="personalHelpAndCare95CheckBox" mnemonicParsing="false" text="Personlig hjælp og pleje (§ 95)" />
+                                          <CheckBox fx:id="practicalHelp83" mnemonicParsing="false" text="Praktisk hjælp (§ 83)" />
+                                          <CheckBox fx:id="practicalHelp95" mnemonicParsing="false" text="Praktisk hjælp (§ 95)" />
+                                          <CheckBox fx:id="socioeducationalSubsidyCheckBox" mnemonicParsing="false" text="Socialpædagoisk støtte">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til administration (§ 85)">
+                                          <CheckBox fx:id="subsidyForTheAdministrationCheckBox" disable="true" mnemonicParsing="false" text="Støtte til administration (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til indkøb og kost (§ 85)">
+                                          <CheckBox fx:id="subsidyToPurchaseAndFoodCheckBox" disable="true" mnemonicParsing="false" text="Støtte til indkøb og kost (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til kontakt og samvær (§ 85)">
+                                          <CheckBox fx:id="subsidyForContactAndGatheringCheckBox" disable="true" mnemonicParsing="false" text="Støtte til kontakt og samvær (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til medicinhåndtering (§ 85)">
+                                          <CheckBox fx:id="subsidyForMedicalHandlingCheckBox" disable="true" mnemonicParsing="false" text="Støtte til medicinhåndtering (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til personlig pleje (§ 85)">
+                                          <CheckBox fx:id="subsidyForPersonalCareCheckBox" disable="true" mnemonicParsing="false" text="Støtte til personlig pleje (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til praktiske opgaver i hjemmet (§ 85)">
+                                          <CheckBox fx:id="subsidyForPracticalTasksAtHomeCheckBox" disable="true" mnemonicParsing="false" text="Støtte til praktiske opgaver i hjemmet (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til uddannelse og beskæftigelse (§ 85)">
+                                          <CheckBox fx:id="subsidyForEducationAndEmploymentCheckBox" disable="true" mnemonicParsing="false" text="Støtte til uddannelse og beskæftigelse (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til varetagelse af forældrerollen (§ 85)">
+                                          <CheckBox fx:id="subsidyForSafeguardingForParentingCheckBox" disable="true" mnemonicParsing="false" text="Støtte til varetagelse af forældrerollen (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Støttepersonordning">
+                                          <CheckBox fx:id="supportivePersonAgreementCheckBox" mnemonicParsing="false" text="Støttepersonordning">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Afløsning (§ 84)">
+                                          <CheckBox fx:id="replacement84CheckBox" disable="true" mnemonicParsing="false" text="Afløsning (§ 84)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Afløsning (§ 95 )">
+                                          <CheckBox fx:id="replacement95CheckBox" disable="true" mnemonicParsing="false" text="Afløsning (§ 95 )">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Borgerstyret personlig assistance (§ 96)">
+                                          <CheckBox fx:id="citizenManagedPersonalAssistanceCheckBox" disable="true" mnemonicParsing="false" text="Borgerstyret personlig assistance (§ 96)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Kontaktperson for døvblinde (§ 98)">
+                                          <CheckBox fx:id="contactPersonForDeafAndBlindCheckBox" disable="true" mnemonicParsing="false" text="Kontaktperson for døvblinde (§ 98)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Ledsageordning (§ 97)">
+                                          <CheckBox fx:id="accompanyingAgreementCheckBox" disable="true" mnemonicParsing="false" text="Ledsageordning (§ 97)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Pasning af pårørende (§ 118)">
+                                          <CheckBox fx:id="careOfRelatives118CheckBox" disable="true" mnemonicParsing="false" text="Pasning af pårørende (§ 118)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Pasning af pårørende (§ 119)">
+                                          <CheckBox fx:id="careOfRelatives119CheckBox" disable="true" mnemonicParsing="false" text="Pasning af pårørende (§ 119)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Støtteredskab">
+                                          <CheckBox fx:id="supportToolCheckBox" mnemonicParsing="false" text="Støtteredskab">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Hjælpemiddel (§ 112)">
+                                          <CheckBox fx:id="aidCheckBox" disable="true" mnemonicParsing="false" text="Hjælpemiddel (§ 112)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til bil (§ 114)">
+                                          <CheckBox fx:id="subsidyToCar" disable="true" mnemonicParsing="false" text="Støtte til bil (§ 114)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Støtte til boligindretning (§ 116)">
+                                          <CheckBox fx:id="subsidyForInteriorDesignCheckBox" disable="true" mnemonicParsing="false" text="Støtte til boligindretning (§ 116)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Forbrugsgoder (§ 113)">
+                                          <CheckBox fx:id="consumerGoodsCheckBox" disable="true" mnemonicParsing="false" text="Forbrugsgoder (§ 113)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Træning">
+                                          <CheckBox fx:id="trainingCheckBox" mnemonicParsing="false" text="Træning">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Genoptræning (§ 85)">
+                                          <CheckBox fx:id="rehabilitation85CheckBox" disable="true" mnemonicParsing="false" text="Genoptræning (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Genoptræning (§ 86)">
+                                          <CheckBox fx:id="rehabilitation86CheckBox" disable="true" mnemonicParsing="false" text="Genoptræning (§ 86)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Genoptræning (§ 102)">
+                                          <CheckBox fx:id="rehabilitation102CheckBox" disable="true" mnemonicParsing="false" text="Genoptræning (§ 102)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 85)">
+                                          <CheckBox fx:id="maintenanceTraning85CheckBox" disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 85)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 86)">
+                                          <CheckBox fx:id="maintenanceTraning86CheckBox" disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 86)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 102)">
+                                          <CheckBox fx:id="maintenanceTraining102CheckBox" disable="true" mnemonicParsing="false" text="Vedligeholdelsestræning (§ 102)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Undervisning">
+                                          <CheckBox fx:id="tuitionCheckBox" mnemonicParsing="false" text="Undervisning">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Kompenserende specialundervisning (Lov om specialundervisning til voksne § 1)">
+                                          <CheckBox fx:id="compensatorySpecialEducationCheckBox" disable="true" mnemonicParsing="false" text="Kompenserende specialundervisning (Lov om specialundervisning til voksne § 1)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox disable="true" mnemonicParsing="false" text="Ungdomsuddannelse for unge med særlige behov (Lov om ungdomsuddannelse forunge med særlige behov, § 2)">
+                                          <CheckBox fx:id="youthEducationForYoungPeopleWithSpecialNeedsCheckBox" disable="true" mnemonicParsing="false" text="Ungdomsuddannelse for unge med særlige behov (Lov om ungdomsuddannelse for unge med særlige behov, § 2)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
                                           <Label text="Ikke visiterede ydelser" />
-                                          <CheckBox mnemonicParsing="false" text="Rådgivning (§ 10)">
+                                          <CheckBox fx:id="counselingCheckBox" mnemonicParsing="false" text="Rådgivning (§ 10)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Støtte- og kontaktperson (§ 99)">
+                                          <CheckBox fx:id="supportAndContactPersonCheckBox" mnemonicParsing="false" text="Støtte- og kontaktperson (§ 99)">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
                                           <Label text="Ambulant tilbud til voksne" />
-                                          <CheckBox mnemonicParsing="false" text="Ambulant behandlingstilbud til voksne">
+                                          <CheckBox fx:id="ambulantAvailableTreatmentOfferCheckBox" mnemonicParsing="false" text="Ambulant behandlingstilbud til voksne">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
                                           <Label text="Dagtilbud til voksne" />
-                                          <CheckBox mnemonicParsing="false" text="Aktivitets- og samværstilbud">
+                                          <CheckBox fx:id="activityAndGatheringOfferCheckBox" mnemonicParsing="false" text="Aktivitets- og samværstilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Beskyttet beskæftigelsestilbud">
+                                          <CheckBox fx:id="protectedEmploymentCheckBox" mnemonicParsing="false" text="Beskyttet beskæftigelsestilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Dagbehandlingstilbud til voksne">
+                                          <CheckBox fx:id="dayTreatmentOfferForAdultsCheckBox" mnemonicParsing="false" text="Dagbehandlingstilbud til voksne">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Uddannelsestilbud">
+                                          <CheckBox fx:id="educationalOfferCheckBox" mnemonicParsing="false" text="Uddannelsestilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
                                           <Label text="Dagtilbud til voksne" />
-                                          <CheckBox mnemonicParsing="false" text="Almen plejebolig">
+                                          <CheckBox fx:id="commonResidentialCareFacilityCheckBox" mnemonicParsing="false" text="Almen plejebolig">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Almen ældrebolig/handicapvenlig bolig">
+                                          <CheckBox fx:id="commonElderFriendlyHandicapFriendlyHomeCheckBox" mnemonicParsing="false" text="Almen ældrebolig/handicapvenlig bolig">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Bofællesskab">
+                                          <CheckBox fx:id="cohabitationCheckBox" mnemonicParsing="false" text="Bofællesskab">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Døgnbehandlingstilbud til voksne">
+                                          <CheckBox fx:id="dayAndNightTreatmentsOfferForAdultsCheckBOx" mnemonicParsing="false" text="Døgnbehandlingstilbud til voksne">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Forsorgshjem/herberg">
+                                          <CheckBox fx:id="careHomeHostelCheckBOx" mnemonicParsing="false" text="Forsorgshjem/herberg">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Krisecenter">
+                                          <CheckBox fx:id="crisisCentreCheckBox" mnemonicParsing="false" text="Krisecenter">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
                                           <Label text="Længerevarende botilbud til voksne" />
-                                          <CheckBox mnemonicParsing="false" text="Sikret botilbud">
+                                          <CheckBox fx:id="securedHousingCheckBox" mnemonicParsing="false" text="Sikret botilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Andet længerevarende botilbud til voksne">
+                                          <CheckBox fx:id="otherlongtermResidentialAccommodationForAdultsCheckBox" mnemonicParsing="false" text="Andet længerevarende botilbud til voksne">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Midlertidigt botilbud">
+                                          <CheckBox fx:id="temporaryResidentialAccommodationCheckBox" mnemonicParsing="false" text="Midlertidigt botilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Plejehjem">
+                                          <CheckBox fx:id="careHomeCheckBox" mnemonicParsing="false" text="Plejehjem">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Rehabiliteringstilbud">
+                                          <CheckBox fx:id="rehabilitationOfferCheckBox" mnemonicParsing="false" text="Rehabiliteringstilbud">
                                              <VBox.margin>
                                                 <Insets left="20.0" />
                                              </VBox.margin>
                                           </CheckBox>
-                                          <CheckBox mnemonicParsing="false" text="Udgående tilbud til voksne" />
-                                          <CheckBox mnemonicParsing="false" text="Tilbud med myndighedsbeføjelse" />
+                                          <CheckBox fx:id="outboundOffersForAdultsCheckBox" mnemonicParsing="false" text="Udgående tilbud til voksne" />
+                                          <CheckBox fx:id="offersWithAuthorityCheckBox" mnemonicParsing="false" text="Tilbud med myndighedsbeføjelse" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -515,15 +510,15 @@
                               </Text>
                               <VBox layoutX="14.0" layoutY="31.0" prefHeight="335.0" prefWidth="278.0" spacing="8.0">
                                  <children>
-                                    <CheckBox fx:id="Borger" mnemonicParsing="false" text="Borger" />
-                                    <CheckBox fx:id="Pårørende" mnemonicParsing="false" text="Pårørende" />
-                                    <CheckBox fx:id="Læge" mnemonicParsing="false" text="Læge" />
-                                    <CheckBox fx:id="Hospital" mnemonicParsing="false" text="Hospital" />
-                                    <CheckBox fx:id="andenForvaltning" mnemonicParsing="false" text="Anden forvaltning" />
-                                    <CheckBox fx:id="igangværendeIndsats" mnemonicParsing="false" text="Igangværende indsats" />
-                                    <CheckBox fx:id="andenKommune" mnemonicParsing="false" text="Anden kommune" />
-                                    <CheckBox fx:id="andre" mnemonicParsing="false" text="Andre [angiv kontaktoplysninger]" />
-                                    <TextField disable="true" editable="false" prefHeight="27.0" prefWidth="143.0" />
+                                    <CheckBox fx:id="citizenCheckBox" mnemonicParsing="false" text="Borger" />
+                                    <CheckBox fx:id="relativeCheckBox" mnemonicParsing="false" text="Pårørende" />
+                                    <CheckBox fx:id="doctorCheckbox" mnemonicParsing="false" text="Læge" />
+                                    <CheckBox fx:id="hospitalCheckBox" mnemonicParsing="false" text="Hospital" />
+                                    <CheckBox fx:id="otherManagementCheckBox" mnemonicParsing="false" text="Anden forvaltning" />
+                                    <CheckBox fx:id="continualEffortCheckBox" mnemonicParsing="false" text="Igangværende indsats" />
+                                    <CheckBox fx:id="otherMunicipalityCheckBox" mnemonicParsing="false" text="Anden kommune" />
+                                    <CheckBox fx:id="otherContactInformationCheckBox" mnemonicParsing="false" text="Andre [angiv kontaktoplysninger]" />
+                                    <TextField fx:id="otherContactInformationTextField" disable="true" editable="false" prefHeight="27.0" prefWidth="143.0" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Er borgeren indforstået med henvendelsen? ">
                                        <font>
                                           <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
@@ -531,8 +526,8 @@
                                     </Text>
                                     <HBox prefHeight="22.0" prefWidth="278.0" spacing="8.0">
                                        <children>
-                                          <CheckBox fx:id="andre1" mnemonicParsing="false" text="Ja" />
-                                          <CheckBox fx:id="andre11" mnemonicParsing="false" text="Nej" />
+                                          <CheckBox fx:id="isTheCitizenInAgreementWithTheEnquiryYesCheckBox" mnemonicParsing="false" text="Ja" />
+                                          <CheckBox fx:id="isTheCitizenInAgreementWithTheEnquiryNoCheckBox" mnemonicParsing="false" text="Nej" />
                                        </children>
                                     </HBox>
                                  </children>
@@ -562,11 +557,11 @@
                                                 <Font name="Arial" size="13.0" />
                                              </font>
                                           </Label>
-                                          <CheckBox mnemonicParsing="false" text="Værgemål" />
-                                          <CheckBox mnemonicParsing="false" text="Værgemål med frataget retslig handleevne (§ 6)" />
-                                          <CheckBox mnemonicParsing="false" text="Samværgemål" />
-                                          <CheckBox mnemonicParsing="false" text="Værge [angiv kontaktoplysninger]" />
-                                          <TextArea disable="true" editable="false" prefHeight="109.0" prefWidth="417.0" />
+                                          <CheckBox fx:id="guardianshipCheckBox" mnemonicParsing="false" text="Værgemål" />
+                                          <CheckBox fx:id="guardianshipWithDeprivedLegalCapacityCheckBox" mnemonicParsing="false" text="Værgemål med frataget retslig handleevne (§ 6)" />
+                                          <CheckBox fx:id="curatorshipCheckBox" mnemonicParsing="false" text="Samværgemål" />
+                                          <CheckBox fx:id="guardianContactInformationCheckBox" mnemonicParsing="false" text="Værge [angiv kontaktoplysninger]" />
+                                          <TextArea fx:id="guardianContactInformationTextArea" disable="true" editable="false" prefHeight="109.0" prefWidth="417.0" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -584,11 +579,11 @@
                                                 <Font name="Arial" size="13.0" />
                                              </font>
                                           </Label>
-                                          <CheckBox mnemonicParsing="false" text="Bisidder" />
-                                          <CheckBox mnemonicParsing="false" text="Partsrepræsentant" />
-                                          <CheckBox mnemonicParsing="false" text="Samværgemål" />
-                                          <CheckBox mnemonicParsing="false" text="Fuldmagt - hvis ja, angiv hvad der er givet fuldmagt til:" />
-                                          <TextArea disable="true" editable="false" prefHeight="109.0" prefWidth="374.0" />
+                                          <CheckBox fx:id="companionCheckBox" mnemonicParsing="false" text="Bisidder" />
+                                          <CheckBox fx:id="representativeCheckBox" mnemonicParsing="false" text="Partsrepræsentant" />
+                                          <CheckBox fx:id="curatorship1CheckBox" mnemonicParsing="false" text="Samværgemål" />
+                                          <CheckBox fx:id="powerOfAttorneyCheckBox" mnemonicParsing="false" text="Fuldmagt - hvis ja, angiv hvad der er givet fuldmagt til:" />
+                                          <TextArea fx:id="powerOfAttorneyTextArea" disable="true" editable="false" prefHeight="109.0" prefWidth="374.0" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -607,12 +602,12 @@
                                  <children>
                                     <VBox prefHeight="427.0" prefWidth="509.0" spacing="8.0">
                                        <children>
-                                          <CheckBox mnemonicParsing="false" text="Er borgeren informeret om ret til bisidder og partsrepræsentant?" />
+                                          <CheckBox fx:id="isTheCitizenInformedAboutTheRightToACompanionAndARepresentativeCheckBox" mnemonicParsing="false" text="Er borgeren informeret om ret til bisidder og partsrepræsentant?" />
                                           <Label text="Er borgeren informeret om at oplysningerne vil blive registreret elektronisk?   " />
                                           <HBox prefHeight="26.0" prefWidth="518.0" spacing="8.0">
                                              <children>
-                                                <CheckBox mnemonicParsing="false" text="Ja" />
-                                                <CheckBox mnemonicParsing="false" text="Nej" />
+                                                <CheckBox fx:id="isTheCitizenInformedAboutTheInformationsWillGetRegistredElectronicallyYesCheckBox" mnemonicParsing="false" text="Ja" />
+                                                <CheckBox fx:id="isTheCitizenInformedAboutTheInformationsWillGetRegistredElectronicallyYesCheckBox" mnemonicParsing="false" text="Nej" />
                                              </children>
                                           </HBox>
                                           <Label text="Samtykke">
@@ -623,23 +618,23 @@
                                           <Label text="Er det relevant at indhente samtykke?" />
                                           <HBox prefHeight="26.0" prefWidth="518.0" spacing="8.0">
                                              <children>
-                                                <CheckBox mnemonicParsing="false" text="Ja" />
-                                                <CheckBox mnemonicParsing="false" text="Nej" />
+                                                <CheckBox fx:id="isItRelevantToCollectConsentYesCheckBox" mnemonicParsing="false" text="Ja" />
+                                                <CheckBox fx:id="isItRelevantToCollectConsentNoCheckBox" mnemonicParsing="false" text="Nej" />
                                              </children>
                                           </HBox>
                                           <Label text="Hvis ja, angiv hvordan samtykke er modtaget:   " />
-                                          <CheckBox mnemonicParsing="false" text="Mundtligt samtykke" />
-                                          <CheckBox mnemonicParsing="false" text="Skriftligt samtykke" />
+                                          <CheckBox fx:id="oralConsentCheckBox" mnemonicParsing="false" text="Mundtligt samtykke" />
+                                          <CheckBox fx:id="writtenConsentCheckBox" mnemonicParsing="false" text="Skriftligt samtykke" />
                                           <Label text="Indhentelse af oplysninger">
                                              <font>
                                                 <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                              </font>
                                           </Label>
                                           <Label text="Er der modtaget samtykke om indhentning af oplysninger fra:  " />
-                                          <CheckBox mnemonicParsing="false" text="Egen læge [angiv læge]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Speciallæge [angiv speciallæge]" />
-                                          <TextField disable="true" editable="false" />
+                                          <CheckBox fx:id="isTheReceivedConsentForObtainingInformationFromOwnDoctorCheckBox" mnemonicParsing="false" text="Egen læge [angiv læge]" />
+                                          <TextField fx:id="ownDoctorTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="specialistDoctorCheckBox" mnemonicParsing="false" text="Speciallæge [angiv speciallæge]" />
+                                          <TextField fx:id="specialistDoctorTextField" disable="true" editable="false" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -653,20 +648,20 @@
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                        </padding>
                                        <children>
-                                          <CheckBox mnemonicParsing="false" text="Hospital [angiv hospital]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="A-kasse [angiv a-kasse]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Tilbud [angiv konkret tilbudssted]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Arbejdsgiver [angiv arbejdsgiver]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Tidligere opholdskommune[angiv bopælskommune]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Andre forvaltninger [angiv hvilke]" />
-                                          <TextField disable="true" editable="false" />
-                                          <CheckBox mnemonicParsing="false" text="Andre:[angiv hvilke]" />
-                                          <TextField disable="true" editable="false" />
+                                          <CheckBox fx:id="hospitalCheckBox" mnemonicParsing="false" text="Hospital [angiv hospital]" />
+                                          <TextField fx:id="hospitalTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="unemploymentFundCheckBox" mnemonicParsing="false" text="A-kasse [angiv a-kasse]" />
+                                          <TextField fx:id="unemploymentFundTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="OfferCheckBox" mnemonicParsing="false" text="Tilbud [angiv konkret tilbudssted]" />
+                                          <TextField fx:id="offerTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="employerCheckBox" mnemonicParsing="false" text="Arbejdsgiver [angiv arbejdsgiver]" />
+                                          <TextField fx:id="employerTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="earlierDistrictOfResidenceCheckBox" mnemonicParsing="false" text="Tidligere opholdskommune[angiv bopælskommune]" />
+                                          <TextField fx:id="earlierDistrictOfResidenceTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="otherAdministrationCheckBox" mnemonicParsing="false" text="Andre forvaltninger [angiv hvilke]" />
+                                          <TextField fx:id="otherAdministrationTextField" disable="true" editable="false" />
+                                          <CheckBox fx:id="otherCheckBox" mnemonicParsing="false" text="Andre:[angiv hvilke]" />
+                                          <TextField fx:id="otherTextField" disable="true" editable="false" />
                                        </children>
                                     </VBox>
                                  </children>
@@ -681,7 +676,7 @@
                               <VBox prefHeight="425.0" prefWidth="1007.0" spacing="8.0">
                                  <children>
                                     <Label text="Hvilke aftaler er indgået med borgeren om det videre forløb" />
-                                    <TextArea prefHeight="200.0" prefWidth="979.0" />
+                                    <TextArea fx:id="whichAgreementsIsMadeWithTheCitizenAboutTheFurtherDevelopmentsOfTheCaseTextArea" prefHeight="200.0" prefWidth="979.0" />
                                  </children>
                                  <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -708,17 +703,17 @@
                                        </font>
                                     </Label>
                                     <Label text="Eventuelle særlige forhold der skal adresseres for at borgeren kan inddrages i sagsbehandlingen?" />
-                                    <TextArea prefHeight="81.0" prefWidth="980.0" />
+                                    <TextArea fx:id="anySpecialCircumstancesThatNeedToBeAddressedTextArea" prefHeight="81.0" prefWidth="980.0" />
                                     <Label text="Handle- og betalingskommune">
                                        <font>
                                           <Font name="Apple SD GothicNeo ExtraBold" size="13.0" />
                                        </font>
                                     </Label>
                                     <Label text="Angiv kun hvilken kommune,hvis det ikke er egenkommune." />
-                                    <CheckBox mnemonicParsing="false" text="Anden handlekommune [angiv hvilke]" />
-                                    <TextField disable="true" />
-                                    <CheckBox mnemonicParsing="false" text="Anden betalingskommune [angiv hvilke]" />
-                                    <TextField disable="true" />
+                                    <CheckBox fx:id="otherActingMunicipalityCheckBox" mnemonicParsing="false" text="Anden handlekommune [angiv hvilke]" />
+                                    <TextField fx:id="otherActingMunicipalityTextField" disable="true" />
+                                    <CheckBox fx:id="otherPayingMunicipalityCheckBox" mnemonicParsing="false" text="Anden betalingskommune [angiv hvilke]" />
+                                    <TextField fx:id="otherPayingMunicipalityTextField" disable="true" />
                                  </children>
                               </VBox>
                            </children>
