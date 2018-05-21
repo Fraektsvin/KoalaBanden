@@ -130,6 +130,7 @@ public class BusinessFacade implements IBusiness {
         return manager.getCurrentUsername();
     }
     
+    @Override
     public void setUser(String Username) {
         manager.setUser(Username);
     }
