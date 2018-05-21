@@ -27,7 +27,7 @@ public class SystemManager {
     private static final String SAGSBEHANDLER = "Sagsbehandler";
     private static final String BORGER = "Borger";
     private static final String VÆRGE = "Værge";
-    private static final String PARTSREPRÆSENTANT = "Partsrepæsentant";
+    private static final String PARTSREPRÆSENTANT = "Partsrepræsentant";
 
     public SystemManager() {
         accessLevels = new ArrayList();

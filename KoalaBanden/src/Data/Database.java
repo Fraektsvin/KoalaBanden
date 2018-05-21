@@ -126,12 +126,9 @@ public class Database {
             Class.forName("org.postgresql.Driver");
             Statement st = db.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM users");
-            ResultSetMetaData resultSetMetaData = rs.getMetaData();
-            int columnCount = resultSetMetaData.getColumnCount();
             while(rs.next()) {
                     userMap.put(userID, new User(rs));
                     userID++;
-            
             }   
             rs.close();
             st.close();

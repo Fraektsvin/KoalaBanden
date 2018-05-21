@@ -72,7 +72,7 @@ public class CreateuserController implements Initializable {
         
         if (!"".equals(username) && !"".equals(password) && !"".equals(email) && !"".equals(CPR) && !"".equals(accessLevel)) {
             // TODO: Parse access level from cobo box
-            isUserCreated = GUIFacade.createUser(username, password, email, CPR, AccessLevel.BORGER);
+            isUserCreated = GUIFacade.createUser(username, password, email, CPR, AccessLevel.valueOf(accessLevel.toUpperCase()));
         }
         else {
             statusLabel.setText("Status: Alle felter skal være udfyldt.");
