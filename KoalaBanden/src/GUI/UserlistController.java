@@ -95,20 +95,21 @@ public class UserlistController implements Initializable {
         this.updateUserList();
         statusLabel.setText("Status: " + username + " er slettet.");
         logger.info(username + " er blevet slettet");
+        GUIFacade.business.getUsers().remove(username);
     }
     
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
         // Stores the old username to temporarily set the logged in user to the selected user.
         String oldUsername = GUIFacade.business.getCurrentUsername();
+        // Makes sure that a user is selected in the listView or it would set the logged in user to null and cause and error.
+        if(!userListView.getSelectionModel().isEmpty()) {
         // Stores the original username in a string.
         String username = userListView.getSelectionModel().getSelectedItem();
         // Sets the user logged in to be the selected one in the userListView, so that we can edit the user info.
         GUIFacade.business.setUser(username);
-        if (username != null) {
             try {
                 logger.info(GUIFacade.business.getCurrentUsername() + "Bruger manager åbnet");
-                
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -121,15 +122,16 @@ public class UserlistController implements Initializable {
                     public void handle(WindowEvent we) {
                         GUIFacade.business.setUser(oldUsername);
                     }
+                    
                 });                
-                System.out.println(username);
             } catch (IOException io) {
                 io.printStackTrace();
             }
         } else {
-            statusLabel.setText("Status: Vælg en bruger.");
-        }
+          statusLabel.setText("Status: Vælg en bruger.");  
+        }       
         
+  
         this.updateUserList();
     }
     

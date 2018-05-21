@@ -44,6 +44,27 @@ public class Database {
            ex.printStackTrace();
         }
     }
+    // Deletes a user based on the username.
+    public void deleteUser(String userName) throws SQLException {
+        try {
+            // Iterates through the hashMap containing users to find the user with the specified username. 
+            for (int i = 0; i < userMap.size(); i++) {
+                if(userMap.get(i).getUsername().equals(userName)) {
+                    userMap.remove(i);
+                    System.out.println(userName + " removed");
+                }
+            }
+            // Removes the user from the database.
+            Class.forName("org.postgresql.Driver");
+            Statement st = db.createStatement();
+            st.execute("DELETE from users WHERE username = '" + userName + "'");
+            st.close();
+        } catch(PSQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
+    
     
     public Boolean userExists(String userName) throws SQLException {
         try {

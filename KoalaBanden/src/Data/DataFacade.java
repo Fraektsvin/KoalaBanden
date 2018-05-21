@@ -45,7 +45,15 @@ public class DataFacade implements IData {
         } catch(SQLException e) {
             e.printStackTrace();
         }
-      
+    }
+    
+    @Override
+    public void deleteUser(String userName) {
+        try {
+            database.deleteUser(userName);
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
     }
     
     @Override
@@ -65,11 +73,6 @@ public class DataFacade implements IData {
             e.printStackTrace();
         }
         return null;
-    }
-
-    @Override
-    public void deleteUser(String username) {
-        // userData.deleteUser(username);
     }
 
     @Override

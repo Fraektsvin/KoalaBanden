@@ -75,9 +75,6 @@ public class BusinessFacade implements IBusiness {
     public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel) {
         return manager.createUser(username, password, email, SSN, accessLevel);
     }
-    
-    
-    
 
     @Override
     public Collection getAccessLevels() {
