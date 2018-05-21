@@ -45,11 +45,7 @@ import javafx.stage.Stage;
     public static Collection getAccessLevels() {
         return business.getAccessLevels();
     }
-    
-    public static Map<String, IUser> getUsers() {
-        return business.getUsers();
-    }
-        
+            
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));

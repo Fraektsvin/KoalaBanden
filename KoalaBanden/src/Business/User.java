@@ -38,11 +38,11 @@ public class User implements Serializable, IUser {
 
     // Used to access database info. 
     public User(ResultSet rs) throws SQLException {
-        this.SSN = rs.getInt(1);
-        this.username = rs.getString(2);
-        this.password = rs.getString(3);
-        this.email = rs.getString(4);
-        int accessLevel = rs.getInt(5);
+        this.SSN = rs.getInt("CPR");
+        this.username = rs.getString("Username");
+        this.password = rs.getString("Password");
+        this.email = rs.getString("Email");
+        int accessLevel = rs.getInt("AccessLevel");
         this.accessLevel = AccessLevel.fromInt(accessLevel);
     }
 

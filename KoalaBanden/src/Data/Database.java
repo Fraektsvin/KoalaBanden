@@ -15,6 +15,7 @@ import java.sql.Statement;
 import java.sql.*;
 
 import Business.User;
+import java.util.HashMap;
 import org.postgresql.util.PSQLException;
 
 /**
@@ -27,6 +28,7 @@ public class Database {
     private String dbusername = "ntkoapef";
     private String dbpassword = "URBi5bIfDLXmwLn5Mfcs4b5NmS2jgRXg";
     private Connection db = DriverManager.getConnection(host, dbusername, dbpassword);
+    private HashMap<Integer, IUser> userMap = new HashMap();
     
     public Database() throws SQLException {
      
@@ -95,6 +97,31 @@ public class Database {
         }
         return user;
     }
+     // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
+        public HashMap getUsers() throws SQLException {
+        IUser user = null;
+        int userID = 0;
+        try {
+            Class.forName("org.postgresql.Driver");
+            Statement st = db.createStatement();
+            ResultSet rs = st.executeQuery("SELECT * FROM users");
+            ResultSetMetaData resultSetMetaData = rs.getMetaData();
+            int columnCount = resultSetMetaData.getColumnCount();
+            while(rs.next()) {
+                    userMap.put(userID, new User(rs));
+                    userID++;
+            
+            }   
+            rs.close();
+            st.close();
+            
+        } catch(PSQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        
+        return userMap;
+    }
+     
     // Takes userName to check the user we want to change password for. Takes password as the new password. 
     public void setPassword(String userName, String password) throws SQLException {
         try {

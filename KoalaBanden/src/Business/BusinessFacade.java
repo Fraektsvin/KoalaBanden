@@ -85,7 +85,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public Map<String, IUser> getUsers() {
+    public HashMap<Integer, User> getUsers() {
         return data.getUsers();
     }
 
@@ -131,6 +131,10 @@ public class BusinessFacade implements IBusiness {
     @Override
     public String getCurrentUsername() {
         return manager.getCurrentUsername();
+    }
+    
+    public void setUser(String Username) {
+        manager.setUser(Username);
     }
 }
 

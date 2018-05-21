@@ -23,6 +23,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.util.Calendar;
+import javafx.event.EventHandler;
+import javafx.stage.Modality;
+import javafx.stage.WindowEvent;
 
 /**
  * FXML Controller class
@@ -30,7 +33,7 @@ import java.util.Calendar;
  * @author trium
  */
 public class UserlistController implements Initializable {
-
+    
     @FXML
     private JFXButton returnButton;
     @FXML
@@ -49,11 +52,11 @@ public class UserlistController implements Initializable {
     private Label userlistDate;
     @FXML
     private Label userlistMonth;
-
+    
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     
     Calendar calendar = Calendar.getInstance();
-            
+
     /**
      * Initializes the controller class.
      */
@@ -63,18 +66,18 @@ public class UserlistController implements Initializable {
         this.updateUserList();
         System.out.println("Dags dato: " + calendar.get(Calendar.DATE));
     }    
-
+    
     @FXML
     private void handleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
         stage.close();
     }
-
+    
     @FXML
     private void handleCreateUserButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede lav bruger værktøjet");
-
+            
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createuser.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -84,7 +87,7 @@ public class UserlistController implements Initializable {
             io.printStackTrace();
         }
     }
-
+    
     @FXML
     private void handleDeleteUserButton(ActionEvent event) {
         String username = userListView.getSelectionModel().getSelectedItem();
@@ -93,26 +96,37 @@ public class UserlistController implements Initializable {
         statusLabel.setText("Status: " + username + " er slettet.");
         logger.info(username + " er blevet slettet");
     }
-
+    
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
+        // Stores the old username to temporarily set the logged in user to the selected user.
+        String oldUsername = GUIFacade.business.getCurrentUsername();
+        // Stores the original username in a string.
         String username = userListView.getSelectionModel().getSelectedItem();
-        GUIFacade.currentUsername = username;
-        
+        // Sets the user logged in to be the selected one in the userListView, so that we can edit the user info.
+        GUIFacade.business.setUser(username);
         if (username != null) {
             try {
                 logger.info(GUIFacade.business.getCurrentUsername() + "Bruger manager åbnet");
-
+                
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                // Makes sure that no other action can be done while edit user scene is open.
+                stage.initModality(Modality.APPLICATION_MODAL);
                 stage.show();
+                // Sets the user back to the real user logged in on scene close.
+                stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+                    public void handle(WindowEvent we) {
+                        GUIFacade.business.setUser(oldUsername);
+                    }
+                });                
+                System.out.println(username);
             } catch (IOException io) {
                 io.printStackTrace();
             }
-        }
-        else {
+        } else {
             statusLabel.setText("Status: Vælg en bruger.");
         }
         
@@ -120,14 +134,14 @@ public class UserlistController implements Initializable {
     }
     
     private void updateUserList() {
-        userListView.getItems().clear(); 
+        userListView.getItems().clear();        
         logger.info("Brugerliste opdateret");
-        Map<String, IUser> userMap = GUIFacade.getUsers();
-        for (Map.Entry<String, IUser> entry : userMap.entrySet()) {
-            userListView.getItems().add(entry.getKey());
+        for (int i = 0; i < GUIFacade.business.getUsers().size(); i++) {
+            userListView.getItems().add(GUIFacade.business.getUsers().get(i).getUsername());            
         }
+        
     }
-
+    
     @FXML
     private void handleUpdateListButton(ActionEvent event) {
         this.updateUserList();

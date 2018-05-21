@@ -360,3 +360,1617 @@ maj 18, 2018 11:56:54 AM GUI.MainSystemAdministratorController handleMyProfileBu
 INFO: Bruger manager åbnet
 maj 18, 2018 11:57:00 AM GUI.EditUserController handleEditUserButtonAction
 INFO: Brugerinformationer på Jonas er opdateret
+maj 20, 2018 1:52:00 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 1:52:06 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 1:52:07 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 1:52:09 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 2:04:42 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:04:48 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 2:04:50 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:04:53 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:04:53 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:15:42 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:15:49 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 2:15:50 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:15:52 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:15:52 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:15:59 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:15:59 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:16:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:16:00 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:20:34 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:20:41 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:20:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:20:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:20:55 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:20:56 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:00 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:06 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:21:06 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:10 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:21:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:13 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:21:13 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:21:16 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Jonas åbnede lav bruger værktøjet
+maj 20, 2018 2:21:22 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:22:30 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:22:41 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:22:43 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:22:43 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:23:20 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:23:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:23:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:23:21 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:23:26 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:25:41 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:25:48 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:25:49 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:25:49 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:26:34 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:26:40 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 2:26:44 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:26:46 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:26:46 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:26:54 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:28:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:29:02 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:29:03 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:29:03 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:30:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:30:19 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:30:20 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:30:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:23 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:33:29 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 2:33:30 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:33:32 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:33:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:53 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:53 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:54 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:54 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:33:56 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Jonas åbnede lav bruger værktøjet
+maj 20, 2018 2:34:17 PM GUI.CreateuserController handleCreateUserButtonAction
+WARNING: Fejl er opstået.
+maj 20, 2018 2:34:23 PM GUI.CreateuserController handleCreateUserButtonAction
+WARNING: Fejl er opstået.
+maj 20, 2018 2:34:44 PM GUI.CreateuserController handleCreateUserButtonAction
+INFO: John er oprettet som bruger under Systemadministrator
+maj 20, 2018 2:34:47 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:47 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:48 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:48 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:48 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:48 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:34:52 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:34:52 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:14 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:35:17 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:35:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:35:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:27 PM GUI.UserlistController handleDeleteUserButton
+INFO: Axel er blevet slettet
+maj 20, 2018 2:35:27 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:29 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:35:30 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:34 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:35:34 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:40 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:35:40 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:44 PM GUI.UserlistController handleDeleteUserButton
+INFO: Alex er blevet slettet
+maj 20, 2018 2:35:46 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:35:46 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:35:49 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:36:20 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:36:26 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:36:28 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:36:28 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:36:33 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:36:33 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:37:06 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:37:13 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:37:14 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:37:14 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:37:22 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:37:22 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:37:25 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:37:48 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:37:55 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:37:56 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:37:56 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:37:58 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:37:58 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:38:26 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:38:33 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:38:35 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:38:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:38:38 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:38:38 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:38:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:38:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:38:44 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:38:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:38:47 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:39:07 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:39:13 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:39:15 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:39:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:39:20 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:39:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:39:29 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:39:55 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:40:02 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:40:03 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:40:03 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:07 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:40:08 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:11 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:40:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:14 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:14 PM GUI.UserlistController handleDeleteUserButton
+INFO: Alex er blevet slettet
+maj 20, 2018 2:40:17 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:17 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:18 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:40:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:40:35 PM GUI.UserlistController handleDeleteUserButton
+INFO: Jonas er blevet slettet
+maj 20, 2018 2:40:44 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:40:47 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:40:49 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:41:20 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:41:26 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:41:28 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:41:28 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:42:26 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:42:34 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:42:35 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:42:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:42:42 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:42:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:42:45 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:42:45 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:42:49 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:43:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:43:16 PM GUI.LoginController actionLogin
+WARNING: Fejl i brugernavn og/eller password
+maj 20, 2018 2:43:17 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:43:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:43:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:43:34 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:44:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:44:58 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:45:00 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:45:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:45:02 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:45:02 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:45:06 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:46:39 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:46:45 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:46:47 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:46:47 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:46:51 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:46:51 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:46:55 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:46:55 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:47:28 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:47:34 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:47:36 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:47:36 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:47:40 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:47:40 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:47:44 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Jonas åbnede lav bruger værktøjet
+maj 20, 2018 2:47:50 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:47:51 PM GUI.UserlistController handleDeleteUserButton
+INFO: Axel er blevet slettet
+maj 20, 2018 2:48:05 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:48:06 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:48:53 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:49:00 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:49:01 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:49:01 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:49:15 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:49:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:49:18 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 2:49:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:49:21 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:49:44 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:49:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:49:58 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:49:58 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:50:01 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 2:50:01 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:50:03 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 2:50:40 PM GUI.CreateuserController handleCreateUserButtonAction
+WARNING: Fejl er opstået.
+maj 20, 2018 2:51:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:00 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:00 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:01 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 2:51:14 PM GUI.CreateuserController handleCreateUserButtonAction
+INFO: Jonas er oprettet som bruger under Systemadministrator
+maj 20, 2018 2:51:16 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:16 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:18 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 2:51:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:51:33 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 2:52:09 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:52:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:52:10 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 2:52:23 PM GUI.CreateuserController handleCreateUserButtonAction
+INFO: Bob er oprettet som bruger under Sagsbehandler
+maj 20, 2018 2:52:25 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:52:25 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 2:52:30 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 2:57:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 2:57:16 PM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som BORGER
+maj 20, 2018 2:57:20 PM GUI.MainUserController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 20, 2018 2:57:25 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 2:57:26 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 2:57:27 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:57:32 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 2:57:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 2:57:52 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 2:57:52 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:02:03 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:02:20 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:02:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:02:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:03:09 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:03:23 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:03:26 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:03:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:04:21 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:04:27 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:04:28 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:04:28 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:05:19 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:05:19 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:08:05 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:08:05 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:08:07 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:08:08 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:08:45 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:08:52 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:08:54 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:08:54 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:09:10 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:09:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:09:18 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:09:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:09:23 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 3:10:11 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:10:20 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:10:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:10:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:10:25 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:10:25 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:10:28 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 3:10:50 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:10:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:10:57 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:10:57 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:12:47 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:12:55 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:12:56 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:12:56 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:13:27 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:13:34 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:13:35 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:13:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:13:39 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:13:40 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:13:42 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 3:15:19 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:15:25 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:15:26 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:15:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:15:30 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:15:30 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:15:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:15:32 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:15:35 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:15:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:16:16 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:16:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:16:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:19 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:19 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:20 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:16:21 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:00 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:17:07 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:17:08 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:17:08 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:17:28 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:17:35 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:17:36 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:17:36 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:20:18 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:20:25 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:20:26 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:20:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:20:27 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:20:28 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:22:31 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:22:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:22:57 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:22:57 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:23:37 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:23:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:23:44 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:23:45 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:23:52 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:23:53 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:23:54 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:23:54 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:24:26 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:24:33 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:24:34 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:24:34 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:26:31 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:26:31 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:26:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:26:58 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:27:00 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:27:00 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:27:01 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:27:01 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:27:46 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:27:52 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:27:54 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:27:54 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:27:56 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:27:56 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:28:26 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:28:33 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:28:34 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:28:34 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:30:34 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:30:40 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:30:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:30:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:31:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:31:20 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:31:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:31:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:32:14 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:32:21 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:32:22 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:32:22 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:37:32 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:37:38 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:37:39 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:37:39 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:38:39 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:38:45 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:38:46 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:38:47 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:41:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:41:50 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:41:51 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:41:52 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:42:32 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:42:39 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:42:40 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:42:40 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:42:44 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:42:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:43:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:43:15 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:43:17 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:43:17 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:43:26 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 3:44:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:44:58 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:45:00 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 3:45:02 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:45:02 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:45:05 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 3:45:05 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:46:29 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:46:37 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:46:38 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:46:39 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:47:05 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:47:11 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:47:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:47:13 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:47:34 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:47:41 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:47:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:47:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:47:43 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:47:43 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:49:07 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:49:14 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:49:15 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:49:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:49:36 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:49:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:49:44 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:49:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:50:08 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:50:14 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:50:15 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:50:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:50:47 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:50:54 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:50:55 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:50:55 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:51:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:51:40 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:51:41 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:51:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:52:04 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:52:10 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:52:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:52:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:53:04 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:53:11 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:53:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:53:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:53:31 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:53:37 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:53:38 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:53:39 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:54:07 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:54:12 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:54:13 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:54:13 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:54:36 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:54:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:54:44 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:54:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:54:45 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:54:45 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:55:04 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:55:11 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:55:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:55:13 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:55:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:55:15 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 3:55:32 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:55:39 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:55:40 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:55:41 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:55:59 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:56:16 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:56:22 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:56:23 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:56:23 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 3:59:11 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 3:59:18 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 3:59:19 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 3:59:19 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:02:09 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:02:17 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:02:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:02:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:02:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:02:20 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:06:34 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:06:41 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:06:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:06:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:06:43 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:06:43 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:06:53 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 4:07:04 PM GUI.CreateuserController handleCreateUserButtonAction
+INFO: Jonas er oprettet som bruger under Systemadministrator
+maj 20, 2018 4:07:06 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:06 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:06 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:06 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:09 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:07:09 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:10 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:11 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:07:12 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:08:01 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:08:11 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:08:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:08:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:08:13 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:08:13 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:08:38 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:08:44 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:08:45 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:08:45 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:10:01 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:10:06 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:10:08 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:10:08 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:11:25 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:11:31 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:11:32 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:11:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:11:34 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:11:34 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 4:12:19 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:12:25 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:12:26 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:12:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:13:36 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:13:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:13:44 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:13:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:18:50 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:18:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:18:58 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:18:58 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:19:39 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:19:45 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:19:47 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:19:47 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:20:21 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:21:30 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:21:32 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:21:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:21:34 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 4:21:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:24:49 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:24:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:24:58 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:24:58 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:25:12 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 4:25:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:25:17 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:25:17 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:25:19 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 4:25:32 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:25:39 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:25:41 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:25:41 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:25:44 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 4:25:44 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:26:07 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:26:13 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:26:14 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:26:14 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 4:26:41 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 4:26:49 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 4:26:50 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 4:26:50 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:31:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:31:17 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:31:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:31:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:31:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:31:20 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 6:32:31 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:32:37 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:32:39 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 6:32:41 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:32:42 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:33:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:33:17 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:33:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:33:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:35:10 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:35:17 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:35:18 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:35:18 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:35:21 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 6:35:22 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:35:25 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 6:35:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:35:30 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:35:30 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:37:22 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:37:29 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:37:30 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 6:37:35 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:37:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:37:39 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 20, 2018 6:37:51 PM GUI.CreateuserController handleCreateUserButtonAction
+INFO: Bob er oprettet som bruger under Systemadministrator
+maj 20, 2018 6:37:53 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:37:53 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 6:37:55 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 6:37:56 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:38:00 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 6:48:21 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:48:27 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:48:29 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:48:29 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:48:34 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 6:48:34 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:11 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 6:58:18 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 6:58:20 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:58:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:22 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 6:58:22 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:27 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 6:58:29 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 6:58:29 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:32 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 6:58:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:35 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 6:58:36 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:39 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 6:58:39 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:43 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 6:58:43 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 6:58:47 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 6:58:49 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 20, 2018 6:59:54 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:00:01 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:00:02 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:00:02 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:06 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 7:00:07 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:09 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 7:00:12 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:00:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:15 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:00:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:22 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:22 PM GUI.UserlistController handleUpdateListButton
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:25 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 7:00:25 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:00:28 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret
+maj 20, 2018 7:00:47 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret
+maj 20, 2018 7:01:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:01:18 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:01:20 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:01:20 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:01:23 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 7:01:23 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:01:26 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret
+maj 20, 2018 7:01:43 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 7:01:46 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 20, 2018 7:04:49 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:04:56 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:04:58 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:04:58 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:06:16 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:06:23 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:06:24 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:06:24 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:06:26 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 7:06:26 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:06:32 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 7:06:34 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:06:35 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:06:37 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 7:06:37 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:06:40 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 20, 2018 7:12:18 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:12:25 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:12:27 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:13:26 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:13:33 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:13:34 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:14:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:14:20 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:14:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:26:13 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:26:20 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:26:21 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:26:21 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:26:24 PM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 20, 2018 7:26:25 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:26:28 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 7:26:28 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:26:32 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 20, 2018 7:26:32 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:26:35 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret
+maj 20, 2018 7:26:49 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret
+maj 20, 2018 7:26:56 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 20, 2018 7:27:38 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 20, 2018 7:27:45 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 20, 2018 7:27:46 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 20, 2018 7:27:46 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:27:48 PM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 20, 2018 7:27:49 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 20, 2018 7:27:52 PM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Jonas er opdateret
+maj 21, 2018 10:51:56 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 10:52:07 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som BORGER
+maj 21, 2018 10:52:09 AM GUI.MainUserController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 21, 2018 10:52:13 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 10:52:14 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 10:52:15 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:52:31 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 10:52:31 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:52:34 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 10:52:35 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:52:40 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 10:52:40 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:52:44 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 10:52:44 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:52:44 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:54:10 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 10:54:20 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 10:54:21 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 10:54:21 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:54:24 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 10:54:25 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:54:26 AM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassanåbnede log listen
+maj 21, 2018 10:54:31 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 21, 2018 10:54:35 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 21, 2018 10:55:18 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 10:55:18 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:55:23 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 10:55:23 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:55:48 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 21, 2018 10:56:03 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 10:56:05 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 10:56:05 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:56:07 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 10:56:07 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:56:10 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 21, 2018 10:56:40 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 10:56:40 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 10:56:55 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 21, 2018 11:01:41 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 11:01:48 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 11:01:49 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 11:01:49 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:01:53 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 11:01:53 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:08:41 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 11:08:48 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 11:08:49 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 11:08:49 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:08:52 AM GUI.UserlistController handleEditUserButtonAction
+INFO: JonasBruger manager åbnet
+maj 21, 2018 11:08:53 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:09:11 AM GUI.UserlistController handleEditUserButtonAction
+INFO: HassanBruger manager åbnet
+maj 21, 2018 11:09:11 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:13:56 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 11:14:03 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 11:14:05 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 11:14:05 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:14:08 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 11:14:08 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:14:52 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 21, 2018 11:14:58 AM GUI.LoginController actionLogin
+INFO: Jonas er logget ind som BORGER
+maj 21, 2018 11:15:01 AM GUI.MainUserController handleLogoutButtonAction
+INFO: JonasLogged ud
+maj 21, 2018 11:15:04 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 21, 2018 11:15:05 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 11:15:05 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:15:11 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 11:15:11 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:15:16 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 21, 2018 11:15:19 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 21, 2018 11:15:19 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:15:22 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 21, 2018 11:15:22 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 21, 2018 11:15:28 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Bob er opdateret

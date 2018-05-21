@@ -107,6 +107,10 @@ public class SystemManager {
         return null;
    
     }
+    // Sets the current logged in user for administrative purposes.
+    public void setUser(String Username) {
+        currentUser = BusinessFacade.data.getUser(Username);
+    }
 
     public ArrayList<User> getCase() {
         return Case;

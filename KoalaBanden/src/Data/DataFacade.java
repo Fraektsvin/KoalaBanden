@@ -11,6 +11,7 @@ import Acquaintance.IUser;
 import Business.User;
 
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -57,9 +58,13 @@ public class DataFacade implements IData {
     }
 
     @Override
-    public Map<String, IUser> getUsers() {
-       // return userData.getUserMap();
-       return null;
+    public HashMap getUsers() {
+        try {
+            return database.getUsers();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
@@ -86,7 +91,7 @@ public class DataFacade implements IData {
     }
         return null;
     }
-
+    
     @Override
     public void setPassword(String userName, String password) {
         try {

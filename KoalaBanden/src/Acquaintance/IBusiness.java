@@ -1,6 +1,8 @@
 package Acquaintance;
 
+import Business.User;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 public interface IBusiness {
@@ -9,7 +11,7 @@ public interface IBusiness {
 
     public Map<Integer, ICase> getCases();
     
-    public Map<String, IUser> getUsers();
+    public HashMap<Integer, User> getUsers();
 
     public ICaseworker getCaseworker();
 
@@ -32,4 +34,6 @@ public interface IBusiness {
       public IUser getUser(String userName);
     
     public String getCurrentUsername();
+    
+    public void setUser(String Username);
 }
