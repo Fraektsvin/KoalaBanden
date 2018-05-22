@@ -52,7 +52,6 @@ public class CreateuserController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    // Test push
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
