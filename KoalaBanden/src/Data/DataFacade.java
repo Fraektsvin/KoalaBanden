@@ -8,7 +8,9 @@ package Data;
 import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
-import java.sql.Connection;
+import Business.User;
+import java.sql.Date;
+
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,31 +46,43 @@ public class DataFacade implements IData {
         } catch(SQLException e) {
             e.printStackTrace();
         }
-      
     }
     
     @Override
-    public void saveCase(ICase c) {
-//        caseData.saveCase(c);
+    public void deleteUser(String userName) {
+        try {
+            database.deleteUser(userName);
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
     }
+    
+    @Override
+   public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException {
+       database.createCase(cpr, id, dateCreated, lastModified, lastModifiedBy);
+   }
 
     public Map<Integer, ICase> getCases() {
-        return caseData.getCaseMap();
+        try {
+            return database.getCases(); 
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+     return null;  
     }
 
     @Override
-    public Map<String, IUser> getUsers() {
-       // return userData.getUserMap();
-       return null;
+    public HashMap getUsers() {
+        try {
+            return database.getUsers();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
-    public void deleteUser(String username) {
-        // userData.deleteUser(username);
-    }
-
-    @Override
-    public String[] getUser(String userName, String password) {
+    public IUser getUser(String userName, String password) {
         try {
             return database.getUser(userName, password);
         } catch(SQLException e) {
@@ -76,5 +90,35 @@ public class DataFacade implements IData {
     }
         return null;
     }
+
+    @Override
+    public IUser getUser(String userName) {
+         try {
+            return database.getUser(userName);
+        } catch(SQLException e) {
+        e.printStackTrace();
+    }
+        return null;
+    }
+    
+    @Override
+    public void setPassword(String userName, String password) {
+        try {
+         database.setPassword(userName, password);  
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+       
+    }
+
+    @Override
+    public void setEmail(String userName, String email) {
+        try {
+         database.setEmail(userName, email);  
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
 
 }

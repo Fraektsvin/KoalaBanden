@@ -5,6 +5,8 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
+
 /**
  *
  * @author Jonas
@@ -14,7 +16,7 @@ public class Representative extends User {
     private String address; 
     private String caseInformation;
     
-    public Representative(String username, String password, String email, int SSN, int accessLevel) {
+    public Representative(String username, String password, String email, int SSN, AccessLevel accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
     

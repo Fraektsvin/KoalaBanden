@@ -5,8 +5,11 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
 import Acquaintance.ICaseworker;
 import Acquaintance.IData;
+import java.sql.Date;
+import java.sql.SQLException;
 
 /**
  *
@@ -19,15 +22,18 @@ public class Caseworker extends User implements ICaseworker {
     private int ID;
 
     // Constructor
-    public Caseworker(String username, String password, String email, int SSN, int accessLevel) {
+    public Caseworker(String username, String password, String email, int SSN, AccessLevel accessLevel) {
         super(username, password, email, SSN, accessLevel);
     }
 
     // Methods
     @Override
-    public void createCase(int citizenSSN) {
-        BusinessFacade.data.saveCase(new Case(citizenSSN));
-
+    public void createCase(int citizenSSN, int ID, Date dateCreated, Date lastModified, String lastModifiedBy) {
+        try {
+        BusinessFacade.data.createCase(ID, ID, dateCreated, lastModified, lastModifiedBy);
+        } catch(SQLException e) {
+            e.printStackTrace();
+    }
     }
 
     public void createCaseOpening() {

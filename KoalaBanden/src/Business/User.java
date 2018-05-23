@@ -5,8 +5,12 @@
  */
 package Business;
 
+import Acquaintance.AccessLevel;
+import Acquaintance.IBusiness;
 import Acquaintance.IUser;
 import java.io.Serializable;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -15,23 +19,33 @@ import java.io.Serializable;
 public class User implements Serializable, IUser {
     
     // Date field
-    
+
     private String username;
     private String password;
     private String email;
     private int SSN;
-    private int accessLevel;
+    private AccessLevel accessLevel;
     
     // Constructor
     
-    public User(String username, String password, String email, int SSN, int accessLevel){
+    public User(String username, String password, String email, int SSN, AccessLevel accessLevel){
         this.username = username;
         this.password = password;
         this.email = email;
         this.SSN = SSN;
         this.accessLevel = accessLevel;
     }
-    
+
+    // Used to access database info. 
+    public User(ResultSet rs) throws SQLException {
+        this.SSN = rs.getInt("CPR");
+        this.username = rs.getString("Username");
+        this.password = rs.getString("Password");
+        this.email = rs.getString("Email");
+        int accessLevel = rs.getInt("AccessLevel");
+        this.accessLevel = AccessLevel.fromInt(accessLevel);
+    }
+
     // Methods
 
     @Override
@@ -40,9 +54,16 @@ public class User implements Serializable, IUser {
     }
 
     @Override
-    public void setPassword(String password) {
+    public void setPassword(String userName, String password) {
         this.password = password;
-        BusinessFacade.data.createUser(this);
+        BusinessFacade.data.setPassword(userName, password);
+    }
+    
+     @Override
+    public void setEmail(String userName, String email) {
+        this.email = email;
+        BusinessFacade.data.setEmail(userName, email);
+        
     }
 
     @Override
@@ -51,21 +72,13 @@ public class User implements Serializable, IUser {
     }
 
     @Override
-    public void setEmail(String email) {
-        this.email = email;
-        BusinessFacade.data.createUser(this);
-    }
-
-    @Override
     public String getUsername() {
         return this.username;
     }
 
-    public int getAccessLevel() {
+    public AccessLevel getAccessLevel() {
         return accessLevel;
     }
-    
-    
 
     @Override
     public boolean checkPassword(String password) {
@@ -83,7 +96,7 @@ public class User implements Serializable, IUser {
 
     @Override
     public String getAccessLevelString() {
-        return SystemManager.getAccessLevelString(this.accessLevel);
+        return this.accessLevel.toString();
     }
 
     

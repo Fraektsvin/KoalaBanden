@@ -2,6 +2,7 @@ package Acquaintance;
 
 import Business.User;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 public interface IBusiness {
@@ -10,25 +11,29 @@ public interface IBusiness {
 
     public Map<Integer, ICase> getCases();
     
-    public Map<String, IUser> getUsers();
+    public HashMap<Integer, User> getUsers();
 
     public ICaseworker getCaseworker();
 
-    public void createCaseworker(String username, String password, String email, int SSN, int accesslevel);
+    public void createCaseworker(String username, String password, String email, int SSN, AccessLevel accesslevel);
 
     IData getData();
     
-    public int login(String userName, String password);
+    public IUser login(String userName, String password);
     
-    public boolean createUser(String username, String password, String email, String SSN, String accessLevel);
+    public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel);
     
     public Collection getAccessLevels();
     
     public void deleteUser(String username);
     
-    public int getCurrentAccessLevel();
+    public AccessLevel getCurrentAccessLevel();
     
-    public String[] getUser(String userName, String password);
+    public IUser getUser(String userName, String password);
+    
+      public IUser getUser(String userName);
     
     public String getCurrentUsername();
+    
+    public void setUser(String Username);
 }

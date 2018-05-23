@@ -12,4 +12,5 @@ package Acquaintance;
 public interface ICase {
 
 //    public int getID();
+    public int getSSN();
 }

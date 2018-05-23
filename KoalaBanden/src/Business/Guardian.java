@@ -1,6 +1,8 @@
 package Business;
 
 import java.util.ArrayList;
+
+import Acquaintance.AccessLevel;
 import Acquaintance.ICaseOpening;
 import Acquaintance.IUser;
 import Business.User;
@@ -14,7 +16,7 @@ public class Guardian extends User implements IUser {
     private String password;
     private String email;
     private int SSN;
-    private int accessLevel;
+    private AccessLevel accessLevel;
     private String firstName;
     private String lastName;
     private String DOB;
@@ -22,7 +24,7 @@ public class Guardian extends User implements IUser {
     private String PostalCode;
     private String guardianDescription;
 
-    public Guardian(String username, String password, String email, int SSN, int accessLevel) {
+    public Guardian(String username, String password, String email, int SSN, AccessLevel accessLevel) {
         super(username, password, email, SSN, accessLevel);
         this.username = username;
         this.password = password;

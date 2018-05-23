@@ -5,11 +5,13 @@
  */
 package Acquaintance;
 
+import java.sql.Date;
+
 /**
  *
  * @author Jonas
  */
 public interface ICaseworker {
 
-    public void createCase(int citizenSSN);
+    public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy);
 }

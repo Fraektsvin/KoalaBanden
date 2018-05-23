@@ -51,14 +51,8 @@ public class EditUserController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        String username = GUIFacade.currentUsername;
-        usernameTextField.setText(GUIFacade.business.getUser(username, password)[1]);
-        passwordTextField.setText(user.getPassword());
-        emailTextField.setText(user.getEmail());
-        String CPR = user.getCPR() + "";
-        CPRTextField1.setText(CPR.substring(0, 7));
-        CPRTextField2.setText(CPR.substring(7));
-        accessLevelTextField.setText(user.getAccessLevelString());
+        user = GUIFacade.business.getUser(GUIFacade.business.getCurrentUsername());
+        fillEditProfile();
         
     }    
 
@@ -67,8 +61,8 @@ public class EditUserController implements Initializable {
         String password = passwordTextField.getText();
         String email = emailTextField.getText();
         if (!"".equals(password) && !"".equals(email)) {
-            user.setPassword(password);
-            user.setEmail(email);
+            user.setPassword(GUIFacade.business.getCurrentUsername(), password);
+            user.setEmail(GUIFacade.business.getCurrentUsername(), email);
             statusLabel.setText("Status: Brugerinformationer er opdateret.");
             logger.info("Brugerinformationer på " + user.getUsername() + " er opdateret");
         }
@@ -76,6 +70,18 @@ public class EditUserController implements Initializable {
             statusLabel.setText("Status: Alle felter skal udfyldes.");
             
         }
+    }
+    @FXML
+    private void fillEditProfile() {
+        // Fylder edit user scenen ud med info. 
+        usernameTextField.setText(GUIFacade.business.getCurrentUsername());
+        passwordTextField.setText(user.getPassword());
+        emailTextField.setText(user.getEmail());
+        String CPR = user.getCPR() + "";
+        CPRTextField1.setText(CPR.substring(0, 6));
+        CPRTextField2.setText(CPR.substring(6, 10));
+        accessLevelTextField.setText(user.getAccessLevelString());
+        
     }
     
 }

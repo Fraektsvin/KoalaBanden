@@ -5,19 +5,15 @@
  */
 package Business;
 
-import Acquaintance.IBusiness;
-import Acquaintance.ICase;
-import Acquaintance.ICaseworker;
-import Acquaintance.IData;
-import Acquaintance.IUser;
+import Acquaintance.*;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
-import Acquaintance.ICaseOpening;
-import Business.Citizen;
+
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
-import java.util.Date;
+
 import java.util.HashMap;
 
 /**
@@ -54,7 +50,7 @@ public class BusinessFacade implements IBusiness {
         return worker;
     }
     
-    public void createCaseworker(String username, String password, String email, int SSN, int accesslevel ) {
+    public void createCaseworker(String username, String password, String email, int SSN, AccessLevel accesslevel ) {
         //manager.createCaseworker(username, password, email, SSN, accesslevel);
         this.worker = new Caseworker(username, password, email, SSN, accesslevel);
     }
@@ -70,12 +66,13 @@ public class BusinessFacade implements IBusiness {
         return this.data;
     }
     
-    public int login(String userName, String password) {
+    @Override
+    public IUser login(String userName, String password) {
         return manager.login(userName, password);
     }
 
     @Override
-    public boolean createUser(String username, String password, String email, String SSN, String accessLevel) {
+    public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel) {
         return manager.createUser(username, password, email, SSN, accessLevel);
     }
 
@@ -85,7 +82,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public Map<String, IUser> getUsers() {
+    public HashMap<Integer, User> getUsers() {
         return data.getUsers();
     }
 
@@ -95,14 +92,20 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public int getCurrentAccessLevel() {
+    public AccessLevel getCurrentAccessLevel() {
         return manager.getCurrentAccessLevel();
     }
 
     @Override
-    public String[] getUser(String userName, String password) {
+    public IUser getUser(String userName, String password) {
         return data.getUser(userName, password);
     }
+    
+     @Override
+    public IUser getUser(String userName) {
+        return data.getUser(userName);
+    }
+    
      public ArrayList<Guardian>GetGuardian() {
         return CaseOpening.GetGuardian();
     }
@@ -126,5 +129,12 @@ public class BusinessFacade implements IBusiness {
     public String getCurrentUsername() {
         return manager.getCurrentUsername();
     }
+    
+    @Override
+    public void setUser(String Username) {
+        manager.setUser(Username);
+    }
 }
+
+  
 
