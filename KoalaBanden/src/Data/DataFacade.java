@@ -9,6 +9,7 @@ import Acquaintance.ICase;
 import Acquaintance.IData;
 import Acquaintance.IUser;
 import Business.User;
+import java.sql.Date;
 
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -57,12 +58,17 @@ public class DataFacade implements IData {
     }
     
     @Override
-    public void saveCase(ICase c) {
-//        caseData.saveCase(c);
-    }
+   public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException {
+       database.createCase(cpr, id, dateCreated, lastModified, lastModifiedBy);
+   }
 
     public Map<Integer, ICase> getCases() {
-        return caseData.getCaseMap();
+        try {
+            return database.getCases(); 
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+     return null;  
     }
 
     @Override

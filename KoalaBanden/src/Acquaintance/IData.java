@@ -6,6 +6,8 @@
 package Acquaintance;
 
 
+import java.sql.Date;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +22,7 @@ public interface IData {
     public void createUser(IUser user);
     public IUser getUser(String userName, String password);
     public IUser getUser(String userName);
-    public void saveCase(ICase c);
+    public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException;
     public Map<Integer, ICase> getCases();
     public HashMap getUsers();
     public void deleteUser(String username);

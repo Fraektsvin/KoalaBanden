@@ -2686,3 +2686,229 @@ maj 21, 2018 1:48:01 PM GUI.UserlistController updateUserList
 INFO: Brugerliste opdateret
 maj 21, 2018 1:48:01 PM GUI.UserlistController handleUpdateListButton
 INFO: Brugerliste opdateret
+maj 22, 2018 12:16:38 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 12:16:49 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 12:16:53 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 12:17:13 PM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Axel åbnet sin egen profil
+maj 22, 2018 12:17:16 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AxelLogged ud
+maj 22, 2018 12:29:51 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 12:29:57 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 12:31:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 12:31:19 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 12:31:20 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 12:32:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 12:32:18 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 12:32:20 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:18:21 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:18:29 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:18:30 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:20:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:20:59 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:21:00 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:21:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:21:42 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:21:43 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:26:47 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:26:56 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:26:57 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:30:23 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:30:31 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:30:32 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:30:55 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:33:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:34:10 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:34:11 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:34:22 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AxelLogged ud
+maj 22, 2018 2:35:45 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:35:51 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:35:53 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 2:36:53 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:37:00 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:43:47 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 2:43:58 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 2:44:01 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 3:47:31 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 3:47:38 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 3:55:29 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 3:55:37 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 3:56:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 3:56:58 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 3:58:36 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 3:58:43 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 3:59:03 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 3:59:06 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:09 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:09 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:10 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:12 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 3:59:14 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:14 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:19 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:19 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:20 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:20 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:20 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:20 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 3:59:21 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AxelLogged ud
+maj 22, 2018 4:01:24 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 4:01:30 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 4:01:32 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:01:32 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:01:33 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:01:33 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:01:46 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 4:01:54 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 4:01:57 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:14 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 4:02:20 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 4:02:22 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:22 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:25 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:25 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:37 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 4:02:41 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:41 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:02:41 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:17 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 4:03:25 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 4:03:26 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:26 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:26 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:58 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:58 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:58 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:59 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:59 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:03:59 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:04:05 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:04:05 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:04:05 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:04:08 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AxelLogged ud
+maj 22, 2018 4:07:15 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 22, 2018 4:07:21 PM GUI.LoginController actionLogin
+INFO: Axel er logget ind som SAGSBEHANDLER
+maj 22, 2018 4:07:23 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:23 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:23 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:25 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Axel
+maj 22, 2018 4:07:34 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:34 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:34 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:34 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:36 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:36 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:36 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:36 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 22, 2018 4:07:44 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: AxelLogged ud

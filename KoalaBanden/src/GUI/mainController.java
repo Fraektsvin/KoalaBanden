@@ -10,6 +10,7 @@ import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -113,8 +114,7 @@ public class mainController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, AccessLevel.SYSTEMADMINISTRATOR);
-        GUIFacade.business.getCaseworker().createCase(12);
+        
         try {
              logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");
 

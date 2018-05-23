@@ -10,6 +10,9 @@ import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Date;
+import java.time.ZonedDateTime;
+import java.util.Calendar;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
@@ -64,8 +67,8 @@ public class MainCaseWorkerController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.createCaseworker("abc", "abc", "abc", 0, AccessLevel.SYSTEMADMINISTRATOR);
-        GUIFacade.business.getCaseworker().createCase(12);
+        GUIFacade.business.createCaseworker("Test", "Test", "Test", 0, AccessLevel.SAGSBEHANDLER);
+        GUIFacade.business.getCaseworker().createCase(0, 0, new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
         try {
             logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
@@ -82,9 +85,9 @@ public class MainCaseWorkerController implements Initializable {
     private void seeCases(ActionEvent event) {
         // Resets the list containing items everytime method is called.
         sagerListe.getItems().clear();
-        // Adds every case ID from the case hashMap file to file sagerListe list. 
-        for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
-            sagerListe.getItems().add("Sag: " + i);
+        // Adds every case ID from the case hashMap to sagerListe list. 
+        for (int i = 0; i < GUIFacade.business.getCases().size(); i++) {
+            sagerListe.getItems().add("Sag: " + GUIFacade.business.getCases().get(i).getSSN());
             logger.info("Se sager åbnet");
         }
     }

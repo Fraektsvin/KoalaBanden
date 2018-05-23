@@ -7,6 +7,8 @@ package Business;
 
 import Acquaintance.ICase;
 import java.io.Serializable;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 /**
@@ -25,6 +27,13 @@ public class Case implements Serializable, ICase {
     // Constructor
     public Case(int citizenSSN) {
         this.citizenSSN = citizenSSN;
+    }
+    
+    public Case(ResultSet rs) throws SQLException {
+        this.citizenSSN = rs.getInt("citizencpr");
+        this.dateCreated = rs.getDate("datecreated");
+        this.lastModified = rs.getDate("lastmodified");
+        this.lastModifiedBy = rs.getString("lastmodifiedby");
     }
 
     // Methods
