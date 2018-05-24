@@ -11,8 +11,6 @@ import Acquaintance.IData;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.util.HashMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -33,10 +31,10 @@ public class Caseworker extends User implements ICaseworker {
     @Override
     public void createCase(int citizenSSN, int ID, Date dateCreated, Date lastModified, String lastModifiedBy) {
         try {
-        BusinessFacade.data.createCase(ID, ID, dateCreated, lastModified, lastModifiedBy);
-        } catch(SQLException e) {
+            BusinessFacade.data.createCase(ID, ID, dateCreated, lastModified, lastModifiedBy);
+        } catch (SQLException e) {
             e.printStackTrace();
-    }
+        }
     }
 
     public void createCaseOpening() {
@@ -51,7 +49,7 @@ public class Caseworker extends User implements ICaseworker {
         String caseInformation = null;
         return caseInformation;
     }
-    
+
     public void registerEnquiry(int id, String source, Date date, String description, int citizencpr) {
         try {
             BusinessFacade.data.createEnquiry(id, source, date, description, citizencpr);
@@ -59,17 +57,17 @@ public class Caseworker extends User implements ICaseworker {
             ex.printStackTrace();
         }
     }
-    
+
     public HashMap getEnquiries() throws SQLException {
         return BusinessFacade.data.getEnquiries();
     }
-    
+
     public HashMap getCitizens() throws SQLException {
         return BusinessFacade.data.getCitizens();
     }
-    
+
     public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException {
         BusinessFacade.data.createCitizen(cpr, address, email, phoneNumber, firstname, lastname);
     }
-    
+
 }

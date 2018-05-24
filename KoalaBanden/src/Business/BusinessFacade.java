@@ -106,13 +106,13 @@ public class BusinessFacade implements IBusiness {
         return data.getUser(userName);
     }
     
-     public ArrayList<Guardian>GetGuardian() {
-        return CaseOpening.GetGuardian();
-    }
-    
-    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
-    return CaseOpening.AddGuardian(guardian);
-}
+//    public ArrayList<Guardian> GetGuardian() {
+//        return CaseOpening.GetGuardian();
+//    }
+//
+//    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
+//        return CaseOpening.AddGuardian(guardian);
+//    }
     
     public HashMap getCPRSMAP() {
         return CaseOpening.getCPRSMAP();

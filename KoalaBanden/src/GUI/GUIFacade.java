@@ -116,9 +116,9 @@ import javafx.stage.Stage;
     }
     
     public void showEnquiryScene() throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("Henvendelse.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
+         Parent root = FXMLLoader.load(getClass().getResource("Enquiry.fxml"));
+        stage.setWidth(810);
+        stage.setHeight(715);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }

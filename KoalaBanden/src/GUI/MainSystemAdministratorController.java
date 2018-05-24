@@ -17,8 +17,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -42,15 +40,16 @@ public class MainSystemAdministratorController implements Initializable {
 
     private Parent root;
     private Scene scene;
-    
+
     private static final Logger logger = Logger.getLogger(LoggerStart.class.getName());
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void handleUserButtonAction(ActionEvent event) {
@@ -65,21 +64,20 @@ public class MainSystemAdministratorController implements Initializable {
             io.printStackTrace();
         }
     }
-        
-    
+
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
             logger.info("Bruger manager åbnet");
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
-                Parent root = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.show();
-            } catch (IOException io) {
-                io.printStackTrace();
-            }
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
     }
 
     @FXML
@@ -88,20 +86,20 @@ public class MainSystemAdministratorController implements Initializable {
             logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
-            Stage stage = (Stage)scene.getWindow();
+            Stage stage = (Stage) scene.getWindow();
             stage.setWidth(494);
             stage.setHeight(472);
             stage.centerOnScreen();
             scene.setRoot(root);
             scene.getRoot().requestFocus();
-            }
-            catch (IOException ex) {
-                ex.printStackTrace();
-            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
+
     @FXML
     private void handleLogButtonAction(ActionEvent event) {
-         try {
+        try {
             logger.info(GUIFacade.business.getCurrentUsername() + "åbnede log listen");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("log.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
@@ -111,8 +109,7 @@ public class MainSystemAdministratorController implements Initializable {
         } catch (IOException io) {
             io.printStackTrace();
         }
-    
+
     }
 
-    
 }

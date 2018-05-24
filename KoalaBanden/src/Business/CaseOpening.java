@@ -5,13 +5,10 @@
  */
 package Business;
 
-import Acquaintance.AccessLevel;
 import Acquaintance.ICaseOpening;
 import Acquaintance.IUser;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -42,53 +39,44 @@ public class CaseOpening implements ICaseOpening {
         this.phoneNumber = phoneNumber;
         this.CitizenDescription = username + Address + Firstname + Lastname + Nationality + phoneNumber;
     }
-    
-  //  public CaseOpening(ResultSet rs) {
-          
-  //  }
 
+    //  public CaseOpening(ResultSet rs) {
+    //  }
     public String getCitizenDescription() {
         return CitizenDescription;
     }
 
     // private ArrayList<Guardian> guardianList;
-    public ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
-
-    public Guardian newGuardian = new Guardian("31313", "12113", "12313", 3, AccessLevel.SAGSBEHANDLER);
-    public ArrayList<Enquiry> EnquiryList = new ArrayList<Enquiry>();
-    public final HashMap<Integer, String> CPRS = new HashMap<>();
-    
-   
-
-    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
-            guardianlist.add(guardian);
-        
-        return guardianlist;
-    }
-    public ArrayList<Guardian>GetGuardian() {
-        return guardianlist;
-    }
-
+//    public ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
+//    public Guardian newGuardian = new Guardian("31313", "12113", "12313", 3, AccessLevel.SAGSBEHANDLER);
+//    public ArrayList<Enquiry> EnquiryList = new ArrayList<Enquiry>();
+//    public final HashMap<Integer, String> CPRS = new HashMap<>();
+//    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
+//            guardianlist.add(guardian);
+//        
+//        return guardianlist;
+//    }
+//    public ArrayList<Guardian>GetGuardian() {
+//        return guardianlist;
+//    }
     public void saveCPR(Citizen citizen) {
-      //  int CPR = citizen.;
-      //  CPRS.put(CPR, CitizenDescription);
+        //  int CPR = citizen.;
+        //  CPRS.put(CPR, CitizenDescription);
         //for(int i=0; i < CPRS.size(); i++) {
         //if(!CPRSget(getCitizenDescription().equals(Citizen)) {
 
     }
 
-    public HashMap getCPRSMAP() {
-        return CPRS;
-    }
-
-    @Override
-    public void createEnquiry() {
-        if (EN.getDescription() != null) {
-            EnquiryList.add(EN);
-        }
-    }
-      private void addService() {
-          
+//    public HashMap getCPRSMAP() {
+//        return CPRS;
+//    }
+//    @Override
+//    public void createEnquiry() {
+//        if (EN.getDescription() != null) {
+//            EnquiryList.add(EN);
+//        }
+//    }
+    private void addService() {
 
     }
 
@@ -96,5 +84,14 @@ public class CaseOpening implements ICaseOpening {
 
     }
 
+    @Override
+    public void createEnquiry() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public HashMap getCPRSMAP() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

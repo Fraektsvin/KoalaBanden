@@ -7,17 +7,17 @@ package Acquaintance;
 
 import Business.Citizen;
 import Business.Enquiry;
-import Business.Guardian;
+//import Business.Guardian;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public interface ICaseOpening {
 
-    public ArrayList<Guardian> AddGuardian(Guardian guardian);
+//    public ArrayList<Guardian> AddGuardian(Guardian guardian);
 
     public void createEnquiry();
 
-    public ArrayList<Guardian> GetGuardian();
+//    public ArrayList<Guardian> GetGuardian();
 
     public void saveCPR(Citizen citizen);
     public HashMap getCPRSMAP();

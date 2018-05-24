@@ -3428,3 +3428,163 @@ maj 24, 2018 5:22:54 PM GUI.LoginController actionLogin
 INFO: Bob er logget ind som SAGSBEHANDLER
 maj 24, 2018 5:22:55 PM GUI.MainCaseWorkerController createEnquiry
 INFO: Bob oprettede henvendelse
+maj 24, 2018 10:17:07 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:17:13 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:17:16 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 24, 2018 10:17:16 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:17:27 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BrianBruger manager åbnet
+maj 24, 2018 10:17:27 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:17:33 PM GUI.UserlistController handleEditUserButtonAction
+INFO: BobBruger manager åbnet
+maj 24, 2018 10:17:33 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:18:22 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 24, 2018 10:18:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:18:38 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:33:22 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:33:27 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:33:29 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 24, 2018 10:33:35 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:33:37 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 24, 2018 10:33:37 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:33:43 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
+maj 24, 2018 10:33:49 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:33:54 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob oprettede henvendelse
+maj 24, 2018 10:34:12 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:34:17 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:34:22 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 10:35:56 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 24, 2018 10:36:03 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 24, 2018 10:40:47 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:40:52 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:40:56 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob oprettede henvendelse
+maj 24, 2018 10:41:30 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:41:35 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:41:37 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob oprettede henvendelse
+maj 24, 2018 10:42:52 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:43:10 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:43:12 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 10:43:23 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 24, 2018 10:43:28 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:43:30 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 24, 2018 10:43:30 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:51:46 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:51:51 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:51:53 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob oprettede henvendelse
+maj 24, 2018 10:52:53 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:53:01 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 24, 2018 10:53:05 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 24, 2018 10:53:05 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:58:54 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 10:58:59 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 10:59:02 PM GUI.MainCaseWorkerController createEnquiry
+INFO: ny henvendelse åbnet
+maj 24, 2018 10:59:02 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 10:59:14 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 24, 2018 11:04:59 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:05:02 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:05:05 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bobåbnede en ny henvendelse
+maj 24, 2018 11:05:05 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 11:05:11 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bobåbnede en ny henvendelse
+maj 24, 2018 11:05:12 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 24, 2018 11:05:51 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:05:54 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:05:57 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bobåbnede en ny henvendelse
+maj 24, 2018 11:06:02 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bobåbnede en ny henvendelse
+maj 24, 2018 11:06:08 PM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny henvendelse
+maj 24, 2018 11:06:08 PM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny borger
+maj 24, 2018 11:06:55 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:06:59 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:07:00 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 11:07:09 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 24, 2018 11:07:52 PM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny henvendelse
+maj 24, 2018 11:07:52 PM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny borger
+maj 24, 2018 11:08:21 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 24, 2018 11:08:33 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:08:37 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:08:40 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 24, 2018 11:08:52 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 11:14:13 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:14:19 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:14:21 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 11:14:50 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 24, 2018 11:14:54 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 24, 2018 11:14:55 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 24, 2018 11:15:01 PM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud

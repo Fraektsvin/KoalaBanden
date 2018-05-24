@@ -5,37 +5,28 @@
  */
 package GUI;
 
-
-import Business.Guardian;
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.VBox;
-import Acquaintance.*;
 import Business.LoggerStart;
+import com.jfoenix.controls.JFXButton;
 import java.util.ArrayList;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
+import javafx.stage.Stage;
 
 public class caseOpeningController implements Initializable {
-private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
-   
 
+//    private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
     private JFXComboBox text;
-    
+
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     @FXML
     private Tab generalTab;
@@ -317,21 +308,22 @@ private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();
     private CheckBox otherPayingMunicipalityCheckBox;
     @FXML
     private TextField otherPayingMunicipalityTextField;
-    
+    @FXML
+    private JFXButton returnButton;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-       
+
     }
-   public void addGuardian(ActionEvent event) throws IOException {
-        text.getItems().addAll(guardianlist);
-        logger.info("Tilføjet som guardian");
 
-
-}}
-    
-           
-    
-             
-     
-
-  
+//    public void addGuardian(ActionEvent event) throws IOException {
+//        text.getItems().addAll(guardianlist);
+//        logger.info("Tilføjet som guardian");
+//
+//    }
+    @FXML
+    private void handleReturnButtonAction(ActionEvent event) {
+        Stage stage = (Stage) returnButton.getScene().getWindow();
+        stage.close();
+    }
+}

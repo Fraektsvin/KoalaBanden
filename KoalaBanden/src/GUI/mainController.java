@@ -10,7 +10,6 @@ import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -45,7 +44,7 @@ public class mainController implements Initializable {
     private ListView<String> sagerListe;
     @FXML
     private JFXButton logoutButton;
-    
+
     private Parent root;
     private Scene scene;
     @FXML
@@ -58,7 +57,7 @@ public class mainController implements Initializable {
     private JFXButton enquiryButton;
     @FXML
     private JFXButton administratorButton;
-    
+
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     private void handleButtonAction(MouseEvent event) {
@@ -114,9 +113,9 @@ public class mainController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        
+
         try {
-             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");
+            logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");
 
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
@@ -160,16 +159,15 @@ public class mainController implements Initializable {
 
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
-            Stage stage = (Stage)scene.getWindow();
+            Stage stage = (Stage) scene.getWindow();
             stage.setWidth(494);
             stage.setHeight(472);
             stage.centerOnScreen();
             scene.setRoot(root);
             scene.getRoot().requestFocus();
-            }
-            catch (IOException ex) {
-                ex.printStackTrace();
-            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @FXML

@@ -37,9 +37,7 @@ public class Citizen implements ICitizen {
         this.lastname = rs.getString("lastname");
     }
 
-    
     // Methods
-    
     public int getCpr() {
         return cpr;
     }
