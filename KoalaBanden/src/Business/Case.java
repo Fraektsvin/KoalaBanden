@@ -23,6 +23,7 @@ public class Case implements Serializable, ICase {
     private Date lastModified;
     private String lastModifiedBy;
     private int citizenSSN;
+    private int ID;
 
     // Constructor
     public Case(int citizenSSN) {
@@ -34,6 +35,7 @@ public class Case implements Serializable, ICase {
         this.dateCreated = rs.getDate("datecreated");
         this.lastModified = rs.getDate("lastmodified");
         this.lastModifiedBy = rs.getString("lastmodifiedby");
+        this.ID = rs.getInt("ID");
     }
 
     // Methods
@@ -45,13 +47,13 @@ public class Case implements Serializable, ICase {
         this.citizenSSN = citizenSSN;
     }
 
-//    public int getID() {
-//        return ID;
-//    }
-//
-//    public void setID(int ID) {
-//        this.ID = ID;
-//    }
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
     public Date getDateCreated() {
         return dateCreated;

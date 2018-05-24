@@ -74,7 +74,7 @@
                   <Insets left="50.0" />
                </padding>
             </JFXButton>
-            <JFXButton fx:id="enquiryButton" alignment="BASELINE_LEFT" prefHeight="57.0" prefWidth="268.0" text="Henvendelser">
+            <JFXButton fx:id="enquiryButton" alignment="BASELINE_LEFT" onAction="#createEnquiry" prefHeight="57.0" prefWidth="268.0" text="Opret henvendelse">
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                      <image>

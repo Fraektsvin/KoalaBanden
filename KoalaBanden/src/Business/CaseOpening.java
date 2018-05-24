@@ -8,6 +8,7 @@ package Business;
 import Acquaintance.AccessLevel;
 import Acquaintance.ICaseOpening;
 import Acquaintance.IUser;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
@@ -41,6 +42,10 @@ public class CaseOpening implements ICaseOpening {
         this.phoneNumber = phoneNumber;
         this.CitizenDescription = username + Address + Firstname + Lastname + Nationality + phoneNumber;
     }
+    
+  //  public CaseOpening(ResultSet rs) {
+          
+  //  }
 
     public String getCitizenDescription() {
         return CitizenDescription;
@@ -65,8 +70,8 @@ public class CaseOpening implements ICaseOpening {
     }
 
     public void saveCPR(Citizen citizen) {
-        int CPR = citizen.getSSN();
-        CPRS.put(CPR, CitizenDescription);
+      //  int CPR = citizen.;
+      //  CPRS.put(CPR, CitizenDescription);
         //for(int i=0; i < CPRS.size(); i++) {
         //if(!CPRSget(getCitizenDescription().equals(Citizen)) {
 

@@ -61,7 +61,7 @@ public class SystemManager implements IUser {
                     BusinessFacade.data.createUser(new Caseworker(username, password, email, CPR, accessLevel));
                     return true;
                 case BORGER:
-                    BusinessFacade.data.createUser(new Citizen(username, password, email, CPR, accessLevel));
+                    BusinessFacade.data.createUser(new User(username, password, email, CPR, accessLevel));
                     return true;
                 case VÆRGE:
                     BusinessFacade.data.createUser(new Guardian(username, password, email, CPR, accessLevel));

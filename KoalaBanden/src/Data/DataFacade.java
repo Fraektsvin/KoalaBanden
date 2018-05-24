@@ -10,6 +10,7 @@ import Acquaintance.IData;
 import Acquaintance.IUser;
 import Business.User;
 import java.sql.Date;
+import java.sql.ResultSet;
 
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -90,7 +91,7 @@ public class DataFacade implements IData {
     }
         return null;
     }
-
+    
     @Override
     public IUser getUser(String userName) {
          try {
@@ -120,5 +121,21 @@ public class DataFacade implements IData {
         }
     }
     
+    public HashMap getEnquiries() throws SQLException { 
+        return database.getEnquiries();
+    }
+    
+    public HashMap getCitizens() throws SQLException {
+        return database.getCitizens();
+    }
+    
+    public void createEnquiry(int id, String source, Date date, String description, int citizencpr) throws SQLException {
+        database.createEnquiry(id, source, date, description, citizencpr);
+    }
+    
+     public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException {
+         database.createCitizen(cpr, address, email, phoneNumber, firstname, lastname);
+     }
+     
 
 }

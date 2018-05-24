@@ -67,8 +67,7 @@ public class MainCaseWorkerController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.createCaseworker("Test", "Test", "Test", 0, AccessLevel.SAGSBEHANDLER);
-        GUIFacade.business.getCaseworker().createCase(0, 0, new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
+        GUIFacade.business.getCaseworker().createCase(0, (GUIFacade.business.getData().getCases().size() + 1), new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
         try {
             logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
@@ -123,6 +122,12 @@ public class MainCaseWorkerController implements Initializable {
             } catch (IOException io) {
                 io.printStackTrace();
             }
+    }
+
+    @FXML
+    private void createEnquiry(ActionEvent event) throws IOException {
+        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede henvendelse");
+        GUIFacade.instance.showEnquiryScene();
     }
     
 }

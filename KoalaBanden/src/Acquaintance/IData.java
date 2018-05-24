@@ -28,4 +28,8 @@ public interface IData {
     public void deleteUser(String username);
     public void setPassword(String userName, String password);
     public void setEmail(String userName, String email);
+    public void createEnquiry(int id, String source, Date date, String description, int citizencpr) throws SQLException;
+    public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException;
+    public HashMap getEnquiries() throws SQLException;
+    public HashMap getCitizens() throws SQLException;
 }

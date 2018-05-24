@@ -13,6 +13,7 @@ import java.util.Map;
 
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.sql.SQLException;
 
 import java.util.HashMap;
 
@@ -28,9 +29,8 @@ public class BusinessFacade implements IBusiness {
     int caseID = 0;
     private ICaseOpening CaseOpening;
     
-    public BusinessFacade() {
+    public BusinessFacade() throws SQLException {
         manager = new SystemManager();
-        
     }
    
     public boolean userExists(String userName) {
@@ -120,6 +120,7 @@ public class BusinessFacade implements IBusiness {
     public void createEnquiry() {
        CaseOpening.createEnquiry();
     }
+    
      public ICaseOpening saveCPR(Citizen citizen) {
          CaseOpening.saveCPR(citizen);
         return null;

@@ -8,6 +8,8 @@ package Business;
 import Acquaintance.IEnquiry;
 import Acquaintance.IBusiness;
 import Acquaintance.ICaseOpening;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Date;
 
 /**
@@ -17,47 +19,49 @@ import java.util.Date;
 
 public class Enquiry implements IEnquiry{
     
+    private int id; 
+    private String source;
     private Date date;
-    private int CPR;
     private String description;
-    private Boolean isCitizenAgreed;
+    private int citizenCPR;
     
-    
-
-    public Enquiry(Date date, int CPR, String description, Boolean isCitizenAgreed) {
+   
+    public Enquiry(int id, String source, Date date, String description) {
+        this.id = id;
+        this.source = source;
         this.date = date;
-        this.CPR = CPR;
-        this.description = description;
-        this.isCitizenAgreed = isCitizenAgreed;
+        this.description = description; 
         
     }
-    public void setCPR(int CPR) {
-        this.CPR = CPR;
+    
+     public Enquiry(ResultSet rs) throws SQLException {
+        this.id = rs.getInt("id");
+        this.source = rs.getString("source");
+        this.date = rs.getDate("date");
+        this.description = rs.getString("description");     
+}
+     
+    public int getID() {
+        return id;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
+    
+     public String getSource() {
+        return source; 
     }
 
     public Date getDate() {
         return date;
     }
 
-    public int getCPR() {
-        return CPR;
-    }
 
     public String getDescription() {
         return description;
     }
-
-    public Boolean getIsCitizenAgreed() {
-        return isCitizenAgreed;
+    
+    public int getCitizenCPR() {
+        return citizenCPR;
     }
-
-    public void setIsCitizenAgreed(Boolean isCitizenAgreed) {
-        this.isCitizenAgreed = isCitizenAgreed;
-    }
+    
 }
     
     

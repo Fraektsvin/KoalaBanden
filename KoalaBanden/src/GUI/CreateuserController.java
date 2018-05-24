@@ -22,6 +22,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -36,17 +37,17 @@ public class CreateuserController implements Initializable {
     @FXML
     private JFXTextField usernameTextField;
     @FXML
-    private JFXTextField passwordTextField;
+    private TextField passwordTextField;
     @FXML
-    private JFXTextField CPRTextField1;
+    private TextField CPRTextField1;
     @FXML
-    private JFXTextField CPRTextField2;
+    private TextField CPRTextField2;
     @FXML
     private JFXButton createUserButton;
     @FXML
     private Label statusLabel;
     @FXML
-    private JFXTextField emailTextField;
+    private TextField emailTextField;
 
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
     /**
@@ -58,9 +59,8 @@ public class CreateuserController implements Initializable {
         ObservableList<String> accessLevelList = FXCollections.observableArrayList(GUIFacade.getAccessLevels());
         accessLevelComboBox.setItems(accessLevelList);
     }    
-
     @FXML
-    private void handleCreateUserButtonAction(ActionEvent event) {
+    public void handleCreateUserButtonAction(ActionEvent event) {
         // Read values
         String username = this.usernameTextField.getText();
         String password = this.passwordTextField.getText();

@@ -1,5 +1,6 @@
 package Business;
 
+import Acquaintance.ICitizen;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -7,7 +8,7 @@ import java.sql.SQLException;
  *
  * @author finch
  */
-public class Citizen {
+public class Citizen implements ICitizen {
 
     // Data field
     private int cpr;

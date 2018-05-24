@@ -5,16 +5,10 @@
  */
 package Acquaintance;
 
-import java.util.Date;
-
 /**
  *
- * @author Antonio
+ * @author Jonas
  */
-public interface IEnquiry {
-   int getID();
-   String getSource(); 
-   Date getDate();
-   String getDescription();   
-   public int getCitizenCPR();
+public interface ICitizen {
+    
 }

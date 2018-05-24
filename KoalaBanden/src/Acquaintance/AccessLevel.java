@@ -5,6 +5,7 @@ import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 public enum AccessLevel {
     SYSTEMADMINISTRATOR(1), SAGSBEHANDLER(2), BORGER(3), VÆRGE(4), PARTSREPRÆSENTANT(5);
 
+   
     private int code;
 
     AccessLevel(int code) {
