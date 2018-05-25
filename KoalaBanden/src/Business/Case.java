@@ -46,7 +46,7 @@ public class Case implements Serializable, ICase {
         this.dateCreated = rs.getDate("dateCreated");
         this.lastModified = rs.getDate("lastModified");
         this.lastModifiedBy = rs.getString("lastModifiedBy");
-        this.usersusername = rs.getString("userusername");
+        this.usersusername = rs.getString("usersusername");
     }
 
     // Methods

@@ -65,7 +65,7 @@ public class MainCaseWorkerController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-        GUIFacade.business.getCaseworker().createCase(0, (GUIFacade.business.getData().getCases().size() + 1), new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
+       // GUIFacade.business.getCaseworker().createCase(0, (GUIFacade.business.getData().getCases().size() + 1), new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
         try {
             logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
@@ -84,7 +84,7 @@ public class MainCaseWorkerController implements Initializable {
         sagerListe.getItems().clear();
         // Adds every case ID from the case hashMap to sagerListe list. 
         for (int i = 0; i < GUIFacade.business.getCases().size(); i++) {
-            sagerListe.getItems().add("Sag: " + GUIFacade.business.getCases().get(i).getSSN());
+            sagerListe.getItems().add("Sag: " + GUIFacade.business.getCases().get(i).getCitizencpr());
             logger.info("Se sager åbnet");
         }
     }

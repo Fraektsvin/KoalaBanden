@@ -185,7 +185,7 @@ public class Database {
         int caseID = 0;
         try {
             st = db.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM casesny");
+            ResultSet rs = st.executeQuery("SELECT * FROM cases");
             while(rs.next()) {
                 // BRYDER LAGDELING??
                 caseMap.put(caseID, new Case(rs));
