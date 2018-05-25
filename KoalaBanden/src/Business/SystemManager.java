@@ -7,7 +7,6 @@ package Business;
 
 import Acquaintance.AccessLevel;
 import Acquaintance.IUser;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -15,11 +14,10 @@ import java.util.Collection;
  *
  * @author Antonio
  */
-public class SystemManager implements IUser {
+public class SystemManager {
 
     private ArrayList<User> Users = new ArrayList<>();
     private ArrayList<User> Case = new ArrayList<>();
-
     private IUser currentUser = null;
     private ArrayList<String> accessLevels;
 
@@ -162,48 +160,4 @@ public class SystemManager implements IUser {
         return currentUser.getAccessLevel();
     }
 
-    @Override
-    public String getUsername() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getPassword() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getEmail() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getCPR() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getAccessLevelString() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setPassword(String userName, String password) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setEmail(String userName, String email) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public AccessLevel getAccessLevel() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean checkPassword(String password) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

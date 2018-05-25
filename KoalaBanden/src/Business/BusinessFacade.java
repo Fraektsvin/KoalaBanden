@@ -7,12 +7,9 @@ package Business;
 
 import Acquaintance.*;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import java.sql.SQLException;
 
 import java.util.HashMap;
@@ -105,14 +102,6 @@ public class BusinessFacade implements IBusiness {
     public IUser getUser(String userName) {
         return data.getUser(userName);
     }
-    
-//    public ArrayList<Guardian> GetGuardian() {
-//        return CaseOpening.GetGuardian();
-//    }
-//
-//    public ArrayList<Guardian> AddGuardian(Guardian guardian) {
-//        return CaseOpening.AddGuardian(guardian);
-//    }
     
     public HashMap getCPRSMAP() {
         return CaseOpening.getCPRSMAP();

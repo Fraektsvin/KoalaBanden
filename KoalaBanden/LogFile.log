@@ -3588,3 +3588,27 @@ maj 24, 2018 11:14:55 PM GUI.MainCaseWorkerController createCase
 INFO: Sag oprettet af Bob
 maj 24, 2018 11:15:01 PM GUI.MainCaseWorkerController handleLogoutButtonAction
 INFO: BobLogged ud
+maj 25, 2018 8:40:30 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 25, 2018 8:40:37 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 25, 2018 8:40:39 AM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 25, 2018 8:40:39 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 25, 2018 8:40:41 AM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 25, 2018 8:40:48 AM GUI.UserlistController handleEditUserButtonAction
+INFO: BrianBruger manager åbnet
+maj 25, 2018 8:40:48 AM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 25, 2018 8:40:56 AM GUI.EditUserController handleEditUserButtonAction
+INFO: Brugerinformationer på Brian er opdateret
+maj 25, 2018 8:42:10 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 25, 2018 8:42:14 AM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 25, 2018 8:42:16 AM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Bruger manager åbnet
+maj 25, 2018 8:42:25 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: HassanLogged ud
