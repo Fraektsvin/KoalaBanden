@@ -29,9 +29,9 @@ public class Caseworker extends User implements ICaseworker {
 
     // Methods
     @Override
-    public void createCase(int citizenSSN, int ID, Date dateCreated, Date lastModified, String lastModifiedBy) {
+    public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername) {
         try {
-            BusinessFacade.data.createCase(ID, ID, dateCreated, lastModified, lastModifiedBy);
+            BusinessFacade.data.createCase(id, enquiryid, citizencpr, dateCreated, lastModified, lastModifiedBy, usersusername);
         } catch (SQLException e) {
             e.printStackTrace();
         }
