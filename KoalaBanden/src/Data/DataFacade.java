@@ -59,8 +59,8 @@ public class DataFacade implements IData {
     }
     
     @Override
-   public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException {
-       database.createCase(cpr, id, dateCreated, lastModified, lastModifiedBy);
+   public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername) throws SQLException {
+       database.createCase(id, enquiryid,  citizencpr, dateCreated, lastModified, lastModifiedBy, usersusername);
    }
 
     public Map<Integer, ICase> getCases() {

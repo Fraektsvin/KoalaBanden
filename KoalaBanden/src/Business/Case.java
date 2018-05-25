@@ -19,48 +19,95 @@ import java.util.Date;
 public class Case implements Serializable, ICase {
 
     // Data Field
+   
+    private int id; 
+    private int enquiryid;
+    private int citizencpr; 
     private Date dateCreated;
     private Date lastModified;
     private String lastModifiedBy;
-    private int citizenSSN;
-    private int ID;
-
+    private String usersusername;
+    
     // Constructor
-    public Case(int citizenSSN) {
-        this.citizenSSN = citizenSSN;
+    public Case(int id, int enquiryid, int citizencpr, Date dateCreated, Date lastModified, String lastModifiedBy, String usersusername) {
+        this.id = id;
+        this.enquiryid = enquiryid;
+        this.citizencpr = citizencpr;
+        this.dateCreated = dateCreated;
+        this.lastModified = lastModified;
+        this.lastModifiedBy = lastModifiedBy;
+        this.usersusername = usersusername;
     }
     
     public Case(ResultSet rs) throws SQLException {
-        this.citizenSSN = rs.getInt("citizencpr");
-        this.dateCreated = rs.getDate("datecreated");
-        this.lastModified = rs.getDate("lastmodified");
-        this.lastModifiedBy = rs.getString("lastmodifiedby");
-        this.ID = rs.getInt("ID");
+        this.id = rs.getInt("id");
+        this.enquiryid = rs.getInt("enquiryid");
+        this.citizencpr = rs.getInt("citizencpr");
+        this.dateCreated = rs.getDate("dateCreated");
+        this.lastModified = rs.getDate("lastModified");
+        this.lastModifiedBy = rs.getString("lastModifiedBy");
+        this.usersusername = rs.getString("userusername");
     }
 
     // Methods
-    public int getSSN() {
-        return citizenSSN;
+
+    public int getId() {
+        return id;
     }
 
-    public void setSSN(int citizenSSN) {
-        this.citizenSSN = citizenSSN;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getID() {
-        return ID;
+    public int getEnquiryid() {
+        return enquiryid;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setEnquiryid(int enquiryid) {
+        this.enquiryid = enquiryid;
+    }
+
+    public int getCitizencpr() {
+        return citizencpr;
+    }
+
+    public void setCitizencpr(int citizencpr) {
+        this.citizencpr = citizencpr;
     }
 
     public Date getDateCreated() {
         return dateCreated;
     }
 
+    public void setDateCreated(Date dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
     public Date getLastModified() {
         return lastModified;
     }
+
+    public void setLastModified(Date lastModified) {
+        this.lastModified = lastModified;
+    }
+
+    public String getLastModifiedBy() {
+        return lastModifiedBy;
+    }
+
+    public void setLastModifiedBy(String lastModifiedBy) {
+        this.lastModifiedBy = lastModifiedBy;
+    }
+
+    public String getUsersusername() {
+        return usersusername;
+    }
+
+    public void setUsersusername(String usersusername) {
+        this.usersusername = usersusername;
+    }
+
+    
+    
 
 }

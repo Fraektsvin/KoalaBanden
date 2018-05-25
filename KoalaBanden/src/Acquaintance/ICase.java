@@ -5,12 +5,22 @@
  */
 package Acquaintance;
 
+import java.util.Date;
+
 /**
  *
  * @author Jonas
  */
 public interface ICase {
 
-//    public int getID();
-    public int getSSN();
+  
+    public int getId();
+    public int getEnquiryid();
+    public int getCitizencpr();
+    public Date getDateCreated();
+    public Date getLastModified();
+    public String getLastModifiedBy();
+    public String getUsersusername();
+    
+
 }

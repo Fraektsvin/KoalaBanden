@@ -75,10 +75,10 @@ public class Database {
     }
     
     
-     public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException {
+     public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername) throws SQLException {
           try {
               st = db.createStatement();
-              st.execute("INSERT into casesny(citizencpr, id, datecreated, lastmodified, lastmodifiedBy) VALUES ('" + cpr + "','" + id + "','" + dateCreated + "','" + lastModified + "','" + lastModifiedBy + "')");
+              st.execute("INSERT into cases(id, enquiryid, citizencpr, datecreated, lastmodified, lastmodifiedby, usersusername) VALUES ('" + id + "','" + enquiryid + "','" + citizencpr+ "','" + dateCreated + "','" + lastModified + "','" + lastModifiedBy + "','" + usersusername +  "')");
               st.close();
         } catch(PSQLException ex) {
            ex.printStackTrace();
@@ -93,7 +93,7 @@ public class Database {
             st.close();
              // Iterates through the hashMap containing cases to find the case with the specified CPR. 
             for (int i = 0; i < userMap.size(); i++) {
-                if(Integer.toString(caseMap.get(i).getSSN()).equals(citizenCPR)){
+                if(Integer.toString(caseMap.get(i).getCitizencpr()).equals(citizenCPR)){
                     caseMap.remove(i);
                     System.out.println(citizenCPR + " removed");
                 } else {

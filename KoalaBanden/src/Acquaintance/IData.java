@@ -22,7 +22,6 @@ public interface IData {
     public void createUser(IUser user);
     public IUser getUser(String userName, String password);
     public IUser getUser(String userName);
-    public void createCase(int cpr, int id, Date dateCreated, Date lastModified, String lastModifiedBy ) throws SQLException;
     public Map<Integer, ICase> getCases();
     public HashMap getUsers();
     public void deleteUser(String username);
@@ -32,4 +31,5 @@ public interface IData {
     public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException;
     public HashMap getEnquiries() throws SQLException;
     public HashMap getCitizens() throws SQLException;
+    public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername) throws SQLException;
 }
