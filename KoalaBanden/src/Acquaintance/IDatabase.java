@@ -5,10 +5,18 @@
  */
 package Acquaintance;
 
+import java.sql.SQLException;
+
 /**
  *
  * @author Jonas
  */
 public interface IDatabase {
-    public void createUser(int cpr, String username, String password, String email, int accessLevel);
+    void createUser(IUser u) throws SQLException;
+    void updateUser(IUser u) throws SQLException;
+    void deleteUser(String username) throws SQLException;
+
+    void createCase(ICase c) throws SQLException;
+    void updateCase(ICase c) throws SQLException;
+    void deleteCase(int id) throws SQLException;
 }
