@@ -3612,3 +3612,17 @@ maj 25, 2018 8:42:16 AM GUI.MainSystemAdministratorController handleMyProfileBut
 INFO: Bruger manager åbnet
 maj 25, 2018 8:42:25 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
 INFO: HassanLogged ud
+maj 25, 2018 8:43:01 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 25, 2018 8:44:14 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 25, 2018 8:44:18 PM GUI.MainCaseWorkerController createCase
+INFO: Sag oprettet af Bob
+maj 25, 2018 8:44:25 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 25, 2018 8:44:25 PM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 25, 2018 8:44:35 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 27, 2018 6:42:40 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
