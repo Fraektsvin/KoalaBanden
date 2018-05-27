@@ -13,8 +13,11 @@ import java.sql.SQLException;
 import java.util.HashMap;
 
 /**
- *
- * @author finch
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class Caseworker extends User implements ICaseworker {
 

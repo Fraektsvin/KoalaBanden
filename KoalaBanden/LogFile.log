@@ -3626,3 +3626,5 @@ maj 25, 2018 8:44:35 PM GUI.MainCaseWorkerController createEnquiry
 INFO: Bob åbnede en ny henvendelse
 maj 27, 2018 6:42:40 PM Business.LoggerStart LoggerStart
 INFO: Initializing Logger
+maj 27, 2018 10:09:28 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger

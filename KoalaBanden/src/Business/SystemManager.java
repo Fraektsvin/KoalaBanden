@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Business;
 
 import Acquaintance.AccessLevel;
@@ -11,15 +6,21 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- *
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
  * @author Antonio
  */
+
 public class SystemManager {
 
-    private ArrayList<User> Users = new ArrayList<>();
-    private ArrayList<User> Case = new ArrayList<>();
+    // Data field
+    
+    private ArrayList<User> Users = new ArrayList<>(); // arraylist of users
+    private ArrayList<User> Case = new ArrayList<>(); // arraylist of cases ????
     private IUser currentUser = null;
-    private ArrayList<String> accessLevels;
+    private ArrayList<String> accessLevels; // arraylist of accesslevels
 
     // TODO: Lav til enums
     private static final String SYSTEMADMINISTRATOR = "Systemadministrator";
@@ -28,6 +29,12 @@ public class SystemManager {
     private static final String VÆRGE = "Værge";
     private static final String PARTSREPRÆSENTANT = "Partsrepræsentant";
 
+    
+    // Constructors
+    
+    /**
+     * Constructor creating a system manager holding an arraylist of all types of accesslevels
+     */
     public SystemManager() {
         accessLevels = new ArrayList();
         accessLevels.add(SYSTEMADMINISTRATOR);
@@ -37,21 +44,34 @@ public class SystemManager {
         accessLevels.add(PARTSREPRÆSENTANT);
     }
 
+    /**
+     * Method used to create users with different accesslevel in the GUI
+     * @param username
+     * @param password
+     * @param email
+     * @param CPRString
+     * @param accessLevel
+     * @return 
+     */
     public boolean createUser(String username, String password, String email, String CPRString, AccessLevel accessLevel) {
+        // Checks if a user with the entered username exists
         if (!BusinessFacade.data.userExists(username)) {
+            // Checks if the entered user cpr is exactly 10 characters
             if (CPRString.length() != 10) {
                 return false;
             }
-
+            
+            // Iterates through the entered cpr and checks if all characters are digits.
             for (int i = 0; i < 10; i++) {
                 boolean isDigit = Character.isDigit(CPRString.charAt(i));
                 if (!isDigit) {
                     return false;
                 }
             }
-
+            
             int CPR = Integer.parseInt(CPRString);
-
+            
+            // A switch holding the different types of users creatable 
             switch (accessLevel) {
                 case SYSTEMADMINISTRATOR:
                     BusinessFacade.data.createUser(new User(username, password, email, CPR, accessLevel));
@@ -76,41 +96,63 @@ public class SystemManager {
         }
     }
 
+    /**
+     * Method deletes a user, based on the username
+     * @param username 
+     */
     public void deleteUser(String username) {
         BusinessFacade.data.deleteUser(username);
     }
 
+    /**
+     * Method sets users in the user arraylist
+     * @param Users 
+     */
     public void setUsers(ArrayList<User> Users) {
         this.Users = Users;
     }
 
+    /**
+     * Method sets cases in the case arraylist
+     * @param Case 
+     */
     public void setCase(ArrayList<User> Case) {
         this.Case = Case;
     }
 
+    /**
+     * 
+     * @returns the arraylist of users
+     */
     public ArrayList<User> getUsers() {
         return Users;
     }
 
+    /**
+     * 
+     * @returns the current user logged in as an IUser
+     */
     public IUser getCurrentUser() {
         return currentUser;
     }
 
+    /**
+     * 
+     * @returns username of the current user logged in 
+     */
     public String getCurrentUsername() {
         return currentUser.getUsername();
     }
 
-    public Case createCase(int ID, int citizenSSN) {
-        Caseworker worker = (Caseworker) currentUser;
-        return null;
-
-    }
-
-    // Sets the current logged in user for administrative purposes.
+    /**
+     * Method sets the current logged in user for administrative purposes.
+     * @param Username 
+     */
     public void setUser(String Username) {
         currentUser = BusinessFacade.data.getUser(Username);
     }
 
+    // Bruges den?
     public ArrayList<User> getCase() {
         return Case;
     }
@@ -123,6 +165,7 @@ public class SystemManager {
         return null;
     }
 
+    
     public void logOut() {
         currentUser = null;
     }
@@ -131,6 +174,11 @@ public class SystemManager {
         return this.accessLevels;
     }
 
+    /**
+     * Method used to get the different access level strings
+     * @param accessLevel
+     * @return 
+     */
     public static String getAccessLevelString(int accessLevel) {
         String accessLevelString = "";
         switch (accessLevel) {
@@ -156,6 +204,7 @@ public class SystemManager {
         return accessLevelString;
     }
 
+    // Method used to return accesslevel of the current user logged in.
     public AccessLevel getCurrentAccessLevel() {
         return currentUser.getAccessLevel();
     }

@@ -28,6 +28,10 @@ import org.postgresql.util.PSQLException;
 /**
  *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class Database {
 
