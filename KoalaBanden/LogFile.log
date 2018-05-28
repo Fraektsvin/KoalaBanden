@@ -3688,3 +3688,107 @@ maj 28, 2018 8:59:09 AM GUI.LoginController actionLogin
 INFO: Bob er logget ind som SAGSBEHANDLER
 maj 28, 2018 8:59:11 AM GUI.MainCaseWorkerController createCase
 INFO:  Opret sag startet af:  Bob
+maj 28, 2018 9:41:21 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 10:23:00 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 10:23:09 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 10:23:11 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 10:26:00 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 10:26:08 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 10:26:10 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 10:26:22 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 10:26:29 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 10:26:30 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:01:42 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:01:53 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:01:57 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:10:23 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:10:35 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:10:37 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:13:09 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:13:16 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:13:17 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:16:27 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:16:34 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:16:36 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:18:18 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:18:25 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:18:29 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:20:26 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:20:34 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:21:17 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:21:19 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:21:22 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:22:34 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:22:41 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:22:43 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:22:52 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny henvendelse
+maj 28, 2018 11:22:52 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny borger
+maj 28, 2018 11:25:33 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:25:40 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:25:48 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:28:31 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:28:38 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:28:39 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:30:14 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 11:30:21 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:30:23 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 11:30:33 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny henvendelse
+maj 28, 2018 11:30:33 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny borger
+maj 28, 2018 11:30:47 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny henvendelse
+maj 28, 2018 11:30:47 AM GUI.EnquiryController createEnquiry
+INFO: Bob oprettede ny borger
+maj 28, 2018 11:32:11 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 28, 2018 11:32:14 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 11:32:21 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 11:32:25 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud

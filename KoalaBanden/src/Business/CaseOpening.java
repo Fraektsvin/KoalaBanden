@@ -40,8 +40,7 @@ public class CaseOpening implements ICaseOpening {
         this.CitizenDescription = username + Address + Firstname + Lastname + Nationality + phoneNumber;
     }
 
-    //  public CaseOpening(ResultSet rs) {
-    //  }
+  
     public String getCitizenDescription() {
         return CitizenDescription;
     }

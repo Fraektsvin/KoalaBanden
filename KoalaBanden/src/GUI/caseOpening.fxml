@@ -54,7 +54,7 @@
               <tabs>
                 <Tab fx:id="generalTab" text="Generelt">
                      <content>
-                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0" vvalue="1.0">
+                        <ScrollPane hbarPolicy="NEVER" minViewportHeight="10.0" minViewportWidth="10.0" prefHeight="530.0" prefViewportHeight="100.0" prefViewportWidth="10.0" prefWidth="1007.0">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2791.0" prefWidth="1014.0">
                                  <children>
@@ -561,7 +561,7 @@
                                           <CheckBox fx:id="guardianshipWithDeprivedLegalCapacityCheckBox" mnemonicParsing="false" text="Værgemål med frataget retslig handleevne (§ 6)" />
                                           <CheckBox fx:id="curatorshipCheckBox" mnemonicParsing="false" text="Samværgemål" />
                                           <CheckBox fx:id="guardianContactInformationCheckBox" mnemonicParsing="false" text="Værge [angiv kontaktoplysninger]" />
-                                          <TextArea fx:id="guardianContactInformationTextArea" disable="true" editable="false" prefHeight="109.0" prefWidth="417.0" />
+                                          <TextArea fx:id="guardianContactInformationTextArea" prefHeight="109.0" prefWidth="417.0" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -583,7 +583,7 @@
                                           <CheckBox fx:id="representativeCheckBox" mnemonicParsing="false" text="Partsrepræsentant" />
                                           <CheckBox fx:id="curatorship1CheckBox" mnemonicParsing="false" text="Samværgemål" />
                                           <CheckBox fx:id="powerOfAttorneyCheckBox" mnemonicParsing="false" text="Fuldmagt - hvis ja, angiv hvad der er givet fuldmagt til:" />
-                                          <TextArea fx:id="powerOfAttorneyTextArea" disable="true" editable="false" prefHeight="109.0" prefWidth="374.0" />
+                                          <TextArea fx:id="powerOfAttorneyTextArea" prefHeight="109.0" prefWidth="374.0" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -729,7 +729,7 @@
       </Pane>
       <Pane layoutX="14.0" layoutY="684.0" prefHeight="70.0" prefWidth="1014.0" style="-fx-background-color: #F0F0F0;">
          <children>
-            <JFXButton layoutX="517.0" layoutY="23.0" style="-fx-background-color: #699F6B;" text="Opret" textFill="WHITE" />
+            <JFXButton layoutX="517.0" layoutY="23.0" onAction="#createCaseOpening" style="-fx-background-color: #699F6B;" text="Opret" textFill="WHITE" />
             <JFXButton fx:id="returnButton" layoutX="443.0" layoutY="23.0" onAction="#handleReturnButtonAction" style="-fx-background-color: #FC432E;" text="Tilbage" textFill="WHITE" />
          </children>
       </Pane>

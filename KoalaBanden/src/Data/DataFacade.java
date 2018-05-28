@@ -132,7 +132,9 @@ public class DataFacade implements IData {
         return null;
     }
     
-    
+    public void createCaseOpening(int id, Boolean guardianship, Boolean guardianshipwithdesprivedjudiciallegalcapacity, Boolean guardiancuratorship, Boolean guardian, String guardianinformation, Boolean layrepresentative, Boolean representative, Boolean representationcuratorship, Boolean authority, String authorityinformation) throws SQLException {
+        database.createCaseOpening(id, guardianship, guardianshipwithdesprivedjudiciallegalcapacity, guardiancuratorship, guardian, guardianinformation, layrepresentative, representative, representationcuratorship, authority, authorityinformation);
+    }
 
     public HashMap getCitizens() throws SQLException {
         return database.getCitizens();

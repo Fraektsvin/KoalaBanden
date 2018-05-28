@@ -30,7 +30,7 @@
       <Separator layoutX="38.0" layoutY="116.0" prefHeight="3.0" prefWidth="572.0" />
       <TextField fx:id="responsibleCaseworkerField" disable="true" editable="false" layoutX="339.0" layoutY="223.0" prefHeight="31.0" prefWidth="279.0" />
       <JFXComboBox fx:id="enquiryIDList" layoutX="188.0" layoutY="142.0" prefHeight="31.0" prefWidth="430.0" promptText="Vælg" unFocusColor="WHITE" />
-      <JFXButton fx:id="naestebtn" alignment="CENTER" layoutX="555.0" layoutY="292.0" onAction="#createCaseButtonAction" style="-fx-background-color: #699F6B;" text="Næste" textFill="WHITE" />
+      <JFXButton fx:id="naestebtn" alignment="CENTER" layoutX="516.0" layoutY="296.0" onAction="#createCaseButtonAction" style="-fx-background-color: #699F6B;" text="Gå til sagsåbning" textFill="WHITE" />
       <Label layoutX="38.0" layoutY="147.0" text="Henvendelse ID:" />
       <Label layoutX="38.0" layoutY="228.0" text="Ansvarlig sagsbehandler:" />
       <Label layoutX="38.0" layoutY="191.0" text="Dato:" />

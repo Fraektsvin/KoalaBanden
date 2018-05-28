@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Tab;
@@ -316,14 +317,17 @@ public class caseOpeningController implements Initializable {
 
     }
 
-//    public void addGuardian(ActionEvent event) throws IOException {
-//        text.getItems().addAll(guardianlist);
-//        logger.info("Tilføjet som guardian");
-//
-//    }
     @FXML
     private void handleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
         stage.close();
     }
+
+    @FXML
+    // ID on caseOpening is irrelevant because we did not implement the connection between cases and caseOpenings. 
+    private void createCaseOpening(ActionEvent event) throws SQLException {
+        GUIFacade.business.getCaseworker().createCaseOpening(GUIFacade.business.getCases().size(), guardianshipCheckBox.isSelected(), guardianshipWithDeprivedLegalCapacityCheckBox.isSelected(), curatorshipCheckBox.isSelected(), guardianContactInformationCheckBox.isSelected(), guardianContactInformationTextArea.getText(), companionCheckBox.isSelected(), representativeCheckBox.isSelected() , curatorship1CheckBox.isSelected(), powerOfAttorneyCheckBox.isSelected(), powerOfAttorneyTextArea.getText());
+    }
+    
+    
 }

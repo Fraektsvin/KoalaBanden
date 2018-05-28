@@ -19,4 +19,5 @@ public interface ICaseworker {
     public void registerEnquiry(int id, String source, Date date, String description, int citizencpr);
     public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException;
     public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException;
+    public void createCaseOpening(int id, Boolean guardianship, Boolean guardianshipwithdesprivedjudiciallegalcapacity, Boolean guardiancuratorship, Boolean guardian, String guardianinformation, Boolean layrepresentative, Boolean representative, Boolean representationcuratorship, Boolean authority, String authorityinformation) throws SQLException;
 }

@@ -287,21 +287,14 @@ public class Database {
      *
      * @return @throws SQLException
      */
-    private ICaseOpening getCaseOpening() throws SQLException {
-//            ICaseOpening caseOpening = null;
-//        try {
-//            st = db.createStatement();
-//            ResultSet rs = st.executeQuery("SELECT * FROM users WHERE username = '" + userName + "'");
-//
-//            rs.next();
-//            // BRYDER LAGDELING??
-//            caseOpening = new CaseOpening(rs);
-//            rs.close();
-//            st.close();
-//        } catch(PSQLException ex) {
-//            ex.printStackTrace();
-//        }
-        return null;
+   public void createCaseOpening(int id, Boolean guardianship, Boolean guardianshipwithdesprivedjudiciallegalcapacity, Boolean guardiancuratorship, Boolean guardian, String guardianinformation, Boolean layrepresentative, Boolean representative, Boolean representationcuratorship, Boolean authority, String authorityinformation) throws SQLException {
+        try {
+            st = db.createStatement();
+            st.execute("INSERT into caseOpenings(id, guardianship, guardianshipwithdesprivedjudiciallegalcapacity, guardiancuratorship, guardian, guardianinformation, layrepresentative, representative, representationcuratorship, authority, authorityinformation) VALUES ('" + id + "','" + guardianship + "','" + guardianshipwithdesprivedjudiciallegalcapacity + "','" + guardiancuratorship + "','" + guardian + "','" + guardianinformation + "','" + layrepresentative + "','" + representative + "','" + representationcuratorship + "','" + authority + "','" + authorityinformation + "')");
+            st.close();
+        } catch (PSQLException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /**

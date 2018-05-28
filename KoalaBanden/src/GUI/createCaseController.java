@@ -8,6 +8,7 @@ package GUI;
 import Acquaintance.IEnquiry;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -73,9 +75,18 @@ public class createCaseController implements Initializable {
     }    
 
     @FXML
-    private void createCaseButtonAction(ActionEvent event) {     
+    private void createCaseButtonAction(ActionEvent event) throws IOException {  
+        try {
         GUIFacade.business.getCaseworker().createCase(GUIFacade.business.getCases().size() + 1, GUIFacade.business.getEnquiries().get(enquiryIDList.getSelectionModel().getSelectedIndex()).getID(), GUIFacade.business.getEnquiries().get(enquiryIDList.getSelectionModel().getSelectedIndex()).getCitizenCPR(), new java.sql.Date(Calendar.getInstance().getTime().getTime()), new java.sql.Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername(), GUIFacade.business.getCurrentUsername());
-
+        Stage stage = (Stage) naestebtn.getScene().getWindow();
+        stage.close();
+        GUIFacade.instance.showCaseOpeningScene();
+        
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+            
+       
 
     
     }  

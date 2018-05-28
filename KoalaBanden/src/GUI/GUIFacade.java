@@ -122,6 +122,30 @@ import javafx.stage.Stage;
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }
+    
+      public void showCaseOpeningScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("caseOpening.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+      
+    public void showCreateCaseScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("createCase.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+    
+    public void showEditUserScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("editUser.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
 
    
 }
