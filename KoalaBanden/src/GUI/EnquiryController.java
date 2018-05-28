@@ -95,11 +95,14 @@ public class EnquiryController implements Initializable {
 //        }
     }
 
+<<<<<<< HEAD
     /**
      * Method closes the current open FXML window.
      *
      * @param event
      */
+=======
+>>>>>>> b4ad264eae3cdb282158003acb345a3dc592f608
     @FXML
     private void HandleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
