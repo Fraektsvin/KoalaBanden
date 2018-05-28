@@ -1,44 +1,53 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Business;
 
 import Acquaintance.AccessLevel;
-import Acquaintance.IBusiness;
 import Acquaintance.IUser;
 import java.io.Serializable;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- *
- * @author finch
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class User implements Serializable, IUser {
     
     // Date field
 
-    private String username;
-    private String password;
-    private String email;
-    private int SSN;
-    private AccessLevel accessLevel;
+    private String username; // userame of a user
+    private String password; // password of a user
+    private String email; // email of a user
+    private int CPR; // cpr of the user
+    private AccessLevel accessLevel; // accesslevel of the user, 1 is for system administrator, 2 is for caseworker, 3 is for citizen, guardian and representative
     
     // Constructor
     
-    public User(String username, String password, String email, int SSN, AccessLevel accessLevel){
+    /**
+     * Constructor creating a user 
+     * @param username of a user
+     * @param password of a user
+     * @param email of a user
+     * @param CPR of a user
+     * @param accessLevel of a user
+     */
+    public User(String username, String password, String email, int CPR, AccessLevel accessLevel){
         this.username = username;
         this.password = password;
         this.email = email;
-        this.SSN = SSN;
+        this.CPR = CPR;
         this.accessLevel = accessLevel;
     }
 
-    // Used to access database info. 
+    /**
+     * Constructor creating a user resultset, used to access database information of a user
+     * @param rs
+     * @throws SQLException 
+     */
     public User(ResultSet rs) throws SQLException {
-        this.SSN = rs.getInt("CPR");
+        this.CPR = rs.getInt("CPR");
         this.username = rs.getString("Username");
         this.password = rs.getString("Password");
         this.email = rs.getString("Email");
@@ -48,57 +57,89 @@ public class User implements Serializable, IUser {
 
     // Methods
 
+    /**
+     * 
+     * @returns password of the user
+     */
     @Override
     public String getPassword() {
         return password;
     }
-
+    
+    /**
+     * Method sets password of the user, based on the username
+     * @param userName
+     * @param password 
+     */
     @Override
     public void setPassword(String userName, String password) {
         this.password = password;
         BusinessFacade.data.setPassword(userName, password);
     }
     
+    /**
+     * Method sets email of the user, based on the username
+     * @param userName
+     * @param email 
+     */
      @Override
     public void setEmail(String userName, String email) {
         this.email = email;
         BusinessFacade.data.setEmail(userName, email);
         
     }
-
+    
+    /**
+     * 
+     * @returns email of a user
+     */
     @Override
     public String getEmail() {
         return email;
     }
 
+    /**
+     * 
+     * @returns username of a user
+     */
     @Override
     public String getUsername() {
         return this.username;
     }
 
+    /**
+     * 
+     * @returns accesslevel of a user
+     */
     public AccessLevel getAccessLevel() {
         return accessLevel;
     }
 
+    /**
+     * Method checks if the entered password is valid
+     * @param password
+     * @return 
+     */
     @Override
     public boolean checkPassword(String password) {
         return this.password.equals(password);
     }
 
+    /**
+     * 
+     * @returns cpr of a user
+     */
     @Override
     public int getCPR() {
-        return this.SSN;
+        return this.CPR;
     }
 
-    public int getSSN() {
-        return SSN;
-    }
-
+    /**
+     * 
+     * @returns the accesslevel of a user as a string 
+     */
     @Override
     public String getAccessLevelString() {
         return this.accessLevel.toString();
     }
-
-    
-    
 }

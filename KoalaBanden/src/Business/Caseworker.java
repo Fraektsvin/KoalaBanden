@@ -16,8 +16,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
- * @author finch
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class Caseworker extends User implements ICaseworker {
 
