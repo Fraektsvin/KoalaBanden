@@ -22,14 +22,14 @@ public interface IData {
     public void createUser(IUser user);
     public IUser getUser(String userName, String password);
     public IUser getUser(String userName);
-    public Map<Integer, ICase> getCases();
+    public HashMap getCases();
     public HashMap getUsers();
     public void deleteUser(String username);
     public void setPassword(String userName, String password);
     public void setEmail(String userName, String email);
     public void createEnquiry(int id, String source, Date date, String description, int citizencpr) throws SQLException;
     public void createCitizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) throws SQLException;
-    public HashMap getEnquiries() throws SQLException;
+    public HashMap getEnquiries();
     public HashMap getCitizens() throws SQLException;
     public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername) throws SQLException;
 }

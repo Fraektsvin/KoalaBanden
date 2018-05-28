@@ -3612,3 +3612,73 @@ maj 25, 2018 8:42:16 AM GUI.MainSystemAdministratorController handleMyProfileBut
 INFO: Bruger manager åbnet
 maj 25, 2018 8:42:25 AM GUI.MainSystemAdministratorController handleLogoutButtonAction
 INFO: HassanLogged ud
+maj 28, 2018 8:22:45 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 8:22:56 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 8:23:00 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:23:33 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:23:33 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:23:33 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:23:36 AM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 28, 2018 8:23:39 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnede sin egen profil
+maj 28, 2018 8:23:43 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 28, 2018 8:23:51 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 8:23:58 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 8:24:00 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:24:11 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:24:15 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 28, 2018 8:26:37 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 8:26:44 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 8:26:48 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:26:48 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:26:48 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:26:48 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:26:51 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:27:16 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud
+maj 28, 2018 8:28:15 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 8:28:21 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 8:28:23 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:28:23 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:28:23 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:28:23 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:28:23 AM GUI.MainCaseWorkerController seeCases
+INFO: Se sager åbnet
+maj 28, 2018 8:28:27 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:29:59 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:33:32 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:33:45 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
+maj 28, 2018 8:34:29 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
+INFO: Bob åbnede sin egen profil
+maj 28, 2018 8:35:09 AM GUI.MainCaseWorkerController handleLogoutButtonAction
+INFO: BobLogged ud

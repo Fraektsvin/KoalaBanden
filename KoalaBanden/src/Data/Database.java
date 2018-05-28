@@ -156,7 +156,7 @@ public class Database {
     }
      
      // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
-        public HashMap getUsers() throws SQLException {
+        public HashMap<Integer, IUser> getUsers() throws SQLException {
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
         userMap = new HashMap();
         int userID = 0;
@@ -179,7 +179,7 @@ public class Database {
     }
         
         // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
-        public HashMap getCases() throws SQLException {
+        public HashMap<Integer, ICase> getCases() throws SQLException {
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
         caseMap = new HashMap();
         int caseID = 0;
@@ -259,7 +259,7 @@ public class Database {
         }
     }
     
-    public HashMap getEnquiries() throws SQLException {
+    public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException {
       // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
         enquiryMap = new HashMap();
         int enquiryID = 0;
@@ -282,7 +282,7 @@ public class Database {
    
     }
     
-    public HashMap getCitizens() throws SQLException {
+    public HashMap<Integer, ICitizen> getCitizens() throws SQLException {
       // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
         citizenMap = new HashMap();
         int citizenID = 0;
@@ -301,7 +301,7 @@ public class Database {
             ex.printStackTrace();
         }
         
-        return enquiryMap;
+        return citizenMap;
    
     }
     

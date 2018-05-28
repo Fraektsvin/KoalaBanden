@@ -65,10 +65,9 @@ public class MainCaseWorkerController implements Initializable {
 
     @FXML
     private void createCase(ActionEvent event) {
-       // GUIFacade.business.getCaseworker().createCase(0, (GUIFacade.business.getData().getCases().size() + 1), new Date(Calendar.getInstance().getTime().getTime()), new Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername());
         try {
-            logger.info("Sag oprettet af " + GUIFacade.business.getCurrentUsername());
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
+            logger.info(" Opret sag startet af:  " + GUIFacade.business.getCurrentUsername());
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createCase.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));

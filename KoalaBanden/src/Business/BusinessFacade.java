@@ -54,8 +54,13 @@ public class BusinessFacade implements IBusiness {
     
     @Override
     // Returns the collection of cases from data.
-    public Map<Integer, ICase> getCases() {
+    public HashMap<Integer, ICase> getCases() {
         return data.getCases();
+    }
+    
+    @Override
+    public HashMap<Integer, IEnquiry> getEnquiries() {
+        return data.getEnquiries();
     }
 
     @Override
@@ -79,7 +84,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     @Override
-    public HashMap<Integer, User> getUsers() {
+    public HashMap<Integer, IUser> getUsers() {
         return data.getUsers();
     }
 
@@ -124,7 +129,14 @@ public class BusinessFacade implements IBusiness {
     public void setUser(String Username) {
         manager.setUser(Username);
     }
-}
+    
+    public HashMap getCitizens() throws SQLException {
+        return data.getCitizens();
+    }
+    
+} 
+    
+
 
   
 

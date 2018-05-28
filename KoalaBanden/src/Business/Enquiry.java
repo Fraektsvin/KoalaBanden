@@ -24,21 +24,23 @@ public class Enquiry implements IEnquiry{
     private int citizenCPR;
     
    
-    public Enquiry(int id, String source, Date date, String description) {
+    public Enquiry(int id, String source, Date date, String description, int citizencpr) {
         this.id = id;
         this.source = source;
         this.date = date;
         this.description = description; 
-        
+        this.citizenCPR = citizencpr;
     }
     
      public Enquiry(ResultSet rs) throws SQLException {
         this.id = rs.getInt("id");
         this.source = rs.getString("source");
         this.date = rs.getDate("date");
-        this.description = rs.getString("description");     
+        this.description = rs.getString("description");
+        this.citizenCPR = rs.getInt("citizencpr");
 }
      
+    @Override
     public int getID() {
         return id;
     }

@@ -12,9 +12,9 @@ import java.util.Date;
  * @author Antonio
  */
 public interface IEnquiry {
-   int getID();
-   String getSource(); 
-   Date getDate();
-   String getDescription();   
+   public int getID();
+   public String getSource(); 
+   public Date getDate();
+   public String getDescription();   
    public int getCitizenCPR();
 }

@@ -7,6 +7,7 @@ package Data;
 
 import Acquaintance.ICase;
 import Acquaintance.IData;
+import Acquaintance.IEnquiry;
 import Acquaintance.IUser;
 import Business.User;
 import java.sql.Date;
@@ -63,7 +64,7 @@ public class DataFacade implements IData {
        database.createCase(id, enquiryid,  citizencpr, dateCreated, lastModified, lastModifiedBy, usersusername);
    }
 
-    public Map<Integer, ICase> getCases() {
+    public HashMap getCases() {
         try {
             return database.getCases(); 
         } catch(SQLException e) {
@@ -120,10 +121,17 @@ public class DataFacade implements IData {
             e.printStackTrace();
         }
     }
-    
-    public HashMap getEnquiries() throws SQLException { 
-        return database.getEnquiries();
+        
+    @Override
+    public HashMap getEnquiries() {
+        try {
+            return database.getEnquiries();
+        } catch(SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
+    
     
     public HashMap getCitizens() throws SQLException {
         return database.getCitizens();

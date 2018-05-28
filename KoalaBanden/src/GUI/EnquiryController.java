@@ -54,31 +54,55 @@ public class EnquiryController implements Initializable {
     private TextField phoneNumberField;
     @FXML
     private JFXButton returnButton;
-    
-private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
+
+    private Boolean citizenAlreadyRegistered = false;
+
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-       dateField.setText(new Date(Calendar.getInstance().getTime().getTime()).toString());
-        
-    }    
+        dateField.setText(new Date(Calendar.getInstance().getTime().getTime()).toString());
+
+    }
 
     @FXML
     private void createEnquiry(ActionEvent event) throws SQLException {
-    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
-    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
-        
-        GUIFacade.business.getCaseworker().registerEnquiry((GUIFacade.business.getCaseworker().getEnquiries().size() + 1), sourceField.getText(),new java.sql.Date(Calendar.getInstance().getTime().getTime()), descriptionField.getText(), Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()));
-        GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
-    }
 
+        // Tjekker at informationer er udfyldt korrekt, inden henvendelsen bliver sat ind i systemet..
+        if ((CPRTextField1.getText() + CPRTextField2.getText()).length() != 10) {
+            statusLabel.setText("Status: CPR er ikke indtastet korrekt.");
+        } else {
+                // Opretter henvendelsen i databasen.
+                GUIFacade.business.getCaseworker().registerEnquiry((GUIFacade.business.getCaseworker().getEnquiries().size() + 1), sourceField.getText(), new java.sql.Date(Calendar.getInstance().getTime().getTime()), descriptionField.getText(), Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()));
+
+                // Tjekker om borgeren er registreret i systemet og opretter henvendelsen. 
+                for (int i = 0; i < GUIFacade.business.getCitizens().size(); i++) {
+                    if (Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()) == GUIFacade.business.getCitizens().get(i).getCpr()) {
+                        statusLabel.setText("Status: Henvendelse oprettet til allerede eksisterende borger.");
+                        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
+                        citizenAlreadyRegistered = true;
+                    }
+
+                }
+                // Opretter borgeren i systemet, hvis han ikke eksisterer i forvejen.
+                if (citizenAlreadyRegistered = false) {
+                    GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
+                    statusLabel.setText("Status: Henvendelse oprettet.");
+                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
+                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
+                }
+
+            }
+        }
+    
     @FXML
     private void HandleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
         stage.close();
     }
-    
+
 }

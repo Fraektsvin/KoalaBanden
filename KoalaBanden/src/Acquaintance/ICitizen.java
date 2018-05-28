@@ -10,5 +10,5 @@ package Acquaintance;
  * @author Jonas
  */
 public interface ICitizen {
-    
+     public int getCpr();
 }

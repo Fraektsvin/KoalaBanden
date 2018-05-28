@@ -155,7 +155,7 @@ public class mainController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + " JoLogged ud");
+            logger.info(GUIFacade.business.getCurrentUsername() + " Logged ud");
 
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();

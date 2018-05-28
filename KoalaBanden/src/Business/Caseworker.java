@@ -7,10 +7,13 @@ package Business;
 
 import Acquaintance.AccessLevel;
 import Acquaintance.ICaseworker;
+import Acquaintance.ICitizen;
 import Acquaintance.IData;
+import Acquaintance.IEnquiry;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -59,7 +62,7 @@ public class Caseworker extends User implements ICaseworker {
     }
 
     public HashMap getEnquiries() throws SQLException {
-        return BusinessFacade.data.getEnquiries();
+      return BusinessFacade.data.getEnquiries();
     }
 
     public HashMap getCitizens() throws SQLException {

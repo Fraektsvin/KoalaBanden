@@ -1,6 +1,8 @@
 package Acquaintance;
 
+import Business.Enquiry;
 import Business.User;
+import java.sql.SQLException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,9 +11,9 @@ public interface IBusiness {
 
     public abstract void injectData(IData data);
 
-    public Map<Integer, ICase> getCases();
+    public HashMap<Integer, ICase> getCases();
     
-    public HashMap<Integer, User> getUsers();
+    public HashMap<Integer, IUser> getUsers();
 
     public ICaseworker getCaseworker();
 
@@ -36,4 +38,8 @@ public interface IBusiness {
     public String getCurrentUsername();
     
     public void setUser(String Username);
+    
+    public HashMap<Integer, IEnquiry> getEnquiries();
+    
+    public HashMap<Integer, ICitizen> getCitizens() throws SQLException;
 }
