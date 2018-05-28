@@ -6,7 +6,6 @@
 package GUI;
 
 import com.jfoenix.controls.JFXComboBox;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
@@ -16,7 +15,6 @@ import javafx.fxml.Initializable;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
@@ -312,22 +310,35 @@ public class caseOpeningController implements Initializable {
     @FXML
     private JFXButton returnButton;
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
 
+    /**
+     * Method closes the current open scene.
+     *
+     * @param event
+     */
     @FXML
     private void handleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
         stage.close();
     }
 
+    /**
+     * Method creates a caseOpening in the database through the BusinessFacade.
+     *
+     * @param event
+     * @throws SQLException
+     */
     @FXML
     // ID on caseOpening is irrelevant because we did not implement the connection between cases and caseOpenings. 
     private void createCaseOpening(ActionEvent event) throws SQLException {
-        GUIFacade.business.getCaseworker().createCaseOpening(GUIFacade.business.getCases().size(), guardianshipCheckBox.isSelected(), guardianshipWithDeprivedLegalCapacityCheckBox.isSelected(), curatorshipCheckBox.isSelected(), guardianContactInformationCheckBox.isSelected(), guardianContactInformationTextArea.getText(), companionCheckBox.isSelected(), representativeCheckBox.isSelected() , curatorship1CheckBox.isSelected(), powerOfAttorneyCheckBox.isSelected(), powerOfAttorneyTextArea.getText());
+        GUIFacade.business.getCaseworker().createCaseOpening(GUIFacade.business.getCases().size(), guardianshipCheckBox.isSelected(), guardianshipWithDeprivedLegalCapacityCheckBox.isSelected(), curatorshipCheckBox.isSelected(), guardianContactInformationCheckBox.isSelected(), guardianContactInformationTextArea.getText(), companionCheckBox.isSelected(), representativeCheckBox.isSelected(), curatorship1CheckBox.isSelected(), powerOfAttorneyCheckBox.isSelected(), powerOfAttorneyTextArea.getText());
     }
-    
-    
+
 }

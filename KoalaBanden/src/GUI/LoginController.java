@@ -9,7 +9,6 @@ import Acquaintance.IUser;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
@@ -33,10 +32,10 @@ public class LoginController implements Initializable {
     private JFXTextField loginpass;
     @FXML
     private Label statusLabel;
-    
+
     private Parent root;
     private Scene scene;
-    
+
     @FXML
     private JFXButton loginButton;
 
@@ -52,20 +51,26 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
+    /**
+     * Method checks if the username and password input exists in the database
+     * and shows start user screen if input is correct.
+     *
+     * @param event
+     */
     @FXML
     private void actionLogin(ActionEvent event) {
         // Read the input values for username and password.
         String username = loginuser.getText();
         String password = loginpass.getText();
-        
-        if("".equals(username) || "".equals(password)) {
+
+        if ("".equals(username) || "".equals(password)) {
             statusLabel.setText("Status: Alle felter skal udfyldes.");
             logger.warning("Mislykkedes forsøg på login - felter mangler at udfyldes");
             return;
         }
-        
+
         // Call login. Return value indicates status of login
         IUser user = GUIFacade.login(username, password);
 
@@ -79,75 +84,16 @@ public class LoginController implements Initializable {
         GUIFacade.instance.showUserStartScreen(user);
 
         logger.info(username + " er logget ind som " + user.getAccessLevelString());
-
-
-        
-/*        // Act according to login status
-        switch(i) {
-            // An error has occurred
-            case 0:
-                // Inform user of error and break
-                statusLabel.setText("Status: Fejl i brugernavn og/eller password");
-                logger.warning("Fejl i brugernavn og/eller password");
-                break;
-            // System administrator login
-            case 1:
-                try {
-                    logger.info(username + " er logget ind som system admin");
-                    root = FXMLLoader.load(getClass().getResource("mainSystemAdministrator.fxml"));
-                    scene = loginButton.getScene();
-                    Stage stage = (Stage)scene.getWindow();
-                    stage.setWidth(1257);
-                    stage.setHeight(763);
-                    stage.centerOnScreen();
-                    scene.setRoot(root);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                break;
-            case 2:
-                try {
-                    logger.info(username + " er logget ind som sagsbehandler");
-                    root = FXMLLoader.load(getClass().getResource("mainCaseWorker.fxml"));
-                    scene = loginButton.getScene();
-                    Stage stage = (Stage)scene.getWindow();
-                    stage.setWidth(1257);
-                    stage.setHeight(763);
-                    stage.centerOnScreen();
-                    scene.setRoot(root);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                break;
-            case 3:
-            case 4:
-            case 5:
-                try {
-                    logger.info(username + " er logget ind som borger");
-                    root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
-                    scene = loginButton.getScene();
-                    Stage stage = (Stage)scene.getWindow();
-                    stage.setWidth(1257);
-                    stage.setHeight(763);
-                    stage.centerOnScreen();
-                    scene.setRoot(root);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                break;
-            default:
-                statusLabel.setText("Status: Der er sket en fejl.");
-                logger.warning("Der er sket en fejl.");
-                break;
-        }*/
     }
 
+    /**
+     * Method executes actionLogin() method on ENTER pressed.
+     *
+     * @param event
+     */
     @FXML
     private void handlePasswordTextfieldAction(ActionEvent event) {
         actionLogin(event);
     }
-    
+
 }

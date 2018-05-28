@@ -13,14 +13,12 @@ import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -43,10 +41,10 @@ public class MainUserController implements Initializable {
     private Label sager;
     @FXML
     private ListView<String> sagerListe;
-    
+
     private Parent root;
     private Scene scene;
-    
+
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     /**
@@ -55,52 +53,62 @@ public class MainUserController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
+    /**
+     * Method gets all cases belonging to the user from the database through the BusinessFacade and
+     * adds them to a ListView one by one.
+     *
+     * @param event
+     */
     @FXML
     private void seeCases(ActionEvent event) {
-         // Resets the list containing items everytime method is called.
+        // Resets the list containing items everytime method is called.
         sagerListe.getItems().clear();
         // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
-            sagerListe.getItems().add("Sag: " + i);
+              if(GUIFacade.business.getUser(GUIFacade.business.getCurrentUsername()).getCPR() == GUIFacade.business.getCases().get(i).getCitizencpr()) {
+               //If statement checks which cases belong to the user by comparing citizencpr() with the cases and prints it
+       
+            sagerListe.getItems().add("Sags ID: "
+            + GUIFacade.business.getCases().get(i).getId()
+            + "    CPR: " + GUIFacade.business.getCases().get(i).getCitizencpr()
+            + "    Sagsbehandler: " + GUIFacade.business.getCases().get(i).getUsersusername()
+            + "    Registreret: " + GUIFacade.business.getCases().get(i).getDateCreated()
+            + "    Sidst ændret: " + GUIFacade.business.getCases().get(i).getLastModified()
+            + "    Henvendelses ID: " + GUIFacade.business.getCases().get(i).getEnquiryid());
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnet se sager");
-
         }
-    }
+           }
+        }
+   
 
+    /**
+     * @see GUIFacade#instance#showEditUserScene()
+     * @param event
+     */
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
-               logger.info(GUIFacade.business.getCurrentUsername() + " Åbnede brugermanager");
-
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
-                Parent root = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.show();
-            } catch (IOException io) {
-                io.printStackTrace();
-            }
+            logger.info(GUIFacade.business.getCurrentUsername() + " Åbnede brugermanager");
+            GUIFacade.instance.showEditUserScene();
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
     }
 
+    /**
+     * @see GUIFacade#instance#showLoginScene()
+     * @param event
+     */
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
-
-            root = FXMLLoader.load(getClass().getResource("login.fxml"));
-            scene = logoutButton.getScene();
-            Stage stage = (Stage)scene.getWindow();
-            stage.setWidth(494);
-            stage.setHeight(472);
-            stage.centerOnScreen();
-            scene.setRoot(root);
-            scene.getRoot().requestFocus();
-            }
-            catch (IOException ex) {
-                ex.printStackTrace();
-            }
+            GUIFacade.instance.showLoginScene();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

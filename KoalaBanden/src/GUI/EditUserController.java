@@ -8,7 +8,6 @@ package GUI;
 import Acquaintance.IUser;
 import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -43,8 +42,8 @@ public class EditUserController implements Initializable {
     private JFXTextField accessLevelTextField;
     private IUser user;
 
-    
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
+
     /**
      * Initializes the controller class.
      */
@@ -53,9 +52,14 @@ public class EditUserController implements Initializable {
         // TODO
         user = GUIFacade.business.getUser(GUIFacade.business.getCurrentUsername());
         fillEditProfile();
-        
-    }    
 
+    }
+
+    /**
+     * Method updates the selected user's information based on input.
+     *
+     * @param event
+     */
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
         String password = passwordTextField.getText();
@@ -65,12 +69,16 @@ public class EditUserController implements Initializable {
             user.setEmail(GUIFacade.business.getCurrentUsername(), email);
             statusLabel.setText("Status: Brugerinformationer er opdateret.");
             logger.info("Brugerinformationer på " + user.getUsername() + " er opdateret");
-        }
-        else {
+        } else {
             statusLabel.setText("Status: Alle felter skal udfyldes.");
-            
+
         }
     }
+
+    /**
+     * Method fills the edit user window with information. It is called on when
+     * editUser.fxml is initialized.
+     */
     @FXML
     private void fillEditProfile() {
         // Fylder edit user scenen ud med info. 
@@ -81,7 +89,7 @@ public class EditUserController implements Initializable {
         CPRTextField1.setText(CPR.substring(0, 6));
         CPRTextField2.setText(CPR.substring(6, 10));
         accessLevelTextField.setText(user.getAccessLevelString());
-        
+
     }
-    
+
 }

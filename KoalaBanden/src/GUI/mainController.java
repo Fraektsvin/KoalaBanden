@@ -11,20 +11,16 @@ import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 /**
  *
@@ -61,12 +57,10 @@ public class mainController implements Initializable {
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     private void handleButtonAction(MouseEvent event) {
-        refreshNodes();
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO: Initialize not called when changing scenes
         AccessLevel currentAccessLevel = GUIFacade.business.getCurrentAccessLevel();
         switch (currentAccessLevel) {
             case SYSTEMADMINISTRATOR:
@@ -90,44 +84,14 @@ public class mainController implements Initializable {
             default:
                 break;
         }
-        // refreshNodes();
     }
 
-    private void refreshNodes() {
-        news_scroll.getChildren().clear();
-
-        Node[] nodes = new Node[15];
-
-        for (int i = 0; i < 10; i++) {
-            try {
-                nodes[i] = (Node) FXMLLoader.load(getClass().getResource("news.fxml"));
-                news_scroll.getChildren().add(nodes[i]);
-
-            } catch (IOException ex) {
-                Logger.getLogger(mainController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        }
-
-    }
-
-    @FXML
-    private void createCase(ActionEvent event) {
-
-        try {
-            logger.info(GUIFacade.business.getCurrentUsername() + " åbnede opret sag");
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
-
-    }
-
+    /**
+     * Method gets the list of cases from the data package through the
+     * BusinessFacade and adds them to the ListView one by one.
+     *
+     * @param event
+     */
     @FXML
     private void seeCases(ActionEvent event) {
         // Resets the list containing items everytime method is called.
@@ -139,47 +103,29 @@ public class mainController implements Initializable {
         }
     }
 
-    private void userlist(ActionEvent even) {
-        try {
-            logger.info("brugerliste åbnet");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (IOException io) {
-            io.printStackTrace();
-        }
-    }
-
+    /**
+     * @see GUIFacade#instance#showLoginScene()
+     * @param event
+     */
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " Logged ud");
-
-            root = FXMLLoader.load(getClass().getResource("login.fxml"));
-            scene = logoutButton.getScene();
-            Stage stage = (Stage) scene.getWindow();
-            stage.setWidth(494);
-            stage.setHeight(472);
-            stage.centerOnScreen();
-            scene.setRoot(root);
-            scene.getRoot().requestFocus();
+            GUIFacade.instance.showLoginScene();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
+    /**
+     * @see GUIFacade#instance#showUserListScene()
+     * @param event
+     */
     @FXML
     private void handleUserButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede brugerliste");
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
+            GUIFacade.instance.showUserListScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
