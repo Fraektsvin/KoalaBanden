@@ -5,20 +5,33 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- *
- * @author finch
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class Citizen implements ICitizen {
 
     // Data field
-    private int cpr;
-    private String address;
-    private String email;
-    private int phoneNumber;
-    private String firstname;
-    private String lastname;
+    private int cpr; // cpr of a citizen
+    private String address; // address of a citizen
+    private String email; // email of a citizen
+    private int phoneNumber; // phone number of a citizen
+    private String firstname; // first name of a citizen
+    private String lastname; // last anme of a citizen
 
-    // Contructor
+    // Contructors
+    /**
+     * Constructor creating a citizen
+     *
+     * @param cpr
+     * @param address
+     * @param email
+     * @param phoneNumber
+     * @param firstname
+     * @param lastname
+     */
     public Citizen(int cpr, String address, String email, int phoneNumber, String firstname, String lastname) {
         this.cpr = cpr;
         this.address = address;
@@ -28,6 +41,13 @@ public class Citizen implements ICitizen {
         this.lastname = lastname;
     }
 
+    /**
+     * Constructor creating a citizen by using the resultset of the database to
+     * set the attributes of the citizen class
+     *
+     * @param rs
+     * @throws SQLException
+     */
     public Citizen(ResultSet rs) throws SQLException {
         this.cpr = rs.getInt("cpr");
         this.address = rs.getString("address");
@@ -38,26 +58,50 @@ public class Citizen implements ICitizen {
     }
 
     // Methods
+    /**
+     *
+     * @returns cpr of the citizen
+     */
     public int getCpr() {
         return cpr;
     }
 
+    /**
+     *
+     * @returns address of the citizen
+     */
     public String getAddress() {
         return address;
     }
 
+    /**
+     *
+     * @returns email of the citizen
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     *
+     * @returns phone number of the citizen
+     */
     public int getPhoneNumber() {
         return phoneNumber;
     }
 
+    /**
+     *
+     * @returns first name of the citizen
+     */
     public String getFirstname() {
         return firstname;
     }
 
+    /**
+     *
+     * @returns last name of the citizen
+     */
     public String getLastname() {
         return lastname;
     }

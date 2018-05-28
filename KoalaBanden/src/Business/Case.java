@@ -53,7 +53,8 @@ public class Case implements ICase {
     }
 
     /**
-     * Constructor creating a Case resultset used for the database
+     * Constructor creating a case by using the resultset of the database to set
+     * the attributes of the case class
      *
      * @param rs
      * @throws SQLException
@@ -69,7 +70,6 @@ public class Case implements ICase {
     }
 
     // Methods
-    
     /**
      *
      * @returns id of a case

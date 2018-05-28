@@ -5,21 +5,10 @@
  */
 package Acquaintance;
 
-import Business.Citizen;
-import Business.Enquiry;
-//import Business.Guardian;
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public interface ICaseOpening {
 
-//    public ArrayList<Guardian> AddGuardian(Guardian guardian);
+    /*
+    Not yet implemented
+    */
 
-    public void createEnquiry();
-
-//    public ArrayList<Guardian> GetGuardian();
-
-    public void saveCPR(Citizen citizen);
-    public HashMap getCPRSMAP();
-        
 }
