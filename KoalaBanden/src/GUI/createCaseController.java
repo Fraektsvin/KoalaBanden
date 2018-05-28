@@ -63,9 +63,9 @@ public class createCaseController implements Initializable {
     private void createCaseButtonAction(ActionEvent event) throws IOException {
         try {
             GUIFacade.business.getCaseworker().createCase(GUIFacade.business.getCases().size() + 1, GUIFacade.business.getEnquiries().get(enquiryIDList.getSelectionModel().getSelectedIndex()).getID(), GUIFacade.business.getEnquiries().get(enquiryIDList.getSelectionModel().getSelectedIndex()).getCitizenCPR(), new java.sql.Date(Calendar.getInstance().getTime().getTime()), new java.sql.Date(Calendar.getInstance().getTime().getTime()), GUIFacade.business.getCurrentUsername(), GUIFacade.business.getCurrentUsername());
+            GUIFacade.instance.showCaseOpeningScene();
             Stage stage = (Stage) naestebtn.getScene().getWindow();
             stage.close();
-            GUIFacade.instance.showCaseOpeningScene();
 
         } catch (IOException e) {
             e.printStackTrace();

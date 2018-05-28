@@ -135,7 +135,7 @@ public class GUIFacade extends Application implements IGUI {
      */
     public void showAdminScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainSystemAdministrator.fxml"));
-        stage.setWidth(1257);
+        stage.setWidth(1297);
         stage.setHeight(763);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
@@ -148,7 +148,7 @@ public class GUIFacade extends Application implements IGUI {
      */
     public void showCaseWorkerScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainCaseWorker.fxml"));
-        stage.setWidth(1257);
+        stage.setWidth(1297);
         stage.setHeight(763);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
@@ -161,7 +161,7 @@ public class GUIFacade extends Application implements IGUI {
      */
     public void showUserScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
-        stage.setWidth(1257);
+        stage.setWidth(1297);
         stage.setHeight(763);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
@@ -173,11 +173,12 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showEnquiryScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Enquiry.fxml"));
-        stage.setWidth(810);
-        stage.setHeight(715);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Enquiry.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     /**
@@ -186,11 +187,12 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showCaseOpeningScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("caseOpening.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("caseOpening.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
+
     }
 
     /**
@@ -199,11 +201,11 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showCreateCaseScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("createCase.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createCase.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     /**
@@ -259,11 +261,11 @@ public class GUIFacade extends Application implements IGUI {
     }
 
     public void showCreateUserScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("createuser.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
-    }
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createuser.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
 
+    }
 }

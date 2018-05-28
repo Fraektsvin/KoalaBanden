@@ -339,6 +339,8 @@ public class caseOpeningController implements Initializable {
     // ID on caseOpening is irrelevant because we did not implement the connection between cases and caseOpenings. 
     private void createCaseOpening(ActionEvent event) throws SQLException {
         GUIFacade.business.getCaseworker().createCaseOpening(GUIFacade.business.getCases().size(), guardianshipCheckBox.isSelected(), guardianshipWithDeprivedLegalCapacityCheckBox.isSelected(), curatorshipCheckBox.isSelected(), guardianContactInformationCheckBox.isSelected(), guardianContactInformationTextArea.getText(), companionCheckBox.isSelected(), representativeCheckBox.isSelected(), curatorship1CheckBox.isSelected(), powerOfAttorneyCheckBox.isSelected(), powerOfAttorneyTextArea.getText());
+        Stage stage = (Stage) returnButton.getScene().getWindow();
+        stage.close();
     }
 
 }
