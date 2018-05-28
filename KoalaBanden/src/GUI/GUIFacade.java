@@ -84,7 +84,7 @@ public class GUIFacade extends Application implements IGUI {
     }
 
     /**
-     * Method sets IBusiness to a given IBusiness.
+     * Method sets IBusiness.
      *
      * @param business
      */
