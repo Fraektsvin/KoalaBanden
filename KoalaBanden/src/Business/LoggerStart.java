@@ -12,28 +12,38 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 /**
- *
- * @author trium
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class LoggerStart {
 
-    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
-    private static FileHandler fh;
+    private final static Logger logger = Logger.getLogger(LoggerStart.class.getName()); // Instanciates logger from Java
+    private static FileHandler fh; // fileHandler used for creating local log file
 
+    /**
+     * Constructor creates a logger which inputs logtext into a local log file (1)
+     * Logger is formatted to simpleforamatter for layout purposes to read the logger in txt file(2)
+     * Logger level is set to log everything which also includes the class name(3)
+     * Custom information logging statement (4)
+     * Runtime thread method to close the logger upon closing the application(5)
+     */
     public void LoggerStart() {
 
         try {
 
             // This block configure the logger with handler and formatter  
-            fh = new FileHandler("LogFile.log", true);
+            fh = new FileHandler("LogFile.log", true); //(1)
             logger.addHandler(fh);
-            SimpleFormatter formatter = new SimpleFormatter();
+            SimpleFormatter formatter = new SimpleFormatter();//(2)
             fh.setFormatter(formatter);
 
             // the following statement is used to log any messages  
-            logger.setLevel(Level.ALL);
+            logger.setLevel(Level.ALL);//(3)
             logger.setUseParentHandlers(true);
-            logger.log(Level.INFO, "Initializing Logger");
+            logger.log(Level.INFO, "Initializing Logger");//(4)
 
         } catch (SecurityException e) {
             e.printStackTrace();
@@ -41,8 +51,7 @@ public class LoggerStart {
             e.printStackTrace();
         }
 
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            /* Closes the logger upon closing the application. */
+        Runtime.getRuntime().addShutdownHook(new Thread() { //(5)
             @Override
             public void run() {
                 fh.close();

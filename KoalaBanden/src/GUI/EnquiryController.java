@@ -74,10 +74,10 @@ public class EnquiryController implements Initializable {
 
         // Opretter henvendelsen i databasen.
         GUIFacade.business.getCaseworker().registerEnquiry((GUIFacade.business.getCaseworker().getEnquiries().size() + 1), sourceField.getText(), new java.sql.Date(Calendar.getInstance().getTime().getTime()), descriptionField.getText(), Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()));
-         GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
-                    statusLabel.setText("Status: Henvendelse oprettet.");
-                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
-                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
+        GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
+        statusLabel.setText("Status: Henvendelse oprettet.");
+        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
+        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
 
         // Tjekker om borgeren er registreret i systemet og opretter henvendelsen. 
 //        for (int i = 0; i < GUIFacade.business.getCitizens().size(); i++) {
@@ -87,13 +87,7 @@ public class EnquiryController implements Initializable {
 //                citizenAlreadyRegistered = true;
 //            }
 //        }
-
-                   
-                }
-
-    
-    
-    
+    }
 
     @FXML
     private void HandleReturnButtonAction(ActionEvent event) {

@@ -7,7 +7,6 @@ package Data;
 
 import Acquaintance.AccessLevel;
 import Acquaintance.ICase;
-import Acquaintance.ICaseOpening;
 import Acquaintance.ICitizen;
 import Acquaintance.IEnquiry;
 import Acquaintance.IUser;
@@ -76,8 +75,8 @@ public class Database {
     }
 
     /**
-     * Method deletes a User from the Database from table users, based on the
-     * username
+     * Method deletes a User from the Database from table users and HashMap
+     * userMap, based on the username
      *
      * @param userName
      * @throws SQLException
@@ -202,7 +201,7 @@ public class Database {
      * Method is used to call methods on a User at the GUI level AFTER the user
      * is logged in.
      *
-     * @param userName of a User
+     * @param userName of a user
      * @returns a user
      * @throws SQLException
      */
@@ -223,15 +222,17 @@ public class Database {
         return user;
     }
 
-     
-      /**
-     * Method retrieves all current users in the database table users.
+    /**
+     * Method retrieves all current users in the database table users and adds
+     * all users to HashMap userMap. A new instance of caseMap is created to
+     * make sure the HashMap is updated according to the database everytime
+     * getUsers() is called.
      *
      * @returns a HashMap with all users in the database.
      * @throws SQLException
      */
-        public HashMap<Integer, IUser> getUsers() throws SQLException {
-  
+    public HashMap<Integer, IUser> getUsers() throws SQLException {
+
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
         userMap = new HashMap();
         int userID = 0;
@@ -239,7 +240,6 @@ public class Database {
             st = db.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM users");
             while (rs.next()) {
-                // BRYDER LAGDELING??
                 userMap.put(userID, new User(rs));
                 userID++;
             }
@@ -253,23 +253,21 @@ public class Database {
         return userMap;
     }
 
-        
-        // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
-        public HashMap<Integer, ICase> getCases() throws SQLException {
     /**
-     * Method retrieves all current cases in the database table cases.
+     * Method retrieves all current cases in the database table cases. A new
+     * instance of caseMap is created to make sure the HashMap is updated
+     * according to the database everytime getCases() is called.
      *
      * @returns a HashMap with all current cases in the database
      * @throws SQLException
      */
-        // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
+    public HashMap<Integer, ICase> getCases() throws SQLException {
         caseMap = new HashMap();
         int caseID = 0;
         try {
             st = db.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM cases");
             while (rs.next()) {
-                // BRYDER LAGDELING??
                 caseMap.put(caseID, new Case(rs));
                 caseID++;
             }
@@ -284,10 +282,23 @@ public class Database {
     }
 
     /**
+     * Method creates a caseOpening and adds it to the database table
+     * caseOpenings
      *
-     * @return @throws SQLException
+     * @param id
+     * @param guardianship
+     * @param guardianshipwithdesprivedjudiciallegalcapacity
+     * @param guardiancuratorship
+     * @param guardian
+     * @param guardianinformation
+     * @param layrepresentative
+     * @param representative
+     * @param representationcuratorship
+     * @param authority
+     * @param authorityinformation
+     * @throws SQLException
      */
-   public void createCaseOpening(int id, Boolean guardianship, Boolean guardianshipwithdesprivedjudiciallegalcapacity, Boolean guardiancuratorship, Boolean guardian, String guardianinformation, Boolean layrepresentative, Boolean representative, Boolean representationcuratorship, Boolean authority, String authorityinformation) throws SQLException {
+    public void createCaseOpening(int id, Boolean guardianship, Boolean guardianshipwithdesprivedjudiciallegalcapacity, Boolean guardiancuratorship, Boolean guardian, String guardianinformation, Boolean layrepresentative, Boolean representative, Boolean representationcuratorship, Boolean authority, String authorityinformation) throws SQLException {
         try {
             st = db.createStatement();
             st.execute("INSERT into caseOpenings(id, guardianship, guardianshipwithdesprivedjudiciallegalcapacity, guardiancuratorship, guardian, guardianinformation, layrepresentative, representative, representationcuratorship, authority, authorityinformation) VALUES ('" + id + "','" + guardianship + "','" + guardianshipwithdesprivedjudiciallegalcapacity + "','" + guardiancuratorship + "','" + guardian + "','" + guardianinformation + "','" + layrepresentative + "','" + representative + "','" + representationcuratorship + "','" + authority + "','" + authorityinformation + "')");
@@ -372,25 +383,21 @@ public class Database {
         }
     }
 
-    
-    public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException {
-      // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
-
-
     /**
      * Method retrieves all current enquiries from the database table enquiries
+     * A new instance of caseMap is created to make sure the HashMap is updated
+     * according to the database everytime getCases() is called.
      *
      * @returns a HashMap with all current enquries
      * @throws SQLException
      */
-        // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
+    public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException {
         enquiryMap = new HashMap();
         int enquiryID = 0;
         try {
             st = db.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM enquiries");
             while (rs.next()) {
-                // BRYDER LAGDELING??
                 enquiryMap.put(enquiryID, new Enquiry(rs));
                 enquiryID++;
             }
@@ -405,17 +412,16 @@ public class Database {
 
     }
 
-    
-    public HashMap<Integer, ICitizen> getCitizens() throws SQLException {
-      // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
-
     /**
-     * Method retrieves all current citizens from the database table citizens
+     * Method retrieves all current citizens from the database table citizens. A
+     * new instance of caseMap is created to make sure the HashMap is updated
+     * according to the database everytime getCitizens() is called.
      *
      * @returns a HashMap with all current enquiries
      * @throws SQLException
      */
-        // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
+    public HashMap<Integer, ICitizen> getCitizens() throws SQLException {
+
         citizenMap = new HashMap();
         int citizenID = 0;
         try {
@@ -432,7 +438,7 @@ public class Database {
         } catch (PSQLException ex) {
             ex.printStackTrace();
         }
-        
+
         return citizenMap;
     }
 

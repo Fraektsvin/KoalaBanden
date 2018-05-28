@@ -19,5 +19,4 @@ public interface IUser {
     public void setPassword(String userName, String password);
     public void setEmail(String userName, String email);
     public AccessLevel getAccessLevel();
-    public boolean checkPassword(String password);
 }
