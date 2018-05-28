@@ -121,8 +121,7 @@ public class DataFacade implements IData {
             e.printStackTrace();
         }
     }
-<<<<<<< HEAD
-        
+       
     @Override
     public HashMap getEnquiries() {
         try {
@@ -134,13 +133,7 @@ public class DataFacade implements IData {
     }
     
     
-=======
 
-    public HashMap getEnquiries() throws SQLException {
-        return database.getEnquiries();
-    }
-
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
     public HashMap getCitizens() throws SQLException {
         return database.getCitizens();
     }

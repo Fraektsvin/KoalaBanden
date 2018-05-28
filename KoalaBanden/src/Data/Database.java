@@ -222,20 +222,16 @@ public class Database {
         }
         return user;
     }
-<<<<<<< HEAD
-     
-     // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
-        public HashMap<Integer, IUser> getUsers() throws SQLException {
-=======
 
-    /**
+     
+      /**
      * Method retrieves all current users in the database table users.
      *
      * @returns a HashMap with all users in the database.
      * @throws SQLException
      */
-    public HashMap getUsers() throws SQLException {
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
+        public HashMap<Integer, IUser> getUsers() throws SQLException {
+  
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
         userMap = new HashMap();
         int userID = 0;
@@ -256,20 +252,16 @@ public class Database {
 
         return userMap;
     }
-<<<<<<< HEAD
+
         
         // This method is used to retrieve all current users in the database. Returns a HashMap with all users.
         public HashMap<Integer, ICase> getCases() throws SQLException {
-=======
-
     /**
      * Method retrieves all current cases in the database table cases.
      *
      * @returns a HashMap with all current cases in the database
      * @throws SQLException
      */
-    public HashMap getCases() throws SQLException {
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getUsers() is called.     
         caseMap = new HashMap();
         int caseID = 0;
@@ -386,11 +378,11 @@ public class Database {
             ex.printStackTrace();
         }
     }
-<<<<<<< HEAD
+
     
     public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException {
       // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
-=======
+
 
     /**
      * Method retrieves all current enquiries from the database table enquiries
@@ -398,9 +390,7 @@ public class Database {
      * @returns a HashMap with all current enquries
      * @throws SQLException
      */
-    public HashMap getEnquiries() throws SQLException {
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
         enquiryMap = new HashMap();
         int enquiryID = 0;
         try {
@@ -421,11 +411,10 @@ public class Database {
         return enquiryMap;
 
     }
-<<<<<<< HEAD
+
     
     public HashMap<Integer, ICitizen> getCitizens() throws SQLException {
       // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
-=======
 
     /**
      * Method retrieves all current citizens from the database table citizens
@@ -433,9 +422,7 @@ public class Database {
      * @returns a HashMap with all current enquiries
      * @throws SQLException
      */
-    public HashMap getCitizens() throws SQLException {
         // Creates the HashMap to make sure the HashMap is updated according to the database everytime getEnquiries() is called.     
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
         citizenMap = new HashMap();
         int citizenID = 0;
         try {
@@ -452,15 +439,8 @@ public class Database {
         } catch (PSQLException ex) {
             ex.printStackTrace();
         }
-<<<<<<< HEAD
         
         return citizenMap;
-   
-=======
-
-        return enquiryMap;
-
->>>>>>> 680ab6ca0500a445df5dcb9b386a56b1a27783cf
     }
 
 }

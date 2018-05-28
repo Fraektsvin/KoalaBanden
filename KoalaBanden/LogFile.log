@@ -3682,3 +3682,9 @@ maj 28, 2018 8:34:29 AM GUI.MainCaseWorkerController handleMyProfileButtonAction
 INFO: Bob åbnede sin egen profil
 maj 28, 2018 8:35:09 AM GUI.MainCaseWorkerController handleLogoutButtonAction
 INFO: BobLogged ud
+maj 28, 2018 8:59:01 AM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 8:59:09 AM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 8:59:11 AM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
