@@ -3964,3 +3964,9 @@ maj 28, 2018 2:06:52 PM GUI.MainCaseWorkerController handleLogoutButtonAction
 INFO: BobLogged ud
 maj 28, 2018 2:06:55 PM GUI.LoginController actionLogin
 INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 28, 2018 2:19:30 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 28, 2018 2:19:39 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 28, 2018 2:19:40 PM GUI.MainCaseWorkerController createCase
+INFO:  Opret sag startet af:  Bob
