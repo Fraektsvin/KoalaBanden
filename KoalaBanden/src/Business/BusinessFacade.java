@@ -18,47 +18,42 @@ import java.util.HashMap;
  * @author Antonio
  */
 public class BusinessFacade implements IBusiness {
-    
-    private SystemManager manager;
-    private ICaseworker worker; 
-    public  static IData data;
+
+    private SystemManager manager; // instance of a systemmanager
+    private ICaseworker worker; // instance of an ICaseworker
+    public static IData data; // instance of an IData
     int caseID = 0;
-    private ICaseOpening CaseOpening;
-    
+
     public BusinessFacade() throws SQLException {
         manager = new SystemManager();
     }
-   
+
     public boolean userExists(String userName) {
         return data.userExists(userName);
     }
-    
+
     @Override
     public void injectData(IData data) {
         this.data = data;
     }
-    
-    public void createUser(User user) {
-        data.createUser(user);
-    }
-    
+
     @Override
     public ICaseworker getCaseworker() {
         return worker;
     }
-    
+
     @Override
-    public void createCaseworker(String username, String password, String email, int SSN, AccessLevel accesslevel ) {
+    public void createCaseworker(String username, String password, String email, int SSN, AccessLevel accesslevel) {
         //manager.createCaseworker(username, password, email, SSN, accesslevel);
         this.worker = new Caseworker(username, password, email, SSN, accesslevel);
     }
-    
+
     @Override
     // Returns the collection of cases from data.
     public HashMap<Integer, ICase> getCases() {
         return data.getCases();
     }
-    
+
     @Override
     public HashMap<Integer, IEnquiry> getEnquiries() {
         return data.getEnquiries();
@@ -68,7 +63,7 @@ public class BusinessFacade implements IBusiness {
     public IData getData() {
         return this.data;
     }
-    
+
     @Override
     public IUser login(String userName, String password) {
         return manager.login(userName, password);
@@ -103,41 +98,20 @@ public class BusinessFacade implements IBusiness {
     public IUser getUser(String userName, String password) {
         return data.getUser(userName, password);
     }
-    
-     @Override
+
+    @Override
     public IUser getUser(String userName) {
         return data.getUser(userName);
     }
-    
-    public HashMap getCPRSMAP() {
-        return CaseOpening.getCPRSMAP();
-    }
-    public void createEnquiry() {
-       CaseOpening.createEnquiry();
-    }
-    
-     public ICaseOpening saveCPR(Citizen citizen) {
-         CaseOpening.saveCPR(citizen);
-        return null;
-     }
 
     @Override
     public String getCurrentUsername() {
         return manager.getCurrentUsername();
     }
-    
+
     @Override
     public void setUser(String Username) {
         manager.setUser(Username);
     }
-    
-    public HashMap getCitizens() throws SQLException {
-        return data.getCitizens();
-    }
-    
-} 
-    
 
-
-  
-
+}
