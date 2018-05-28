@@ -51,52 +51,53 @@ public class MainSystemAdministratorController implements Initializable {
         // TODO
     }
 
+    /**
+     * @see GUIFacade#instance#showUserListScene()
+     * @param event
+     */
     @FXML
     private void handleUserButtonAction(ActionEvent event) {
         try {
             logger.info("brugerliste åbnet");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            GUIFacade.instance.showUserListScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
     }
 
+    /**
+     * @see GUIFacade#instance#showEditUserScene()
+     * @param event
+     */
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
             logger.info("Bruger manager åbnet");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            GUIFacade.instance.showEditUserScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
     }
 
+    /**
+     * @see GUIFacade#instance#instance#showLoginScene()
+     * @param event
+     */
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
-            root = FXMLLoader.load(getClass().getResource("login.fxml"));
-            scene = logoutButton.getScene();
-            Stage stage = (Stage) scene.getWindow();
-            stage.setWidth(494);
-            stage.setHeight(472);
-            stage.centerOnScreen();
-            scene.setRoot(root);
-            scene.getRoot().requestFocus();
+            GUIFacade.instance.showLoginScene();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
+    /**
+     * @see GUIFacade#instance#showLogScene()
+     * @param event
+     */
     @FXML
     private void handleLogButtonAction(ActionEvent event) {
         try {

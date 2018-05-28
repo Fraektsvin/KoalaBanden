@@ -9,10 +9,8 @@ import Acquaintance.AccessLevel;
 import Acquaintance.IBusiness;
 import Acquaintance.IGUI;
 import Acquaintance.IUser;
-
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Map;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -20,12 +18,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
 /**
  *
  * @author Antonio
  */
-    public class GUIFacade extends Application implements IGUI {
+public class GUIFacade extends Application implements IGUI {
 
     static GUIFacade instance;
     static IBusiness business;
@@ -34,45 +31,86 @@ import javafx.stage.Stage;
     static String currentEmail;
     private Stage stage;
 
+    /**
+     * @see Business.BusinessFacade#login(java.lang.String, java.lang.String)
+     * @param username
+     * @param password
+     * @return
+     */
     public static IUser login(String username, String password) {
         return business.login(username, password);
     }
-    
+
+    /**
+     * @see Business.BusinessFacade#createUser(java.lang.String,
+     * java.lang.String, java.lang.String, java.lang.String,
+     * Acquaintance.AccessLevel)
+     * @param username
+     * @param password
+     * @param email
+     * @param CPR
+     * @param accessLevel
+     * @return
+     */
     public static boolean createUser(String username, String password, String email, String CPR, AccessLevel accessLevel) {
         return business.createUser(username, password, email, CPR, accessLevel);
     }
-    
+
+    /**
+     * @see Business.BusinessFacade#getAccessLevels()
+     * @return
+     */
     public static Collection getAccessLevels() {
         return business.getAccessLevels();
     }
-            
+
+    /**
+     * Starts the scene by opening the login.fxml file.
+     *
+     * @param stage
+     * @throws Exception
+     */
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        
+
         Scene scene = new Scene(root);
         instance = this;
         this.stage = stage;
-        
+
         stage.setResizable(true);
         stage.setScene(scene);
         stage.show();
     }
 
-
+    /**
+     * Method sets IBusiness to a given IBusiness.
+     *
+     * @param business
+     */
     @Override
     public void injectBusiness(IBusiness business) {
         this.business = business;
     }
 
+    /**
+     * Method launches the application.
+     *
+     * @param args
+     */
     @Override
     public void startApplication(String[] args) {
         launch(args);
     }
 
+    /**
+     * Method shows the user start screen based on the logged in user.
+     *
+     * @param u
+     */
     public void showUserStartScreen(IUser u) {
         try {
-            switch(u.getAccessLevel()) {
+            switch (u.getAccessLevel()) {
                 case SYSTEMADMINISTRATOR:
                     showAdminScene();
                     break;
@@ -90,7 +128,11 @@ import javafx.stage.Stage;
         }
     }
 
-
+    /**
+     * Method opens the mainSystemAdministrator.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showAdminScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainSystemAdministrator.fxml"));
         stage.setWidth(1257);
@@ -99,6 +141,11 @@ import javafx.stage.Stage;
         stage.getScene().setRoot(root);
     }
 
+    /**
+     * Method opens the mainCaseWorker.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showCaseWorkerScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainCaseWorker.fxml"));
         stage.setWidth(1257);
@@ -107,6 +154,11 @@ import javafx.stage.Stage;
         stage.getScene().setRoot(root);
     }
 
+    /**
+     * Method opens the mainUser.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showUserScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
         stage.setWidth(1257);
@@ -114,23 +166,38 @@ import javafx.stage.Stage;
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }
-    
+
+    /**
+     * Method opens the Enquiry.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showEnquiryScene() throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("Enquiry.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Enquiry.fxml"));
         stage.setWidth(810);
         stage.setHeight(715);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }
-    
-      public void showCaseOpeningScene() throws IOException {
+
+    /**
+     * Method opens the caseOpening.fxml scene.
+     *
+     * @throws IOException
+     */
+    public void showCaseOpeningScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("caseOpening.fxml"));
         stage.setWidth(1257);
         stage.setHeight(763);
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }
-      
+
+    /**
+     * Method opens the createCase.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showCreateCaseScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createCase.fxml"));
         stage.setWidth(1257);
@@ -138,7 +205,12 @@ import javafx.stage.Stage;
         stage.centerOnScreen();
         stage.getScene().setRoot(root);
     }
-    
+
+    /**
+     * Method opens the editUser.fxml scene.
+     *
+     * @throws IOException
+     */
     public void showEditUserScene() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("editUser.fxml"));
         stage.setWidth(1257);
@@ -147,5 +219,51 @@ import javafx.stage.Stage;
         stage.getScene().setRoot(root);
     }
 
-   
+    /**
+     * Method opens the userList.fxml scene.
+     *
+     * @throws IOException
+     */
+    public void showUserListScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("userList.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+
+    /**
+     * Method opens the login.fxml scene.
+     *
+     * @throws IOException
+     */
+    public void showLoginScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        stage.setWidth(494);
+        stage.setHeight(472);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+
+    /**
+     * Method opens the log.fxml scene.
+     *
+     * @throws IOException
+     */
+    public void showLogScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("log.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+
+    public void showCreateUserScene() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("createuser.fxml"));
+        stage.setWidth(1257);
+        stage.setHeight(763);
+        stage.centerOnScreen();
+        stage.getScene().setRoot(root);
+    }
+
 }

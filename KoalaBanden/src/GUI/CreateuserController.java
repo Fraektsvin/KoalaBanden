@@ -11,10 +11,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.ResourceBundle;
-import java.util.Set;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -33,7 +30,7 @@ import javafx.stage.Stage;
 public class CreateuserController implements Initializable {
 
     @FXML
-    private JFXComboBox<String> accessLevelComboBox;
+    private JFXComboBox<String> accessLevelComboBox; 
     @FXML
     private JFXTextField usernameTextField;
     @FXML
@@ -58,7 +55,11 @@ public class CreateuserController implements Initializable {
         // TODO
         ObservableList<String> accessLevelList = FXCollections.observableArrayList(GUIFacade.getAccessLevels());
         accessLevelComboBox.setItems(accessLevelList);
-    }    
+    }  
+    /**
+     * Method creates a user on button clicked and checks that all fields are filled out. 
+     * @param event 
+     */
     @FXML
     public void handleCreateUserButtonAction(ActionEvent event) {
         // Read values

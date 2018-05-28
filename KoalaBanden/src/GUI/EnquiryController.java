@@ -69,15 +69,21 @@ public class EnquiryController implements Initializable {
 
     }
 
+    /**
+     * Method creates a enquiry & citizen in the database based on input.
+     *
+     * @param event
+     * @throws SQLException
+     */
     @FXML
     private void createEnquiry(ActionEvent event) throws SQLException {
 
         // Opretter henvendelsen i databasen.
         GUIFacade.business.getCaseworker().registerEnquiry((GUIFacade.business.getCaseworker().getEnquiries().size() + 1), sourceField.getText(), new java.sql.Date(Calendar.getInstance().getTime().getTime()), descriptionField.getText(), Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()));
-         GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
-                    statusLabel.setText("Status: Henvendelse oprettet.");
-                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
-                    logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
+        GUIFacade.business.getCaseworker().createCitizen(Integer.parseInt(CPRTextField1.getText() + CPRTextField2.getText()), addressField.getText(), emailField.getText(), Integer.parseInt(phoneNumberField.getText()), nameField.getText(), lastNameField.getText());
+        statusLabel.setText("Status: Henvendelse oprettet.");
+        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny henvendelse");
+        logger.info(GUIFacade.business.getCurrentUsername() + " oprettede ny borger");
 
         // Tjekker om borgeren er registreret i systemet og opretter henvendelsen. 
 //        for (int i = 0; i < GUIFacade.business.getCitizens().size(); i++) {
@@ -87,14 +93,13 @@ public class EnquiryController implements Initializable {
 //                citizenAlreadyRegistered = true;
 //            }
 //        }
+    }
 
-                   
-                }
-
-    
-    
-    
-
+    /**
+     * Method closes the current open FXML window.
+     *
+     * @param event
+     */
     @FXML
     private void HandleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();

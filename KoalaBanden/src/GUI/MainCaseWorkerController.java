@@ -9,8 +9,6 @@ import Business.LoggerStart;
 import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Date;
-import java.util.Calendar;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
@@ -63,31 +61,49 @@ public class MainCaseWorkerController implements Initializable {
         // TODO
     }
 
+    /**
+     * @see GUIFacade#instance#showCreateCaseScene()
+     * @param event
+     */
     @FXML
     private void createCase(ActionEvent event) {
         try {
             logger.info(" Opret sag startet af:  " + GUIFacade.business.getCurrentUsername());
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createCase.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            GUIFacade.instance.showCreateCaseScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
     }
 
+    /**
+     * Method loops through all cases in the database and adds them to the list if any of them are connected to the caseworker.
+     * @param event
+     */
     @FXML
     private void seeCases(ActionEvent event) {
         // Resets the list containing items everytime method is called.
         sagerListe.getItems().clear();
         // Adds every case ID from the case hashMap to sagerListe list. 
         for (int i = 0; i < GUIFacade.business.getCases().size(); i++) {
-            sagerListe.getItems().add("Sag: " + GUIFacade.business.getCases().get(i).getCitizencpr());
-            logger.info("Se sager åbnet");
+           if(GUIFacade.business.getCurrentUsername().equals(GUIFacade.business.getCases().get(i).getUsersusername())) {
+           //if statements checks currentl users username and checks if it equals caseworkers username, this will print all cases belonging to the right username
+            sagerListe.getItems().add("Sags ID: "
+            + GUIFacade.business.getCases().get(i).getId()
+            + "    CPR: " + GUIFacade.business.getCases().get(i).getCitizencpr()
+            + "    Sagsbehandler: " + GUIFacade.business.getCases().get(i).getUsersusername()
+            + "    Registreret: " + GUIFacade.business.getCases().get(i).getDateCreated()
+            + "    Sidst ændret: " + GUIFacade.business.getCases().get(i).getLastModified()
+            + "    Henvendelses ID: " + GUIFacade.business.getCases().get(i).getEnquiryid());
+            logger.info(GUIFacade.currentUsername + " har åbnet se sager.");
+        }
         }
     }
 
+    /**
+     * Method sets the scene to login.fxml.
+     *
+     * @param event
+     */
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
@@ -105,38 +121,33 @@ public class MainCaseWorkerController implements Initializable {
         }
     }
 
+    /**
+     * @see GUIFacade#instance#showEditUserScene()
+     * @param event
+     */
     @FXML
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede sin egen profil");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            GUIFacade.instance.showEditUserScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
     }
 
+    /**
+     * @see GUIFacade#instance#showEnquiryScene()
+     * @param event
+     * @throws IOException
+     */
     @FXML
     private void createEnquiry(ActionEvent event) throws IOException {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede en ny henvendelse");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Enquiry.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            GUIFacade.instance.showEnquiryScene();
         } catch (IOException io) {
             io.printStackTrace();
         }
-//        GUIFacade.instance.showEnquiryScene();
     }
-
-    @FXML
-    private void handleUserButtonAction(ActionEvent event) {
-    }
-
 }

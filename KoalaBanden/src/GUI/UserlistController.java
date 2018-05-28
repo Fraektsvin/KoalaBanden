@@ -64,28 +64,34 @@ public class UserlistController implements Initializable {
         this.updateUserList();
         System.out.println("Dags dato: " + calendar.get(Calendar.DATE));
     }    
-    
+    /**
+     * Method closes the current open scene.
+     * @param event 
+     */
     @FXML
     private void handleReturnButtonAction(ActionEvent event) {
         Stage stage = (Stage) returnButton.getScene().getWindow();
         stage.close();
     }
     
+    /**
+     * @see GUIFacade#instance#showCreateUserScene() 
+     * @param event 
+     */
     @FXML
     private void handleCreateUserButtonAction(ActionEvent event) {
         try {
             logger.info(GUIFacade.business.getCurrentUsername() + " åbnede lav bruger værktøjet");
-            
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("createuser.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
+            GUIFacade.instance.showCreateUserScene();
         } catch (IOException io) {
-            io.printStackTrace();
+            io.printStackTrace();   
         }
     }
     
+    /**
+     * Method gets a selected user from the ListView and deletes it from the list and database through the BusinessFacade.
+     * @param event 
+     */
     @FXML
     private void handleDeleteUserButton(ActionEvent event) {
         String username = userListView.getSelectionModel().getSelectedItem();
@@ -96,6 +102,11 @@ public class UserlistController implements Initializable {
         this.updateUserList();
     }
     
+    /**
+     * Method sets the logged in user to the selected user in the ListView and opens the editUser scene.
+     * The method sets the logged in user to the selected user, so that the editUser scene is filled with the correct information.
+     * @param event 
+     */
     @FXML
     private void handleEditUserButtonAction(ActionEvent event) {
         // Stores the old username to temporarily set the logged in user to the selected user.
@@ -132,7 +143,9 @@ public class UserlistController implements Initializable {
   
         this.updateUserList();
     }
-    
+    /**
+     * Method updates the ListView containing users.
+     */
     private void updateUserList() {
         userListView.getItems().clear();        
         logger.info("Brugerliste opdateret");
@@ -142,6 +155,11 @@ public class UserlistController implements Initializable {
         
     }
     
+    /**
+     * Method registers click on button and runs updateUserList() method.
+     * @see #updateUserList() 
+     * @param event 
+     */
     @FXML
     private void handleUpdateListButton(ActionEvent event) {
         this.updateUserList();
