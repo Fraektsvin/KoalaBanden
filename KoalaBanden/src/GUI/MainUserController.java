@@ -91,7 +91,7 @@ public class MainUserController implements Initializable {
     private void handleMyProfileButtonAction(ActionEvent event) {
         GUIFacade.currentUsername = GUIFacade.business.getCurrentUsername();
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + " Åbnede brugermanager");
+            logger.info(GUIFacade.business.getCurrentUsername() + " åbnede brugermanager");
             GUIFacade.instance.showEditUserScene();
         } catch (IOException io) {
             io.printStackTrace();
@@ -105,7 +105,7 @@ public class MainUserController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
+            logger.info(GUIFacade.business.getCurrentUsername() + " er logget ud");
             GUIFacade.instance.showLoginScene();
         } catch (IOException ex) {
             ex.printStackTrace();

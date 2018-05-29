@@ -62,7 +62,7 @@ public class UserlistController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         this.updateUserList();
-        System.out.println("Dags dato: " + calendar.get(Calendar.DATE));
+        
     }    
     /**
      * Method closes the current open scene.
@@ -118,7 +118,7 @@ public class UserlistController implements Initializable {
         // Sets the user logged in to be the selected one in the userListView, so that we can edit the user info.
         GUIFacade.business.setUser(username);
             try {
-                logger.info(GUIFacade.business.getCurrentUsername() + "Bruger manager åbnet");
+                logger.info(GUIFacade.business.getCurrentUsername() + " åbnede brugermanager");
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
@@ -148,7 +148,7 @@ public class UserlistController implements Initializable {
      */
     private void updateUserList() {
         userListView.getItems().clear();        
-        logger.info("Brugerliste opdateret");
+        logger.info(GUIFacade.business.getCurrentUsername() + " opdaterede brugerlisten");
         for (int i = 0; i < GUIFacade.business.getUsers().size(); i++) {
             userListView.getItems().add(GUIFacade.business.getUsers().get(i).getUsername());            
         }
@@ -163,7 +163,7 @@ public class UserlistController implements Initializable {
     @FXML
     private void handleUpdateListButton(ActionEvent event) {
         this.updateUserList();
-        logger.info("Brugerliste opdateret");
+        logger.info(GUIFacade.business.getCurrentUsername() + " opdaterede brugerliste");
     }
     
 }

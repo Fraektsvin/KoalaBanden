@@ -41,9 +41,7 @@ public class LoginController implements Initializable {
 
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
-    public LoginController() {
-        System.out.println("Test");
-    }
+   
 
     /**
      * Initializes the controller class.

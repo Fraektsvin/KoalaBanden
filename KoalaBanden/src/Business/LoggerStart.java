@@ -43,7 +43,7 @@ public class LoggerStart {
             // the following statement is used to log any messages  
             logger.setLevel(Level.ALL);//(3)
             logger.setUseParentHandlers(true);
-            logger.log(Level.INFO, "Initializing Logger");//(4)
+            logger.log(Level.INFO, "============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============");//(4)
 
         } catch (SecurityException e) {
             e.printStackTrace();
@@ -52,9 +52,12 @@ public class LoggerStart {
         }
 
         Runtime.getRuntime().addShutdownHook(new Thread() { //(5)
+            
             @Override
             public void run() {
+                logger.log(Level.INFO, "============= PROGRAM PROCESS STOPPET. LOGGER SLUKKES. =============");
                 fh.close();
+                
             }
         });
 

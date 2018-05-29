@@ -3970,3 +3970,131 @@ maj 28, 2018 2:19:39 PM GUI.LoginController actionLogin
 INFO: Bob er logget ind som SAGSBEHANDLER
 maj 28, 2018 2:19:40 PM GUI.MainCaseWorkerController createCase
 INFO:  Opret sag startet af:  Bob
+maj 29, 2018 1:10:58 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 29, 2018 1:11:18 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 29, 2018 1:11:22 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:11:24 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: brugerliste åbnet
+maj 29, 2018 1:11:24 PM GUI.UserlistController updateUserList
+INFO: Brugerliste opdateret
+maj 29, 2018 1:14:14 PM Data.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 29, 2018 1:17:27 PM Business.LoggerStart LoggerStart
+INFO: Initializing Logger
+maj 29, 2018 1:17:31 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:24:52 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:24:58 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:25:01 PM GUI.MainSystemAdministratorController handleLogoutButtonAction
+INFO: Hassan er logget ud
+maj 29, 2018 1:25:13 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:25:40 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:25:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:25:45 PM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassan åbnede log listen
+maj 29, 2018 1:26:12 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:26:18 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:26:19 PM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassan åbnede log listen
+maj 29, 2018 1:26:39 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:26:43 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:26:44 PM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassan åbnede log listen
+maj 29, 2018 1:27:37 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:27:44 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:27:46 PM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassan åbnede log listen
+maj 29, 2018 1:28:14 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:28:18 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:28:20 PM GUI.MainSystemAdministratorController handleMyProfileButtonAction
+INFO: Hassan åbnede brugermanager
+maj 29, 2018 1:32:29 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:32:34 PM GUI.LoginController actionLogin
+INFO: Bob er logget ind som SAGSBEHANDLER
+maj 29, 2018 1:32:36 PM GUI.MainCaseWorkerController createEnquiry
+INFO: Bob åbnede en ny henvendelse
+maj 29, 2018 1:33:32 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:35:16 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:35:17 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: Hassan åbnede brugerliste
+maj 29, 2018 1:35:17 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:36:50 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:36:54 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:36:55 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: Hassan åbnede brugerliste
+maj 29, 2018 1:36:55 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:40 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:37:44 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:37:45 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: Hassan åbnede brugerliste
+maj 29, 2018 1:37:45 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:47 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:52 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:55 PM GUI.UserlistController handleDeleteUserButton
+INFO: null er blevet slettet
+maj 29, 2018 1:37:55 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:56 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 29, 2018 1:37:59 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:37:59 PM GUI.UserlistController handleUpdateListButton
+INFO: Hassan opdaterede brugerliste
+maj 29, 2018 1:38:42 PM GUI.MainSystemAdministratorController handleUserButtonAction
+INFO: Hassan åbnede brugerliste
+maj 29, 2018 1:38:42 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:38:43 PM GUI.UserlistController handleCreateUserButtonAction
+INFO: Hassan åbnede lav bruger værktøjet
+maj 29, 2018 1:38:45 PM GUI.UserlistController handleDeleteUserButton
+INFO: null er blevet slettet
+maj 29, 2018 1:38:45 PM GUI.UserlistController updateUserList
+INFO: Hassan opdaterede brugerlisten
+maj 29, 2018 1:38:49 PM GUI.UserlistController handleEditUserButtonAction
+INFO: Børge åbnede brugermanager
+maj 29, 2018 1:38:49 PM GUI.UserlistController updateUserList
+INFO: Børge opdaterede brugerlisten
+maj 29, 2018 1:38:53 PM GUI.UserlistController handleEditUserButtonAction
+INFO: Ole åbnede brugermanager
+maj 29, 2018 1:38:53 PM GUI.UserlistController updateUserList
+INFO: Ole opdaterede brugerlisten
+maj 29, 2018 1:38:57 PM GUI.MainSystemAdministratorController handleLogButtonAction
+INFO: Hassan åbnede log listen
+maj 29, 2018 1:42:03 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:42:07 PM GUI.LoginController actionLogin
+INFO: Hassan er logget ind som SYSTEMADMINISTRATOR
+maj 29, 2018 1:42:31 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:43:20 PM Business.LoggerStart LoggerStart
+INFO: ============= PROGRAM PROCESS STARTES. LOGGER STARTES. =============
+maj 29, 2018 1:43:23 PM Business.LoggerStart$1 run
+INFO: ============= PROGRAM PROCESS STOPPET. LOGGER SLUKKES. =============

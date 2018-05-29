@@ -160,11 +160,11 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showUserScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("mainUser.fxml"));
-        stage.setWidth(1297);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("mainUser.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     /**
@@ -214,11 +214,11 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showEditUserScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("editUser.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editUser.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     /**
@@ -227,11 +227,11 @@ public class GUIFacade extends Application implements IGUI {
      * @throws IOException
      */
     public void showUserListScene() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("userList.fxml"));
-        stage.setWidth(1257);
-        stage.setHeight(763);
-        stage.centerOnScreen();
-        stage.getScene().setRoot(root);
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("userlist.fxml"));
+        Parent root = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     /**

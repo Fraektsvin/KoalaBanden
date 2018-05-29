@@ -96,7 +96,7 @@ public class mainController implements Initializable {
     private void seeCases(ActionEvent event) {
         // Resets the list containing items everytime method is called.
         sagerListe.getItems().clear();
-        logger.info("Se sager åbnet");
+        logger.info(GUIFacade.business.getCurrentUsername() + " åbnede sagslisten");
         // Adds every case ID from the case hashMap file to file sagerListe list. 
         for (int i = 1; i < GUIFacade.business.getCases().size(); i++) {
             sagerListe.getItems().add("Sag: " + i);
@@ -110,7 +110,7 @@ public class mainController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + " Logged ud");
+            logger.info(GUIFacade.business.getCurrentUsername() + " er logget ud");
             GUIFacade.instance.showLoginScene();
         } catch (IOException ex) {
             ex.printStackTrace();

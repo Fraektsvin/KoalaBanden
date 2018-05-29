@@ -107,7 +107,7 @@ public class MainCaseWorkerController implements Initializable {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) {
         try {
-            logger.info(GUIFacade.business.getCurrentUsername() + "Logged ud");
+            logger.info(GUIFacade.business.getCurrentUsername() + " er logget ud");
             root = FXMLLoader.load(getClass().getResource("login.fxml"));
             scene = logoutButton.getScene();
             Stage stage = (Stage) scene.getWindow();
