@@ -25,9 +25,9 @@ public class Starter {
     private final static Logger logger = Logger.getLogger(LoggerStart.class.getName());
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        
+        
         IData data = new DataFacade();
-
-
         
         IBusiness business = new BusinessFacade();
         

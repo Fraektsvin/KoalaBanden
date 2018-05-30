@@ -225,11 +225,11 @@ public class DataFacade implements IData {
 
     /**
      * @see Database#createEnquiry(int, java.lang.String, java.sql.Date, java.lang.String, int) 
-     * @param id
-     * @param source
-     * @param date
-     * @param description
-     * @param citizencpr
+     * @param id an id
+     * @param source a source
+     * @param date a date
+     * @param description a description
+     * @param citizencpr a
      * @throws SQLException 
      */
     public void createEnquiry(int id, String source, Date date, String description, int citizencpr) throws SQLException {
