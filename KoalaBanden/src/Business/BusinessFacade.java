@@ -34,8 +34,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see Data.DataFacade#userExists(java.lang.String) 
-     * @param userName
-     * @return 
      */
     public boolean userExists(String userName) {
         return data.userExists(userName);
@@ -52,7 +50,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method return a caseworker object. 
-     * @return 
+     * @return caseworker object
      */
     @Override
     public ICaseworker getCaseworker() {
@@ -75,7 +73,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * 
-     * @returns a collection of cases from the database.
+     * @return a collection of cases from the database.
      */
     @Override
     
@@ -85,7 +83,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * 
-     * @returns a collection of enquiries from the database.
+     * @return a collection of enquiries from the database.
      */
     @Override
     public HashMap<Integer, IEnquiry> getEnquiries() {
@@ -94,7 +92,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method is used to get access to methods in the DataFacade from the BusinessFacade.
-     * @returns IData.
+     * @return IData.
      */
     @Override
     public IData getData() {
@@ -103,9 +101,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#login(java.lang.String, java.lang.String) 
-     * @param userName
-     * @param password
-     * @return 
      */
     @Override
     public IUser login(String userName, String password) {
@@ -114,12 +109,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, Acquaintance.AccessLevel) 
-     * @param username
-     * @param password
-     * @param email
-     * @param SSN
-     * @param accessLevel
-     * @return 
      */
     @Override
     public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel) {
@@ -128,7 +117,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#getAccessLevels() 
-     * @return 
      */
     @Override
     public Collection getAccessLevels() {
@@ -137,7 +125,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * 
-     * @returns a collection of users from the database.
+     * @return a collection of users from the database.
      */
     @Override
     public HashMap<Integer, IUser> getUsers() {
@@ -146,7 +134,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#deleteUser(java.lang.String) 
-     * @param username 
      */
     @Override
     public void deleteUser(String username) {
@@ -155,7 +142,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#getCurrentAccessLevel() 
-     * @return 
      */
     @Override
     public AccessLevel getCurrentAccessLevel() {
@@ -164,8 +150,8 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method is used to get a user from the database with username and password.
-     * @param userName
-     * @param password
+     * @param userName username of the user
+     * @param password password of the user
      * @return a IUser object. 
      */
     @Override
@@ -175,7 +161,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method is used to get a user from the database from a username.
-     * @param userName
+     * @param userName username of the user
      * @return an IUser object.
      */
     @Override
@@ -185,7 +171,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#getCurrentUsername() 
-     * @return 
      */
     @Override
     public String getCurrentUsername() {
@@ -194,7 +179,6 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * @see SystemManager#setUser(java.lang.String) 
-     * @param Username 
      */
     @Override
     public void setUser(String Username) {

@@ -72,7 +72,7 @@ public class Case implements ICase {
     // Methods
     /**
      *
-     * @returns id of a case
+     * @return id of a case
      */
     public int getId() {
         return id;
@@ -89,7 +89,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns id of an enquiry
+     * @return id of an enquiry
      */
     public int getEnquiryid() {
         return enquiryid;
@@ -106,7 +106,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns cpr of a citizen
+     * @return cpr of a citizen
      */
     public int getCitizencpr() {
         return citizencpr;
@@ -123,7 +123,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns the date of when a case is created
+     * @return the date of when a case is created
      */
     public Date getDateCreated() {
         return dateCreated;
@@ -140,7 +140,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns the date of when a case was last modified
+     * @return the date of when a case was last modified
      */
     public Date getLastModified() {
         return lastModified;
@@ -157,7 +157,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns the username of the user who last modified a case
+     * @return the username of the user who last modified a case
      */
     public String getLastModifiedBy() {
         return lastModifiedBy;
@@ -174,7 +174,7 @@ public class Case implements ICase {
 
     /**
      *
-     * @returns the username of the caseworker connected to a case
+     * @return the username of the caseworker connected to a case
      */
     public String getUsersusername() {
         return usersusername;

@@ -60,7 +60,7 @@ public class Citizen implements ICitizen {
     // Methods
     /**
      *
-     * @returns cpr of the citizen
+     * @return cpr of the citizen
      */
     public int getCpr() {
         return cpr;
@@ -68,7 +68,7 @@ public class Citizen implements ICitizen {
 
     /**
      *
-     * @returns address of the citizen
+     * @return address of the citizen
      */
     public String getAddress() {
         return address;
@@ -76,7 +76,7 @@ public class Citizen implements ICitizen {
 
     /**
      *
-     * @returns email of the citizen
+     * @return email of the citizen
      */
     public String getEmail() {
         return email;
@@ -84,7 +84,7 @@ public class Citizen implements ICitizen {
 
     /**
      *
-     * @returns phone number of the citizen
+     * @return phone number of the citizen
      */
     public int getPhoneNumber() {
         return phoneNumber;
@@ -92,7 +92,7 @@ public class Citizen implements ICitizen {
 
     /**
      *
-     * @returns first name of the citizen
+     * @return first name of the citizen
      */
     public String getFirstname() {
         return firstname;
@@ -100,7 +100,7 @@ public class Citizen implements ICitizen {
 
     /**
      *
-     * @returns last name of the citizen
+     * @return last name of the citizen
      */
     public String getLastname() {
         return lastname;

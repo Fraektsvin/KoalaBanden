@@ -72,10 +72,9 @@ public class createCaseController implements Initializable {
         }
     }
 
+    
     /**
-     * Method fills the scene with the date & responsible caseworker on
-     * initialize. It also adds all enquiries without a case connected to a
-     * ListView.
+     * Method fills the scene with the date and a responsible caseworker on initialise. It also adds all enquiries without a case connected to a ListView.
      */
     public void fillCreateCase() {
         dateField.setText(new java.sql.Date(Calendar.getInstance().getTime().getTime()).toString());

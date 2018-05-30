@@ -45,12 +45,6 @@ public class GUIFacade extends Application implements IGUI {
      * @see Business.BusinessFacade#createUser(java.lang.String,
      * java.lang.String, java.lang.String, java.lang.String,
      * Acquaintance.AccessLevel)
-     * @param username
-     * @param password
-     * @param email
-     * @param CPR
-     * @param accessLevel
-     * @return
      */
     public static boolean createUser(String username, String password, String email, String CPR, AccessLevel accessLevel) {
         return business.createUser(username, password, email, CPR, accessLevel);
@@ -58,7 +52,6 @@ public class GUIFacade extends Application implements IGUI {
 
     /**
      * @see Business.BusinessFacade#getAccessLevels()
-     * @return
      */
     public static Collection getAccessLevels() {
         return business.getAccessLevels();

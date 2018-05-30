@@ -57,7 +57,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns password of the user
+     * @return password of the user
      */
     @Override
     public String getPassword() {
@@ -91,7 +91,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns email of a user
+     * @return email of a user
      */
     @Override
     public String getEmail() {
@@ -100,7 +100,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns username of a user
+     * @return username of a user
      */
     @Override
     public String getUsername() {
@@ -109,7 +109,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns accesslevel of a user
+     * @return accesslevel of a user
      */
     public AccessLevel getAccessLevel() {
         return accessLevel;
@@ -117,7 +117,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns cpr of a user
+     * @return cpr of a user
      */
     @Override
     public int getCPR() {
@@ -126,7 +126,7 @@ public class User implements IUser {
 
     /**
      *
-     * @returns the accesslevel of a user as a string
+     * @return the accesslevel of a user as a string
      */
     @Override
     public String getAccessLevelString() {

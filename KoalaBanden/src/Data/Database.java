@@ -32,8 +32,8 @@ import org.postgresql.util.PSQLException;
  * @author Alex
  * @author Antonio
  */
-public class Database {
 
+public class Database {
     // Data field
     private String host = "jdbc:postgresql://dumbo.db.elephantsql.com:5432/ntkoapef";
     private String dbusername = "ntkoapef";
@@ -152,7 +152,7 @@ public class Database {
      * username.
      *
      * @param userName of a user
-     * @returns true or false
+     * @return true or false
      * @throws SQLException
      */
     public Boolean userExists(String userName) throws SQLException {
@@ -177,7 +177,7 @@ public class Database {
      *
      * @param userName of a user
      * @param password of a user
-     * @returns a user
+     * @return a user
      * @throws SQLException
      */
     public IUser getUser(String userName, String password) throws SQLException {
@@ -202,7 +202,7 @@ public class Database {
      * is logged in.
      *
      * @param userName of a user
-     * @returns a user
+     * @return a user
      * @throws SQLException
      */
     public IUser getUser(String userName) throws SQLException {
@@ -228,7 +228,7 @@ public class Database {
      * make sure the HashMap is updated according to the database everytime
      * getUsers() is called.
      *
-     * @returns a HashMap with all users in the database.
+     * @return a HashMap with all users in the database.
      * @throws SQLException
      */
     public HashMap<Integer, IUser> getUsers() throws SQLException {
@@ -258,7 +258,7 @@ public class Database {
      * instance of caseMap is created to make sure the HashMap is updated
      * according to the database everytime getCases() is called.
      *
-     * @returns a HashMap with all current cases in the database
+     * @return a HashMap with all current cases in the database
      * @throws SQLException
      */
     public HashMap<Integer, ICase> getCases() throws SQLException {
@@ -388,7 +388,7 @@ public class Database {
      * A new instance of caseMap is created to make sure the HashMap is updated
      * according to the database everytime getCases() is called.
      *
-     * @returns a HashMap with all current enquries
+     * @return a HashMap with all current enquries
      * @throws SQLException
      */
     public HashMap<Integer, IEnquiry> getEnquiries() throws SQLException {
@@ -417,7 +417,7 @@ public class Database {
      * new instance of caseMap is created to make sure the HashMap is updated
      * according to the database everytime getCitizens() is called.
      *
-     * @returns a HashMap with all current enquiries
+     * @return a HashMap with all current enquiries
      * @throws SQLException
      */
     public HashMap<Integer, ICitizen> getCitizens() throws SQLException {

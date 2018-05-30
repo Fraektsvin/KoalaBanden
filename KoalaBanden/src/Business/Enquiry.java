@@ -61,7 +61,7 @@ public class Enquiry implements IEnquiry {
 
     /**
      *
-     * @returns id of an enquiry
+     * @return id of an enquiry
      */
     @Override
     public int getID() {
@@ -70,7 +70,7 @@ public class Enquiry implements IEnquiry {
 
     /**
      *
-     * @returns source of an enquiry
+     * @return source of an enquiry
      */
     @Override
     public String getSource() {
@@ -88,7 +88,7 @@ public class Enquiry implements IEnquiry {
 
     /**
      *
-     * @returns description of an enquiry
+     * @return description of an enquiry
      */
     @Override
     public String getDescription() {
@@ -97,7 +97,7 @@ public class Enquiry implements IEnquiry {
 
     /**
      *
-     * @returns cpr of the citizen connected to an enquiry
+     * @return cpr of the citizen connected to an enquiry
      */
     @Override
     public int getCitizenCPR() {

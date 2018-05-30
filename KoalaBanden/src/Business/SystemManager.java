@@ -122,7 +122,7 @@ public class SystemManager {
 
     /**
      * 
-     * @returns the arraylist of users
+     * @return the arraylist of users
      */
     public ArrayList<User> getUsers() {
         return Users;
@@ -130,7 +130,7 @@ public class SystemManager {
 
     /**
      * 
-     * @returns the current user logged in as an IUser
+     * @return the current user logged in as an IUser
      */
     public IUser getCurrentUser() {
         return currentUser;
@@ -138,7 +138,7 @@ public class SystemManager {
 
     /**
      * 
-     * @returns username of the current user logged in 
+     * @return username of the current user logged in 
      */
     public String getCurrentUsername() {
         return currentUser.getUsername();
@@ -150,11 +150,6 @@ public class SystemManager {
      */
     public void setUser(String Username) {
         currentUser = BusinessFacade.data.getUser(Username);
-    }
-
-    // Bruges den?
-    public ArrayList<User> getCase() {
-        return Case;
     }
 
     public IUser login(String userName, String password) {
