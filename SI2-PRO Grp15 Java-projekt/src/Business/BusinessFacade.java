@@ -14,7 +14,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 
 /**
- *
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
  * @author Antonio
  */
 public class BusinessFacade implements IBusiness {
@@ -26,14 +29,15 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Constructor instantiates manager as a SystemManager on object created.
-     * @throws SQLException 
+     *
+     * @throws SQLException
      */
     public BusinessFacade() throws SQLException {
         manager = new SystemManager();
     }
 
     /**
-     * @see Data.DataFacade#userExists(java.lang.String) 
+     * @see Data.DataFacade#userExists(java.lang.String)
      */
     public boolean userExists(String userName) {
         return data.userExists(userName);
@@ -41,7 +45,8 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method sets IData.
-     * @param data 
+     *
+     * @param data
      */
     @Override
     public void injectData(IData data) {
@@ -49,7 +54,8 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * Method return a caseworker object. 
+     * Method return a caseworker object.
+     *
      * @return caseworker object
      */
     @Override
@@ -59,11 +65,12 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method creates a caseworker.
+     *
      * @param username
      * @param password
      * @param email
      * @param SSN
-     * @param accesslevel 
+     * @param accesslevel
      */
     @Override
     public void createCaseworker(String username, String password, String email, int SSN, AccessLevel accesslevel) {
@@ -72,17 +79,17 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * 
+     *
      * @return a collection of cases from the database.
      */
     @Override
-    
+
     public HashMap<Integer, ICase> getCases() {
         return data.getCases();
     }
 
     /**
-     * 
+     *
      * @return a collection of enquiries from the database.
      */
     @Override
@@ -91,7 +98,9 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * Method is used to get access to methods in the DataFacade from the BusinessFacade.
+     * Method is used to get access to methods in the DataFacade from the
+     * BusinessFacade.
+     *
      * @return IData.
      */
     @Override
@@ -100,7 +109,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#login(java.lang.String, java.lang.String) 
+     * @see SystemManager#login(java.lang.String, java.lang.String)
      */
     @Override
     public IUser login(String userName, String password) {
@@ -108,7 +117,8 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, Acquaintance.AccessLevel) 
+     * @see SystemManager#createUser(java.lang.String, java.lang.String,
+     * java.lang.String, java.lang.String, Acquaintance.AccessLevel)
      */
     @Override
     public boolean createUser(String username, String password, String email, String SSN, AccessLevel accessLevel) {
@@ -116,7 +126,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#getAccessLevels() 
+     * @see SystemManager#getAccessLevels()
      */
     @Override
     public Collection getAccessLevels() {
@@ -124,7 +134,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * 
+     *
      * @return a collection of users from the database.
      */
     @Override
@@ -133,7 +143,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#deleteUser(java.lang.String) 
+     * @see SystemManager#deleteUser(java.lang.String)
      */
     @Override
     public void deleteUser(String username) {
@@ -141,7 +151,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#getCurrentAccessLevel() 
+     * @see SystemManager#getCurrentAccessLevel()
      */
     @Override
     public AccessLevel getCurrentAccessLevel() {
@@ -149,10 +159,12 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * Method is used to get a user from the database with username and password.
+     * Method is used to get a user from the database with username and
+     * password.
+     *
      * @param userName username of the user
      * @param password password of the user
-     * @return a IUser object. 
+     * @return a IUser object.
      */
     @Override
     public IUser getUser(String userName, String password) {
@@ -161,6 +173,7 @@ public class BusinessFacade implements IBusiness {
 
     /**
      * Method is used to get a user from the database from a username.
+     *
      * @param userName username of the user
      * @return an IUser object.
      */
@@ -170,7 +183,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#getCurrentUsername() 
+     * @see SystemManager#getCurrentUsername()
      */
     @Override
     public String getCurrentUsername() {
@@ -178,7 +191,7 @@ public class BusinessFacade implements IBusiness {
     }
 
     /**
-     * @see SystemManager#setUser(java.lang.String) 
+     * @see SystemManager#setUser(java.lang.String)
      */
     @Override
     public void setUser(String Username) {

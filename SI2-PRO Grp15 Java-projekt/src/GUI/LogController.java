@@ -16,9 +16,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
- * FXML Controller class
- *
- * @author trium
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class LogController implements Initializable {
 

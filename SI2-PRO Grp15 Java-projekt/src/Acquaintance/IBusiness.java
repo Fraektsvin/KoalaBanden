@@ -1,8 +1,15 @@
 package Acquaintance;
 
-import java.sql.SQLException;
 import java.util.Collection;
 import java.util.HashMap;
+
+/**
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
+ */
 
 public interface IBusiness {
 

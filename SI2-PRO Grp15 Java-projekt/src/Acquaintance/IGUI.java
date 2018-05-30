@@ -6,11 +6,17 @@
 package Acquaintance;
 
 /**
- *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public interface IGUI {
+
     public abstract void injectBusiness(IBusiness business);
+
     public abstract void startApplication(String[] args);
 
 }

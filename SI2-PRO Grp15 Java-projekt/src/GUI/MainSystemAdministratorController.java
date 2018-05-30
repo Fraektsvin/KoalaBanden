@@ -21,10 +21,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
- * FXML Controller class
- *
- * @author viktorianadarajah
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public class MainSystemAdministratorController implements Initializable {
 
     @FXML

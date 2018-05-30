@@ -10,9 +10,13 @@ import java.sql.SQLException;
 import java.util.HashMap;
 
 /**
- *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public interface ICaseworker {
     public void createCase(int id, int enquiryid, int citizencpr, java.util.Date dateCreated, java.util.Date lastModified, String lastModifiedBy, String usersusername);
     public void registerEnquiry(int id, String source, Date date, String description, int citizencpr);

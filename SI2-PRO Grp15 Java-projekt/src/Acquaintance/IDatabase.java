@@ -6,9 +6,14 @@
 package Acquaintance;
 
 /**
- *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public interface IDatabase {
+
     public void createUser(int cpr, String username, String password, String email, int accessLevel);
 }

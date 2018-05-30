@@ -6,17 +6,28 @@
 package Acquaintance;
 
 /**
- *
- * @author viktorianadarajah
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public interface IUser {
-    
+
     public String getUsername();
+
     public String getPassword();
+
     public String getEmail();
+
     public int getCPR();
+
     public String getAccessLevelString();
+
     public void setPassword(String userName, String password);
+
     public void setEmail(String userName, String email);
+
     public AccessLevel getAccessLevel();
 }

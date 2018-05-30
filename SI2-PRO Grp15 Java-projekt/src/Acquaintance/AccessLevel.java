@@ -2,6 +2,14 @@ package Acquaintance;
 
 import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 
+/*
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
+*/
+
 public enum AccessLevel {
     SYSTEMADMINISTRATOR(1), SAGSBEHANDLER(2), BORGER(3), VÆRGE(4), PARTSREPRÆSENTANT(5);
 

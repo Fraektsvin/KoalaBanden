@@ -8,8 +8,11 @@ package Acquaintance;
 import java.util.Date;
 
 /**
- *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public interface ICase {
 

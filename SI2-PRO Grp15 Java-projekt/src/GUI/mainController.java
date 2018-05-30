@@ -23,9 +23,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 
 /**
- *
- * @author trium
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public class mainController implements Initializable {
 
     @FXML

@@ -6,9 +6,13 @@
 package Acquaintance;
 
 /**
- *
  * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public interface ICitizen {
      public int getCpr();
 }

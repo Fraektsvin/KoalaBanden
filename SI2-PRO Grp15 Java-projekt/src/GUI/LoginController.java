@@ -20,10 +20,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 
 /**
- * FXML Controller class
- *
- * @author finch
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public class LoginController implements Initializable {
 
     @FXML

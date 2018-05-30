@@ -21,6 +21,14 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+/**
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
+ */
+
 public class caseOpeningController implements Initializable {
 
 //    private ArrayList<Guardian> guardianlist = new ArrayList<Guardian>();

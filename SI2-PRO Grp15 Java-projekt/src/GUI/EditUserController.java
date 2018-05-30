@@ -18,10 +18,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
 /**
- * FXML Controller class
- *
- * @author laurabrinkholmjustesen
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public class EditUserController implements Initializable {
 
     @FXML

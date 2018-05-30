@@ -23,9 +23,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
- * FXML Controller class
- *
- * @author laurabrinkholmjustesen
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
 public class CreateuserController implements Initializable {
 

@@ -26,10 +26,13 @@ import javafx.stage.Modality;
 import javafx.stage.WindowEvent;
 
 /**
- * FXML Controller class
- *
- * @author trium
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
+ * @author Antonio
  */
+
 public class UserlistController implements Initializable {
     
     @FXML

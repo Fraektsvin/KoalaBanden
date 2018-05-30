@@ -8,13 +8,21 @@ package Acquaintance;
 import java.util.Date;
 
 /**
- *
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
  * @author Antonio
  */
 public interface IEnquiry {
-   public int getID();
-   public String getSource(); 
-   public Date getDate();
-   public String getDescription();   
-   public int getCitizenCPR();
+
+    public int getID();
+
+    public String getSource();
+
+    public Date getDate();
+
+    public String getDescription();
+
+    public int getCitizenCPR();
 }

@@ -19,9 +19,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- *
+ * @author Jonas
+ * @author Thomas
+ * @author Viktoria
+ * @author Alex
  * @author Antonio
  */
+
 public class GUIFacade extends Application implements IGUI {
 
     static GUIFacade instance;
