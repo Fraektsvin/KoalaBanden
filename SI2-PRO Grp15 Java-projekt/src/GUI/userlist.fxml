@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UserlistController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="51.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/download.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="51.0" layoutY="104.0" prefHeight="0.0" prefWidth="1020.0" />
+      <Label layoutX="133.0" layoutY="28.0" text="Brugere" textFill="#699f6b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="993.0" layoutY="19.0" text="Dato" textFill="#3a1c9d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userlistDate" layoutX="993.0" layoutY="39.0" text="23" textFill="#aeacac">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="userlistMonth" layoutX="1042.0" layoutY="47.0" text="MAJ" textFill="#3a1c9d" />
+      <Label fx:id="statusLabel" layoutX="133.0" layoutY="61.0" text="Status:" textFill="#b2b0b0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="55.0" layoutY="616.0" prefHeight="70.0" prefWidth="1020.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <JFXButton fx:id="returnButton" layoutX="26.0" layoutY="20.0" onAction="#handleReturnButtonAction" style="-fx-background-color: #FC432E;" text="Tilbage" textFill="WHITE" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="51.0" layoutY="104.0" prefHeight="53.0" prefWidth="1020.0">
+         <children>
+            <JFXButton fx:id="updateListButton" onAction="#handleUpdateListButton" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opdater liste" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Return_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="createUserButton" onAction="#handleCreateUserButtonAction" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Opret Bruger" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Add_User_Male_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="deleteUser" onAction="#handleDeleteUserButton" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Slet Bruger" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Remove_Administrator_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="editUserButton" onAction="#handleEditUserButtonAction" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: #699F6B;" text="Rediger Bruger" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Registration_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets right="200.0" />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXListView fx:id="userListView" layoutX="55.0" layoutY="164.0" prefHeight="444.0" prefWidth="1020.0" />
+   </children>
+</AnchorPane>
