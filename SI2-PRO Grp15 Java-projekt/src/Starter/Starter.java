@@ -41,7 +41,7 @@ public class Starter {
         
         SystemManager manager = new SystemManager();
         business.createCaseworker("Jonas1212", "jonas@jonas.com", "1212121212", 0, AccessLevel.SAGSBEHANDLER);
-        manager.createUser("Admin111", "1234", "admin@admin.com", "1111111111", AccessLevel.SYSTEMADMINISTRATOR);
+        manager.createUser("Admin1111", "1234", "admin@admin.com", "1111111111", AccessLevel.SYSTEMADMINISTRATOR);
 
         GUI.startApplication(args);
             
